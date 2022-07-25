@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .liLink:hover .spLink {
+        @apply w-full;
+    }
+
+    .btn {
+        @apply text-xl px-9 font-semibold py-3 mt-10 hover:bg-white hover:text-black duration-200 border-2 rounded-2xl;
+    }
+}
