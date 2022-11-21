@@ -1,101 +1,369 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth overflowhidden">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/tailwind.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./Media/favicon.ico">
-    <title>Tushar Saini | Dev-Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <title>Tushar Saini | Dev - Portfolio</title>
 </head>
-<body class="text-white bg-black">
 
-    <div class="min-h-screen">
-        
-        <nav class="flex justify-between pt-8 pb-4 md:px-20 bg-gradient-to-b from-black/60 fixed top-0 left-0 right-0 backdrop-blur">
-            <h1 class="text-4xl font-semibold">My Portfolio</h1>
-            <ul class="hidden md:flex text-xl gap-3 font-semibold items-center">
-                <li class="liLink">
-                    <a class="flex flex-col lg:py-2 lg:px-4 items-center" href="#">About
-                        <span class="spLink h-0.5 w-0 transition-all duration-200 bg-white"></span>
-                    </a>
-                </li>
-                <li class="liLink">
-                    <a class="flex flex-col lg:py-2 lg:px-4 items-center" href="#">Skills
-                        <span class="spLink h-0.5 w-0 transition-all duration-200 bg-white"></span>
-                    </a>
-                </li>
-                <li class="liLink">
-                    <a class="flex flex-col lg:py-2 lg:px-4 items-center" href="#">Projects
-                        <span class="spLink h-0.5 w-0 transition-all duration-200 bg-white"></span>
-                    </a>
-                </li>
-                <li class="liLink">
-                    <a class="flex flex-col lg:py-2 lg:px-4 items-center" href="#">Sevices
-                        <span class="spLink h-0.5 w-0 transition-all duration-200 bg-white"></span>
-                    </a>
-                </li>
-                <li class="liLink">
-                    <a class="flex flex-col lg:py-2 lg:px-4 items-center" href="#">Contact
-                        <span class="spLink h-0.5 w-0 transition-all duration-500 bg-white"></span>
-                    </a>
-                </li>
-                <li><a class="text-xl px-7 font-semibold py-3 hover:bg-white hover:text-black duration-200 border-red-900 border-2 rounded-xl" href="https://drive.google.com/file/d/1dxUE69DBQugyi3luz4XZgLKK8snqGDLS/view?usp=sharing" target="_blank">Resume</a></li>
-            </ul>
-        </nav>
-    
-        <div class="md:flex lg:justify-between mx-auto mt-40 lg:mx-20">
-            <div class="absolute -z-10 top-20 left-10 w-96 h-96 bg-pink-500 rounded-full filter blur-3xl opacity-20 mix-blend-exclusion animate-[bounce_17s_infinite]"></div>
-            <div class="absolute -z-10 bottom-10 right-96 w-96 h-96 bg-blue-600 rounded-full filtr blur-3xl opacity-20 mix-blend-exclusion animate-[bounce_20s_infinite]"></div>
-            <figure class="align-bottom w-60 md:w-1/4 max-w-xs md:order-2 mx-auto md:mx-0">
-                <img class="border-4 rounded-full" src="./Media/S2sharpit's Pic.jpeg" alt="">
-                <!-- <figcaption class  ="mt-4 text-3xl lg:text-4xl text-center">Tushar Saini</figcaption> -->
-            </figure>
-            <div class=" flex justify-end flex-col md:w-3/5 md:order-1 mt-20 md:mt-0">
-                <div class="text-3xl">Hi!</div>
-                <b class="text-7xl my-3">&lt;I'm Tushar&frasl;&gt;</b>
-                <div class="text-4xl font-semibold mb-20">a Web-Developer</div>
+<body class="bg-black text-white overflow-hidden">
 
-                <!-- <div class="w-[84vw] mx-[8vw] lg:mx-0 text-justify lg:w-full md:order-2 lg:order-1 text-lg mt-0 md:mt-20 lg:mt-0">
-                    <h2 class="text-2xl font-semibold mb-2">About</h2>
-                    Hey, I'm Tushar Saini studying Bachelor of Technology in Computer Science & Education at
-                    'Institue of Technical Education & Research, Siksha 'O' Anusandhan' in Bhubaneswar, Odisha.
-                    I'm proficient in front-end Web-Developing.
-                </div> -->
-                <!-- <div class="md:order-1 mx-auto lg:order-2 flex flex-wrap px-10 md:px-0 sm:w-full md:w-36 lg:w-full sm:flex-row justify-evenly sm:justify-between gap-5">
-                    <button class="btn">Resume</button>
-                    <button class="btn">Projects</button>
-                    <button class="btn">Contact</button>
-                </div> -->
+    <nav
+        class="text-neutral-300 flex md:justify-end z-10 md:p-5 md:pb-8 fixed top-0 left-0 right-0 bg-gradient-to-b from-black via-black to-transparent">
+        <!-- <h1 class="text-4xl font-semibold">My Portfolio</h1> -->
+        <button class="flex absolute z-10 pointer bg-transparent m-5 md:hidden "
+            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'));myFunction()"
+            aria-label="Main Menu">
+            <svg width="60" height="60" viewBox="0 0 100 100" fill="black" stroke="black">
+                <path class="line line1"
+                    d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3"
+                    d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+        </button>
+        <ul id="showNav"
+            class="hidden md:flex flex-col md:flex-row w-screen h-screen backdrop-blur-none md:bg-transparent justify-center md:w-auto md:h-auto gap-9 font-semibold items-center transition-all">
+            <li class="liLink hover:text-white">
+                <a class="flex flex-col items-center transition-all" href="#home">Home
+                    <span class="spLink h-0.5 w-0 transition-all duration-300 bg-white"></span>
+                </a>
+            </li>
+            <li class="liLink hover:text-white">
+                <a class="flex flex-col items-center transition-all" href="#about">About
+                    <span class="spLink h-0.5 w-0 transition-all duration-300 bg-white"></span>
+                </a>
+            </li>
+            <li class="liLink hover:text-white">
+                <a class="flex flex-col items-center" href="#skills">Skills
+                    <span class="spLink h-0.5 w-0 transition-all duration-300 bg-white"></span>
+                </a>
+            </li>
+            <li class="liLink hover:text-white">
+                <a class="flex flex-col items-center" href="#projects">Projects
+                    <span class="spLink h-0.5 w-0 transition-all duration-300 bg-white"></span>
+                </a>
+            </li>
+            <li class="liLink hover:text-white">
+                <a class="flex flex-col items-center" href="#services">Services
+                    <span class="spLink h-0.5 w-0 transition-all duration-300 bg-white"></span>
+                </a>
+            </li>
+            <li class="liLink hover:text-white">
+                <a class="flex flex-col items-center" href="#contact">Contact
+                    <span class="spLink h-0.5 w-0 transition-all duration-300 bg-white"></span>
+                </a>
+            </li>
+            <li><a class="px-4 py-2 hover:bg-white hover:text-black hover:border-white border-red-900 border-2 rounded-lg duration-300"
+                    href="https://drive.google.com/file/d/11UhACDR2VREYnMfJSFPm_9pPXMEEnPPM/view?usp=sharing"
+                    target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+
+    <ul class="fixed w-0.5 top-1/2 right-5 -translate-y-1/2 space-y-4">
+        <li class="h-14 bg-gray-600 hover:bg-white hover:w-1 cursor-pointer"><a href="#home"
+                class="block h-full w-full"></a></li>
+        <li class="h-14 bg-gray-600 hover:bg-white hover:w-1 cursor-pointer"><a href="#about"
+                class="block h-full w-full"></a></li>
+        <li class="h-14 bg-gray-600 hover:bg-white hover:w-1 cursor-pointer"><a href="#skills"
+                class="block h-full w-full"></a></li>
+        <li class="h-14 bg-gray-600 hover:bg-white hover:w-1 cursor-pointer"><a href="#projects"
+                class="block h-full w-full"></a></li>
+        <li class="h-14 bg-gray-600 hover:bg-white hover:w-1 cursor-pointer"><a href="#services"
+                class="block h-full w-full"></a></li>
+        <li class="h-14 bg-gray-600 hover:bg-white hover:w-1 cursor-pointer"><a href="#contact"
+                class="block h-full w-full"></a></li>
+    </ul>
+
+    <main class="h-[100vh] overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+        <section id="home"
+            class="snap-start relative top-0left-0right-0 h-screen min-w-full px-7 py-32 md:px-20">
+            <!-- <div class="absolute -z-10 -bottom-20 left-10 w-96 h-96 bg-pink-500 rounded-full filter blur-3xl opacity-20 mix-blend-exclusion animate-[bounce_17s_infinite]"></div> -->
+            <!-- <div class="absolute top-36 right-96 w-96 h-96 bg-blue-600 rounded-full filtr blur-3xl opacity-20 mix-blend-exclusion animate-[bounce_20s_infinite]"></div> -->
+            <!-- <div class="absolute z-10 -bottom-10 left-96 w-96 h-96 bg-orange-600 rounded-full filtr blur-3xl opacity-20 mix-blend-exclusion animate-[bounce_20s_infinite]"></div> -->
+            <div class="text-xl md:text-2xl text-white/75 font-mono">WELCOME TO MY PORTFOLIO!</div>
+            <div class="text-4xl md:text-7xl text-white my-5 md:mt-10 font-thin"><b class="font-bold">Tushar</b> Saini
             </div>
-        </div>
-
-    </div>
-
-    <footer class="bg-black p-5 px-8 md:px-20">
-        <div class="md:flex  md:justify-between space-y-5 md:space-y-0">
-            <div class="flex gap-8 md:order-2 w-fit mx-auto md:m-0">
+            <div class="text-3xl md:text-4xl text-white/75 md:mx-2 mb10"><img class="w-8 inline"
+                    src="./media/RedTriangleRight.svg" alt=""> <span class="typing"></span></div>
+            <!-- <a class="px-4 py-2 my-7 mx-2 inline-block font-bold text-lg text-white hover:text-black hover:bg-white hover:border-white border-red-600 border-2 rounded-lg duration-300" href="#" target="_blank">Hire Me</a> -->
+            <div class="flex z-50 flex-col md:flex-row gap-8 w-fit mt-10 mx-5">
                 <a href="https://www.linkedin.com/in/s2sharpit/" target="_blank">
-                    <img class="w-7 h-7" src="./Media/Linkedin.svg" alt="">
+                    <img class="w-6 h-6" src="./media/Linkedin.svg" alt="">
                 </a>
                 <a href="https://github.com/s2sharpit" target="_blank">
-                    <img class="w-7 h-7" src="./Media/GitHub.svg" alt="">
+                    <img class="w-6 h-6" src="./media/GitHub.svg" alt="">
                 </a>
                 <!-- <a href="https://discordapp.com/users/s2sharpit#0572" target="_blank">
-                    <img class="w-7 h-7" src="./Media/Discord.svg" alt="">
-                </a> -->
+                <img class="w-6 h-6" src="./media/Discord.svg" alt="">
+            </a> -->
                 <a href="https://twitter.com/s2sharpit" target="_blank">
-                    <img class="w-7 h-7" src="./Media/Twitter.svg" alt="">
+                    <img class="w-6 h-6" src="./media/Twitter.svg" alt="">
                 </a>
+                <!-- <a href="#" target="_blank">
+                <img class="w-6 h-6" src="./media/Telegram.svg" alt="">
+            </a> -->
                 <a href="https://www.instagram.com/s2sharpit/" target="_blank">
-                    <img class="w-7 h-7" src="./Media/Insta.svg" alt="">
+                    <img class="w-6 h-6" src="./media/Insta.svg" alt="">
                 </a>
             </div>
-            <div class="text-sm sm:text-base text-neutral-500 md:order-1 text-center">
-                Copyright © 2022 Tushar Saini. All Right Reserved.
+            <div class="hidden md:.block w-2/5 my-5">I love exploring and creating 🚀 I'm a lifelong learner 🎓 and I
+                might have a thing for traditional Neapolitan Pizza 🍕</div>
+            <div
+                class="absolute -z10 bg-[linear-gradient(transparent,transparent,black),url('/media/S2sharpit.png')] bg-contain bg-right-bottom bg-no-repeat w-[40vh] md:w-[50vh] lg:w-[65vh] h-4/6 md:h-[80vh] lg:h-[90vh] my-12 lg:my-0 bottom-0 right-0 mr-7 md:mr-20">
             </div>
-        </div>
-    </footer>
+        </section>
+        <hr class="mx-10 border-neutral-800 border-dashed">
+        <section id="about" class="snap-start absolute-z-10top-full h-screen p-20 bgwhite">
+            <h1 class="text-center mt-5 mb-16 text-lg font-semibold"> <span class="text-4xl">About</span> <br> -----who
+                i am-----</h1>
+            <div class="flex flex-row justify-between">
+                <div class="w-1/2 pr-10">
+                    <h2 class="text-2xl font-bold my-5">Hello I'm Tushar, <br class="lg:hidden"> a <span
+                            class="typed text-purple-500"></span></h2>
+                    <p class="text-justify text-neutral-400">One of those challenges is creating a strong online
+                        presence. One that not only reflects your constantly evolving brand and identity but one that
+                        speaks to your customers, as well. As a beginner ,I'm lookin' forward to improve
+                        everyday."Practise makes a man perfect". I believe in a less is more approach. Work tirelessly,
+                        not to satisfy others but for your own satisfaction.</p>
+                </div>
+                <div class="w-1/2 pl-10">
+                    <h2 class="text-3xl font-bold my-5">Education</h2>
+                    <h3 class="text-xl"> <span class="font-semibold">ITER, Siksha 'O' Anusandhan,</span> Bhubaneswar -
+                        <i>B Tech. CSE</i>
+                        <p class="text-xs mb-1 text-neutral-400">NOVEMBER 2021 - PRESENT</p>
+                        <p class="text-base text-neutral-400">Doing B Tech. in Computer Science & Engineering.</p>
+                    </h3>
+                    <h3 class="text-xl mt-7"> <span class="font-semibold">Gurukul Kurukshetra,</span> Kurukshetra -
+                        <i>XII (CBSE)</i>
+                        <p class="text-xs mb-1 text-neutral-400">APRIL 2013 - MARCH 2021</p>
+                        <p class="text-base text-neutral-400">Studied from Class 5th - 12th from CBSE Board in Boarding
+                            School.</p>
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <hr class="mx-10 border-neutral-800 border-dashed">
+        <section id="skills" class="snap-start absolutebottom-full h-screen p-20">
+            <h1 class="text-center mt-5 mb-16 text-lg font-semibold"> <span class="text-4xl">Skills</span> <br>
+                -----what i know-----</h1>
+            <div class="flex flex-row justify-between">
+                <div class="w-1/2 pr-10">
+                    <h2 class="text-2xl font-bold mt-5">Objective</h2>
+                    <p class="text-neutral-400 my-1">To innovate fascinating gadgets.</p>
+                    <h2 class="text-2xl font-bold mt-7">Professional Skills</h2>
+                    <ul class="text-neutral-400 my-1 list-disc ml-5 grid grid-cols-2">
+                        <li class="">Strong Attention to Detail</li>
+                        <li class="">Persistent Problem Solver</li>
+                        <li class="">High Level of Accuracy</li>
+                        <li class="">Natural Negotiator</li>
+                    </ul>
+                </div>
+                <div class="w-1/2 pl-10">
+                    <div class="mb-4">
+                        <div class="flex mb-1 items-center justify-between">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div
+                            class="h-2 w-full bg-white rounded-md relative html before:absolute before:h-2 before:w-[90%] before:bg-gray-500 before:rounded-md">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex mb-1 items-center justify-between">
+                            <span>CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div
+                            class="h-2 w-full bg-white rounded-md relative html before:absolute before:h-2 before:w-[90%] before:bg-gray-500 before:rounded-md">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex mb-1 items-center justify-between">
+                            <span>Javascript</span>
+                            <span>80%</span>
+                        </div>
+                        <div
+                            class="h-2 w-full bg-white rounded-md relative html before:absolute before:h-2 before:w-4/5 before:bg-gray-500 before:rounded-md">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex mb-1 items-center justify-between">
+                            <span>Python</span>
+                            <span>90%</span>
+                        </div>
+                        <div
+                            class="h-2 w-full bg-white rounded-md relative html before:absolute before:h-2 before:w-[90%] before:bg-gray-500 before:rounded-md">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex mb-1 items-center justify-between">
+                            <span>Java</span>
+                            <span>80%</span>
+                        </div>
+                        <div
+                            class="h-2 w-full bg-white rounded-md relative html before:absolute before:h-2 before:w-4/5 before:bg-gray-500 before:rounded-md">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex mb-1 items-center justify-between">
+                            <span>C++</span>
+                            <span>60%</span>
+                        </div>
+                        <div
+                            class="h-2 w-full bg-white rounded-md relative html before:absolute before:h-2 before:w-2/3 before:bg-gray-500 before:rounded-md">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="mx-10 border-neutral-800 border-dashed">
+        <section id="projects" class="snap-start absolutebottom-full h-screen p-20">
+            <h1 class="text-center mt-3 mb-8 text-lg font-semibold"> <span class="text-4xl">Projects</span> <br>
+                -----what i did-----</h1>
+            <div class="flex space-x-10">
+                <div
+                    class="viewProject flex flex-col text-center justify-center w-full h-96 border-2 rounded-2xl border-gray-700 bg-[url('../media/Project/portfolio-1.jpg')] bg-cover bg-no-repeat bg-center">
+                    <div
+                        class="bg-gray-700 bg-opacity-70 h-full rounded-2xl p-5 m-2 opacity-0 transition-all duration-500">
+                        <h3 class="m-5 text-2xl font-bold">Project - 1</h3>
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga deserunt
+                            aspernatutenetur itaque. Voluptatum id ipsam commodi provident quos harum quod?</p>
+                    </div>
+                </div>
+                <div
+                    class="viewProject flex flex-col text-center justify-center w-full h-96 border-2 rounded-2xl border-gray-700 bg-[url('../media/Project/portfolio-2.jpg')] bg-cover bg-no-repeat bg-center">
+                    <div
+                        class="bg-gray-700 bg-opacity-70 h-full rounded-2xl p-5 m-2 opacity-0 transition-all duration-300">
+                        <h3 class="m-5 text-2xl font-bold">Project - 1</h3>
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero natus
+                            quibusdam eligendi ad commodi repellat, consequatur porro odio dolorem atque blanditiis
+                            deserunt distinctio, eveniet maiores maxime rem consectetur soluta vel?</p>
+                    </div>
+                </div>
+                <div
+                    class="viewProject flex flex-col text-center justify-center w-full h-96 border-2 rounded-2xl border-gray-700 bg-[url('../media/Project/portfolio-3.jpg')] bg-cover bg-no-repeat bg-center">
+                    <div
+                        class="bg-gray-700 bg-opacity-70 h-full rounded-2xl p-5 m-2 opacity-0 transition-all duration-300">
+                        <h3 class="m-5 text-2xl font-bold">Project - 1</h3>
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero natus
+                            quibusdam eligendi ad commodi repellat, consequatur porro odio dolorem atque blanditiis
+                            deserunt distinctio, eveniet maiores maxime rem consectetur soluta vel?</p>
+                    </div>
+                </div>
+                <!-- <div class="relative flex flex-col text-center justify-center w-full h-96 ">
+                <img src="media/Project/portfolio-1.jpg" alt="" class="rounded-3xl border-2 border-gray-700 h-96">
+                <p class="absolute m-5 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga deserunt aspernatur delectus laboriosam accusamus facilis? Reprehenderit quidem at voluptatem maxime, tenetur itaque. Voluptatum id ipsam commodi provident quos harum quod?</p>
+                
+            </div> -->
+            </div>
+        </section>
+        <hr class="mx-10 border-neutral-800 border-dashed">
+        <section id="services" class="snap-start absolutebottom-full h-screen p-20">
+            <h1 class="text-center mt-5 mb-16 text-lg font-semibold"> <span class="text-4xl">Services</span> <br>
+                -----things i provide-----</h1>
+            <div class="flex space-x-10 items-center h-80">
+                <div
+                    class="relative viewService w-full h-64 border-2 rounded-3xl hover:h-[27rem] transition-all duration-300">
+                    <div
+                        class="flex flex-col rounded-3xl p-6 bg-gradient-to-tr from-yellow-500 via-purple-600 to-blue-500 text-center items-center justify-center h-64 border-b-2">
+                        <div class="">Service 1</div>
+                        <div class="">I just provide SERVICE-1</div>
+                    </div>
+                    <div
+                        class="absolute bottom-0 -z-10 flex-col text-center items-center justify-center h-max p-5 border-t2 transition-all duration-1000">
+                        <div class="font-bold underline underline-offset-4">About Serivce 1</div>
+                        <div class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
+                            eveniet eaque iste, perspiciatis quasi vero aliquid, soluta repellat fugiat quam velit
+                            aliquam possimus. Rem, maiores?</div>
+                    </div>
+                </div>
+                <div
+                    class="relative viewService w-full h-64 border-2 rounded-3xl hover:h-[27rem] transition-all duration-300">
+                    <div
+                        class="flex flex-col rounded-3xl p-6 bg-gradient-to-tr from-blue-800 via-green-800 to-purple-800 text-center items-center justify-center h-64 border-b-2">
+                        <div class="">Service 1</div>
+                        <div class="">I just provide SERVICE-1</div>
+                    </div>
+                    <div
+                        class="absolute bottom-0 -z-10 flex-col text-center items-center justify-center h-max p-5 border-t2 transition-all duration-1000">
+                        <div class="font-bold underline underline-offset-4">About Serivce 1</div>
+                        <div class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
+                            eveniet eaque iste, perspiciatis quasi vero aliquid, soluta repellat fugiat quam velit
+                            aliquam possimus. Rem, maiores?</div>
+                    </div>
+                </div>
+                <div
+                    class="relative viewService w-full h-64 border-2 rounded-3xl hover:h-[27rem] transition-all duration-300">
+                    <div
+                        class="flex flex-col rounded-3xl p-6 bg-gradient-to-tr from-blue-800 via-green-800 to-purple-800 text-center items-center justify-center h-64 border-b-2">
+                        <div class="">Service 1</div>
+                        <div class="">I just provide SERVICE-1</div>
+                    </div>
+                    <div
+                        class="absolute bottom-0 -z-10 flex-col text-center items-center justify-center h-max p-5 border-t2 transition-all duration-1000">
+                        <div class="font-bold underline underline-offset-4">About Serivce 1</div>
+                        <div class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
+                            eveniet eaque iste, perspiciatis quasi vero aliquid, soluta repellat fugiat quam velit
+                            aliquam possimus. Rem, maiores?</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="mx-10 border-neutral-800 border-dashed">
+        <section id="contact" class="snap-start absolutebottom-full h-screen p-20">
+            <h1 class="text-center mt-5 mb-16 text-lg font-semibold"> <span class="text-4xl">Contact</span> <br>
+                -----get in touch-----</h1>
+            <div class="flex space-x-10 justify-between">
+                <div class="my-10 space-y-5">
+                    <div class=""><b>Name</b><br>Tushar Saini</div>
+                    <div class=""><b>Address</b><br>Bhubaneswar, Odisha, India</div>
+                    <div class=""><b>Email</b><br>tusharpitkapoor@gmail.com</div>
+                </div>
+                <div class="">
+                    <b class="text-2xl">Feedback</b>
+                    <form action="#" class="mt-5">
+                        <input type="text" placeholder="Name" class="rounded-md h-8 w-72 p-2 mr-6 bg-gray-600">
+                        <input type="text" placeholder="Email" class="rounded-md h-8 w-64 p-2 bg-gray-600"><br>
+                        <input type="text" placeholder="Subject" class="rounded-md h-8 w-full p-2 my-5 bg-gray-600">
+                        <textarea cols="30" rows="10" placeholder="Message..." class="rounded-md w-full h-24 p-2 bg-gray-600"></textarea>
+                        <button class="px-9 py-2 mt-5 rounded-lg border-2 hover:text-black hover:bg-gray-300 font-bold transition-all text-lg duration-300" type="submit" name="send">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <script>
+        var typed = new Typed(".typing", {
+            strings: ["Developer", "Programmer", "Designer"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+        var typed = new Typed(".typed", {
+            strings: ["Developer", "Programmer", "Designer"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+        function myFunction() {
+            var x = document.getElementById("showNav");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+                x.style.backdropFilter = "blur(64px)";
+                x.style.transition = "all 5s linear";
+                // x.style.backgroundColor = "rgba(0,0,0,0)"
+                // x.style.position = "absolute";
+            }
+        }
+    </script>
 </body>
+
 </html>

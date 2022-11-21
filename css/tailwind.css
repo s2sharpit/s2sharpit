@@ -3,11 +3,64 @@
 @tailwind utilities;
 
 @layer components {
-    .liLink:hover .spLink {
-        @apply w-full;
+    /* .liLink:hover .spLink {
+        @apply text-white;
+    } */
+
+    main::-webkit-scrollbar {
+        display: none;
     }
 
-    .btn {
-        @apply text-xl px-7 font-semibold py-3 mt-10 hover:bg-white hover:text-black duration-200 border-2 rounded-xl;
+    .menu {
+        /* background-color: transparent;
+        cursor: pointer;
+        display: flex;
+        padding: 0; */
+    }
+    .line {
+        fill: none;
+        stroke: white;
+        stroke-width: 6;
+        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .line1 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+    }
+    .line2 {
+        stroke-dasharray: 60 60;
+        stroke-width: 6;
+    }
+    .line3 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+    }
+    .opened .line1 {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+        stroke-width: 6;
+    }
+    .opened .line2 {
+        stroke-dasharray: 1 60;
+        stroke-dashoffset: -30;
+        stroke-width: 6;
+    }
+    .opened .line3 {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+        stroke-width: 6;
+    }
+
+    /* .showNav {
+        display: none;
+    }
+
+    .opened .showNav {
+        display: block;
+        position: absolute;
+    } */
+
+    .viewProject:hover div {
+        @apply opacity-100;
     }
 }
