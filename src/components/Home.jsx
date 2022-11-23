@@ -15,7 +15,7 @@ export default () => {
             {/* <a className="px-4 py-2 my-7 mx-2 inline-block font-bold text-lg text-white hover:text-black hover:bg-white hover:border-white border-red-600 border-2 rounded-lg duration-300" href="#" target="_blank">Hire Me</a> */}
             <div className="flex z-50 flex-col md:flex-row gap-8 w-fit mt-10 mx-5">
                 <a href="https://www.linkedin.com/in/s2sharpit/" target="_blank">
-                    <img className="w-6 h-6" src="./media/Linkedin.svg" alt="" />
+                    <img className="w-6 h-6" src="./media/LinkedIn.svg" alt="" />
                 </a>
                 <a href="https://github.com/s2sharpit" target="_blank">
                     <img className="w-6 h-6" src="./media/GitHub.svg" alt="" />
@@ -36,7 +36,7 @@ export default () => {
             {/* <div className="hidden md:block w-2/5 my-5">I love exploring and creating 🚀 I'm a lifelong learner 🎓 and I
                 might have a thing for traditional Neapolitan Pizza 🍕</div> */}
             <div
-                className="absolute bg-[url('/media/s2shar.png')] -rotate-6 grayscale bg[linear-gradient(transparent,transparent,#011f25),url('/media/S2sharpit.png')] bg-contain bg-right-bottom bg-no-repeat w-[40vh] md:w-[50vh] lg:w-[65vh] h-4/6 md:h-[80vh] lg:h-[90vh] my-12 lg:my-0 bottom-0 right-0 mr-7 md:mr-20">
+                className="absolute bg-[url('/media/S2shar.png')] -rotate-6 grayscale bg[linear-gradient(transparent,transparent,#011f25),url('/media/S2sharpit.png')] bg-contain bg-right-bottom bg-no-repeat w-[40vh] md:w-[50vh] lg:w-[65vh] h-4/6 md:h-[80vh] lg:h-[90vh] my-12 lg:my-0 bottom-0 right-0 mr-7 md:mr-20">
             </div>
         </section>
     )
