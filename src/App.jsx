@@ -26,7 +26,7 @@ function App() {
   
 
   return (
-    <div className="bg-[#050505] text-white overflow-hidden bg-[url('/media/bg_1.png')]grayscal bg-cover h-[100vh]">
+    <div className="bg-[#080808] text-white overflow-hidden bg-[url('/media/bg_1.png')]grayscal bg-cover h-[100vh]">
 
       <Nav />
       <SideScroll />

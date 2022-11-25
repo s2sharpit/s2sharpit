@@ -1,4 +1,5 @@
 import AutoType from "./AutoType"
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -14,24 +15,20 @@ export default () => (
         <div className="text-xl md:text-2xl text-white/75 font-mono">WELCOME TO MY PORTFOLIO!</div>
         <div className="text-4xl md:text-7xl text-white my-5 md:mt-10 font-thin"><b className="font-bold">Tushar</b> Saini
         </div>
-        <div className="flex text-3xl md:text-4xl text-white/75 md:mx-2 mb10"><img className="w-8 inline"
-            src="./media/RedTriangleRight.svg" alt="" /> <AutoType /></div>
-        <div className="flex z-50 flex-col md:flex-row gap-8 w-fit mt-10 mx-5">
-            <a href="https://www.linkedin.com/in/s2sharpit/" target="_blank"><LinkedInIcon className="text-red-500" /></a>
-            <a href="https://github.com/s2sharpit" target="_blank"><GitHubIcon />
-            </a>
+        <div className="flex items-end text-3xl md:text-4xl text-white/75 md:mx-2 mb10">
+            {/* <ArrowRightIcon className="text-red-600" fontSize="inherit" /> */}
+            <img className="w-8 inline" src="./media/RedTriangleRight.svg" alt="" />
+            <AutoType />
+        </div>
+        <div className="flex z-50 flex-col md:flex-row gap-8 w-fit mt-10 mx-5 text-[1.7rem]">
+            <a className="hover:text-neutral-300" href="https://www.linkedin.com/in/s2sharpit/" target="_blank"><LinkedInIcon fontSize="inherit" /></a>
+            <a className="hover:text-neutral-300" href="https://github.com/s2sharpit" target="_blank"><GitHubIcon fontSize="inherit" /></a>
+            <a className="hover:text-neutral-300" href="https://twitter.com/s2sharpit" target="_blank"><TwitterIcon fontSize="inherit" /></a>
+            <a className="hover:text-neutral-300" href="#" target="_blank"><TelegramIcon fontSize="inherit" /></a>
+            <a className="hover:text-neutral-300" href="https://www.instagram.com/s2sharpit/" target="_blank"><InstagramIcon fontSize="inherit" /></a>
             {/* <a href="https://discordapp.com/users/s2sharpit#0572" target="_blank">
         <img className="w-6 h-6" src="./media/Discord.svg" alt="" />
     </a> */}
-            <a href="https://twitter.com/s2sharpit" target="_blank"><TwitterIcon className="text-[30px]" />
-                <img className="w-6 h-6" src="./media/Twitter.svg" alt="" />
-            </a>
-            <a href="#" target="_blank"><TelegramIcon />
-                <img className="w-6 h-6" src="./media/Telegram.svg" alt="" />
-            </a>
-            <a href="https://www.instagram.com/s2sharpit/" target="_blank"><InstagramIcon />
-                <img className="w-6 h-6" src="./media/Insta.svg" alt="" />
-            </a>
         </div>
         {/* <div className="hidden md:block w-2/5 my-5">I love exploring and creating 🚀 I'm a lifelong learner 🎓 and I
             might have a thing for traditional Neapolitan Pizza 🍕</div> */}
