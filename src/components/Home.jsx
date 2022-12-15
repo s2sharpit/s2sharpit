@@ -24,7 +24,7 @@ export default () => (
             <a className="hover:text-neutral-300" href="https://www.linkedin.com/in/s2sharpit/" target="_blank"><LinkedInIcon fontSize="inherit" /></a>
             <a className="hover:text-neutral-300" href="https://github.com/s2sharpit" target="_blank"><GitHubIcon fontSize="inherit" /></a>
             <a className="hover:text-neutral-300" href="https://twitter.com/s2sharpit" target="_blank"><TwitterIcon fontSize="inherit" /></a>
-            <a className="hover:text-neutral-300" href="#" target="_blank"><TelegramIcon fontSize="inherit" /></a>
+            <a className="hover:text-neutral-300" href="#"><TelegramIcon fontSize="inherit" /></a>
             <a className="hover:text-neutral-300" href="https://www.instagram.com/s2sharpit/" target="_blank"><InstagramIcon fontSize="inherit" /></a>
             {/* <a href="https://discordapp.com/users/s2sharpit#0572" target="_blank">
         <img className="w-6 h-6" src="./media/Discord.svg" alt="" />
