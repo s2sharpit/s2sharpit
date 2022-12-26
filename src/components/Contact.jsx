@@ -7,7 +7,7 @@ export default () => {
                 <div className="my-10 space-y-5">
                     <div className=""><b>Name</b><br />Tushar Saini</div>
                     <div className=""><b>Address</b><br />Bhubaneswar, Odisha, India</div>
-                    <div className=""><b>Email</b><br />tusharpitkapoor@gmail.com</div>
+                    <div className=""><b>Email</b><br />s2sharpit@gmail.com</div>
                 </div>
                 <div className="">
                     <b className="text-2xl">Feedback</b>

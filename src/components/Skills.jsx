@@ -1,8 +1,8 @@
 export default () => {
     return (
-        <section id="skills" className="snap-start absolutebottom-full h-screen p-20">
+        <section id="skills" className="snap-start h-screen p-20">
             <h1 className="text-center mt-5 mb-16 text-lg font-semibold"> <span className="text-4xl">Skills</span> <br />
-                -----what i know-----</h1>
+                what i know</h1>
             <div className="flex flex-row justify-between">
                 <div className="w-1/2 pr-10">
                     <h2 className="text-2xl font-bold mt-5">Objective</h2>

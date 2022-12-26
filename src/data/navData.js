@@ -7,6 +7,6 @@ export default [
     {title: "contact"},
     {
         title: "resume",
-        url: "https://drive.google.com/file/d/16Bn8xX8vIYZ4tNV3Axu7T6dLeI4-dXQG/view?usp=sharing",
+        url: "https://drive.google.com/file/d/16Bn8xX8vIYZ4tNV3Axu7T6dLeI4-dXQG/view",
     },
 ];

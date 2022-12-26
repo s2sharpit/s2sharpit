@@ -3,8 +3,9 @@ import AutoType from "./AutoType"
 export default () => {
     return (
         <section id="about" className="snap-start absolute-z-10top-full h-screen p-20 bgwhite">
-            <h1 className="text-center mt-5 mb-16 text-lg font-semibold"> <span className="text-4xl">About</span> <br /> -----who
-                i am-----</h1>
+            <h1 className="text-center mt-3 mb-8 leading-7 text-md font-semibold text-neutral-400">
+                <span className="text-4xl text-white">About</span><br />Who i am
+            </h1>
             <div className="flex flex-row justify-between">
                 <div className="w-1/2 pr-10">
                     <h2 className="flex text-2xl font-bold my-5">Hello I'm Tushar, <br className="lg:hidden" /> a <span
