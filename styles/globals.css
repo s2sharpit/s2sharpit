@@ -6,6 +6,14 @@
   .scroll:hover .wheel {
     @apply animate-wheel;
   }
+
+  .btn:hover .btnIcon {
+    @apply translate-x-1;
+  }
+
+  .laChild:last-child .lChild {
+    @apply hidden;
+  }
 }
 
 :root {
