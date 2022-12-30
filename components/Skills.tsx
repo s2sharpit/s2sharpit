@@ -4,7 +4,7 @@ import skillData from "../data/skillData";
 export default function Skills() {
     return (
         <section className="pt-8 sm:pt-24 pb-8 px-8">
-            <h2 className="text-4xl text-title-color text-center font-semibold">Skills</h2>
+            <h2 className="text-3xl text-title-color text-center font-semibold">Skills</h2>
             <span className="block mb-16 text-text-color text-center">My Technical Level</span>
 
             <div className="max-w-4xl mx-auto grid gap-6 md:grid-cols-2 gap-x-8 md:gap-x-12 justify-center md:px-8 lg:px-16">

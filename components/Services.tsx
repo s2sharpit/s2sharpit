@@ -5,7 +5,7 @@ import { SetStateAction, useState } from "react";
 export default function Services() {
     return (
         <section className="pt-8 sm:pt-24 pb-8 px-8">
-            <h2 className="text-4xl text-title-color text-center font-semibold">Services</h2>
+            <h2 className="text-3xl text-title-color text-center font-semibold">Services</h2>
             <span className="block mb-16 text-text-color text-center">What I Offer</span>
 
             <div className="max-w-4xl mx-auto grid gap-6 sm:grid-cols-[repeat(2,218px)] md:grid-cols-[repeat(3,218px)] lg:grid-cols-[repeat(3,270px)] justify-center gap-x-9">
@@ -18,7 +18,7 @@ export default function Services() {
 function Service({ data }: { data: any }) {
     const [state, setState] = useState(false);
     return (
-        <div className="relative bg-container-color pt-14 sm:pt-24 pb-5 sm:pb-8 pl-6 sm:pl-10 max-sm:pr-2 border border-black/10">
+        <div className="relative bg-container-color pt-14 sm:pt-24 pb-5 sm:pb-8 pl-6 sm:pl-10 max-sm:pr-2 border border-black/10 rounded-2xl">
             <div className="text-title-color">
                 {data.icon}
                 <h3 className="text-xl mb-4 font-medium w-1/2">{data.title}</h3>

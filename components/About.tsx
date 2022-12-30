@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function About() {
     return (
         <section className="pt-8 sm:pt-24 pb-8 px-8">
-            <h2 className="text-4xl text-title-color text-center font-semibold">About Me</h2>
+            <h2 className="text-3xl text-title-color text-center font-semibold">About Me</h2>
             <span className="block mb-16 text-text-color text-center">My Introduction</span>
 
             <div className="max-w-4xl mx-auto grid gap-6 max-md:gap-y-10 grid-cols-1 md:grid-cols-2 items-center gap-x-16">

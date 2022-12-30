@@ -9,7 +9,8 @@ export default function Data() {
             </h1>
             <h3 className="relative text-title-color text-xl pl-14 md:pl-20 font-normal mb-4 md:mb-3 before:content-start before:absolute before:w-10 md:before:w-16 before:h-[1px] before:bg-text-color before:left-0 before:top-3 md:before:top-4">UX Designer</h3>
             <p className="max-w-none md:max-w-sm mb-10 md:mb-12 text-text-color">I&apos;m creative designer based in New York, and I&apos;m very passionate and dedicated to my work.</p>
-            <Link href="#contact" className="inlineblock bg-title-color text-container-color py-4 md:py-5 px-7 md:px-8 rounded-2xl font-medium hover:bg-title-color-dark inline-flex items-center">Say Hello
+            <Link href="#contact" className="inlineblock bg-title-color text-container-color py-4 md:py-5 px-7 md:px-8 rounded-2xl font-medium hover:bg-title-color-dark inline-flex items-center">
+                Say Hello
                 <svg className="ml-2"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"

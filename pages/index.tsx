@@ -7,6 +7,8 @@ import Skills from '../components/Skills'
 import Services from '../components/Services'
 import Qualification from '../components/Qualification'
 import Testimonials from '../components/Testimonials'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -25,14 +27,14 @@ export default function Home() {
       </Head>
       <main className={`${poppins.variable} font-sans ` + "scroll-smooth text-text-color bg-body-color"}>
         <Header />
-        <main className='pb-10'>
-          <Main />
-          <About />
-          <Skills />
-          <Services />
-          <Qualification />
-          <Testimonials />
-        </main>
+        <Main />
+        <About />
+        <Skills />
+        <Services />
+        <Qualification />
+        <Testimonials />
+        <Contact />
+        <Footer />
       </main>
     </>
   )
