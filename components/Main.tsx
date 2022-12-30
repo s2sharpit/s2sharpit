@@ -4,7 +4,7 @@ import ScrollDown from "./main/ScrollDown";
 
 export default function Main() {
     return (
-        <section className="pt-8 sm:pt-24 pb-8 px-8">
+        <section id="home" className="pt-8 sm:pt-24 pb-8 px-8">
             <div className="max-w-4xl mx-auto grid gap-10">
                 <div className="grid gap-5 md:gap-6 grid-cols-[0.5fr_3fr] sm:grid-cols-[100px_repeat(2,1fr)] md:grid-cols-[116px_repeat(2,1fr)] pt-14 sm:pt-24 items-center">
                     <Social />

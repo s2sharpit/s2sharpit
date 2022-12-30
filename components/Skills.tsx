@@ -3,7 +3,7 @@ import skillData from "../data/skillData";
 
 export default function Skills() {
     return (
-        <section className="pt-8 sm:pt-24 pb-8 px-8">
+        <section id="skills" className="pt-8 sm:pt-24 pb-8 px-8">
             <h2 className="text-3xl text-title-color text-center font-semibold">Skills</h2>
             <span className="block mb-16 text-text-color text-center">My Technical Level</span>
 

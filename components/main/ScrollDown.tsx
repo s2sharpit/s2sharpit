@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function ScrollDown() {
     return (
         <div className="ml-28 md:ml-36 max-sm:hidden">
-            <Link href="#about" className="scroll inline-flex items-center">
+            <a href="#about" className="scroll inline-flex items-center">
                 <svg
                     width="32px"
                     height="32px"
@@ -43,7 +43,7 @@ export default function ScrollDown() {
                 </svg>
                 <span className="text-title-color font-medium ml-0.5 mr-1">Scroll Down</span>
                 <ArrowDownward fontSize="small" className="text-title-color" />
-            </Link>
+            </a>
         </div>
     )
 }

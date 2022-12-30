@@ -7,7 +7,7 @@ import emailjs from '@emailjs/browser';
 
 
 export default function Contact() {
-    const form = useRef();
+    const form = useRef(null);
 
     const sendEmail = (e: any) => {
         e.preventDefault();
@@ -17,7 +17,7 @@ export default function Contact() {
     };
 
     return (
-        <section className="pt-8 sm:pt-24 pb-8 px-8">
+        <section id="contact" className="pt-8 sm:pt-24 pb-8 px-8">
             <h2 className="text-3xl text-title-color text-center font-semibold">Get in Touch</h2>
             <span className="block mb-16 text-text-color text-center">Contact Me</span>
 
@@ -34,17 +34,17 @@ export default function Contact() {
                     <form ref={form} onSubmit={sendEmail} className="sm:w-96 max-md:mx-auto">
                         <div className="relative mb-8 h-16">
                             <label htmlFor="name" className="absolute -top-3 left-5 text-xs p-1 bg-body-color z-20">Name</label>
-                            <input type="name" name="name" placeholder="Enter Your Name" className="absolute top-0 left-0 w-full h-full border-2 border-black/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10" />
+                            <input type="name" name="name"required placeholder="Enter Your Name" className="absolute top-0 left-0 w-full h-full border-2 border-black/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10" />
                         </div>
                         <div className="relative mb-8 h-16">
                             <label htmlFor="email" className="absolute -top-3 left-5 text-xs p-1 bg-body-color z-20">Email</label>
-                            <input type="email" name="email" placeholder="Enter Your Email" className="absolute top-0 left-0 w-full h-full border-2 border-black/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10" />
+                            <input type="email" name="email"required placeholder="Enter Your Email" className="absolute top-0 left-0 w-full h-full border-2 border-black/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10" />
                         </div>
                         <div className="relative mb-8 h-44">
                             <label htmlFor="message" className="absolute -top-3 left-5 text-xs p-1 bg-body-color z-20">Message</label>
-                            <textarea name="message" cols={30} rows={10} placeholder="Enter Your Message" className="absolute top-0 left-0 w-full h-full border-2 border-black/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10 resize-none"></textarea>
+                            <textarea name="message"required cols={30} rows={10} placeholder="Enter Your Message" className="absolute top-0 left-0 w-full h-full border-2 border-black/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10 resize-none"></textarea>
                         </div>
-                        <button className="inlineblock bg-title-color text-container-color py-4 md:py-5 px-7 md:px-8 rounded-2xl font-medium hover:bg-title-color-dark inline-flex items-center">
+                        <button className="bg-title-color text-container-color py-4 md:py-5 px-7 md:px-8 rounded-2xl font-medium hover:bg-title-color-dark inline-flex items-center">
                             Send Message
                             <svg className="ml-2"
                                 xmlns="http://www.w3.org/2000/svg"

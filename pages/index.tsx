@@ -25,7 +25,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/ts.ico" />
       </Head>
-      <main className={`${poppins.variable} font-sans ` + "scroll-smooth text-text-color bg-body-color"}>
+      <main className={`${poppins.variable} font-sans ` + "text-text-color bg-body-color"}>
         <Header />
         <Main />
         <About />

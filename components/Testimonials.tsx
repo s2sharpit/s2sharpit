@@ -11,7 +11,7 @@ import { Pagination } from "swiper";
 
 export default function Testimonials() {
     return (
-        <section className="pt-8 sm:pt-24 pb-8 px-8 max-w-4xl mx-auto">
+        <section id="testimonials" className="pt-8 sm:pt-24 pb-8 px-8 max-w-4xl mx-auto">
             <h2 className="text-4xl text-title-color text-center font-semibold">Testimonials</h2>
             <span className="block mb-16 text-text-color text-center">My Client Say</span>
 

@@ -6,7 +6,7 @@ let toggle = false;
 export default function Qualification() {
     const [state, setState] = useState(1);
     return (
-        <section className="pt-8 sm:pt-24 pb-8 px-8">
+        <section id="qaulification" className="pt-8 sm:pt-24 pb-8 px-8">
             <h2 className="text-3xl text-title-color text-center font-semibold">Qualification</h2>
             <span className="block mb-16 text-text-color text-center">My Personal Journey</span>
 

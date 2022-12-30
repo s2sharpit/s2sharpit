@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer components {
+
+  html {
+    @apply scroll-smooth;
+  }
+
   .scroll:hover .wheel {
     @apply animate-wheel;
   }
