@@ -17,6 +17,12 @@ const projectsData =  [
         para: "A booking app, a web application that allows users to make reservations for a variety of services or products, such as hotel rooms, flights, rental cars, or events.",
         url: "https://booking-app-lyart.vercel.app/",
     },
+    {
+        title: "s2sharpit's admin",
+        img: "/project/project_4.png",
+        para: "A booking app, a web application that allows users to make reservations for a variety of services or products, such as hotel rooms, flights, rental cars, or events.",
+        url: "https://react-admin-panel-three.vercel.app/",
+    },
 ]
 
 export default projectsData;

@@ -16,7 +16,7 @@ export default function Testimonials() {
             <span className="block mb-16 text-text-color text-center">My Client Say</span>
 
             <Swiper className="lg:w-[750px]"
-                // loop={true}
+                loop={true}
                 grabCursor={true}
                 spaceBetween={24}
                 pagination={{

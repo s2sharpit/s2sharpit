@@ -7,7 +7,7 @@ import emailjs from '@emailjs/browser';
 
 
 export default function Contact() {
-    const form = useRef(null);
+    const form = useRef("");
 
     const sendEmail = (e: any) => {
         e.preventDefault();
@@ -31,7 +31,7 @@ export default function Contact() {
 
                 <div className="">
                     <h3 className="text-xl text-center font-medium mb-6 text-title-color">Write Me A Message</h3>
-                    <form ref={form} onSubmit={sendEmail} className="sm:w-96 max-md:mx-auto">
+                    <form ref={form.current} onSubmit={sendEmail} className="sm:w-96 max-md:mx-auto">
                         <div className="relative mb-8 h-16">
                             <label htmlFor="name" className="absolute -top-3 left-5 text-xs p-1 bg-body-color z-20">Name</label>
                             <input type="name" name="name"required placeholder="Enter Your Name" className="absolute top-0 left-0 w-full h-full border-2 border-black/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10" />
