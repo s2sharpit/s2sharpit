@@ -3,27 +3,27 @@ const { TextSnippetOutlined, HomeOutlined, PersonOutlined, BusinessCenterOutline
 const navData = [
     {
         name: "home",
-        icon: <HomeOutlined fontSize="small" className='block md:hidden' />,
+        icon: <HomeOutlined fontSize="small" />,
     },
     {
         name: "about",
-        icon: <PersonOutlined fontSize="small" className='block md:hidden' />,
+        icon: <PersonOutlined fontSize="small" />,
     },
     {
         name: "skills",
-        icon: <TextSnippetOutlined fontSize="small" className='block md:hidden' />,
+        icon: <TextSnippetOutlined fontSize="small" />,
     },
     {
         name: "services",
-        icon: <BusinessCenterOutlined fontSize="small" className='block md:hidden' />,
+        icon: <BusinessCenterOutlined fontSize="small" />,
     },
     {
         name: "projects",
-        icon: <ImageOutlined fontSize="small" className='block md:hidden' />,
+        icon: <ImageOutlined fontSize="small" />,
     },
     {
         name: "contact",
-        icon: <SendOutlined fontSize="small" className='block md:hidden' />,
+        icon: <SendOutlined fontSize="small" />,
     },
 ]
 

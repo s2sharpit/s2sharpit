@@ -14,12 +14,12 @@ export default function Header() {
                 <div className={(menu ? "bottom-0" : "-bottom-full") + " fixed md:static left-0 w-full bottom-0 md:w-fit bg-body-color pt-8 md:pt-0 px-2 sm:px-6 md:px-0 pb-14 md:pb-0 shadow-[0_-1px_4px_rgba(0,0,0,0.15)] md:shadow-none rounded-t-3xl md:rounded-none transition-all md:transition-none duration-300"}>
                     <ul className="grid grid-cols-3 md:flex gap-4 md:gap-8">
                         {navData.map(data => (
-                            <li key={data.name}><a href={"#" + data.name} className="flex flex-col items-center text-sm text-title-color font-medium transition duration-300 hover:text-title-color-dark capitalize">{data.icon} {data.name}</a></li>
+                            <li key={data.name}><a href={"#" + data.name} className="flex flex-col items-center text-sm text-title-color font-medium transition duration-300 hover:text-title-color-dark capitalize"><span className='md:hidden'>{data.icon}</span> {data.name}</a></li>
                         ))}
                     </ul>
-                    <CloseOutlined onClick={()=>showMenu(!menu)} fontSize="medium" className='block md:hidden absolute right-5 bottom-3 cursor-pointer text-title-color hover:text-title-color-dark' />
+                    <span className="md:hidden"><CloseOutlined onClick={()=>showMenu(!menu)} fontSize="medium" className='absolute right-5 bottom-3 cursor-pointer text-title-color hover:text-title-color-dark' /></span>
                 </div>
-                <GridViewOutlined onClick={()=>showMenu(!menu)} fontSize="small" className='text-title-color font-medium block md:hidden' />
+                <span className="md:hidden"><GridViewOutlined onClick={()=>showMenu(!menu)} fontSize="small" className='text-title-color font-medium' /></span>
             </nav>
         </header>
     )

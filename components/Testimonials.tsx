@@ -38,7 +38,7 @@ export default function Testimonials() {
                         <SwiperSlide key={id} className="bg-container-color border border-black/10 py-5 md:py-6 px-6 md:px-8 rounded-3xl mb-12">
                             <Image src={image} alt={"testimonial" + id} width={100} height={100} className="w-14 rounded-full mb-4" />
                             <h3 className="font-medium mb-1 text-title-color">{title}</h3>
-                            <p className="text-sm">{description}</p>
+                            <p className="text-sm text-justify">{description}</p>
                         </SwiperSlide>
                     )
                 })}

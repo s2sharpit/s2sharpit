@@ -2,20 +2,7 @@ import Link from "next/link";
 import contactData from "../data/contactData";
 import { ArrowForward } from "@mui/icons-material";
 
-import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-
-
 export default function Contact() {
-    const form = useRef("");
-
-    const sendEmail = (e: any) => {
-        e.preventDefault();
-
-        emailjs.sendForm('service_u44m95a', 'template_8pbkj2v', form.current, 'UeI6PdjRU2wiiBbp4')
-            e.target.reset();
-    };
-
     return (
         <section id="contact" className="pt-8 sm:pt-24 pb-8 px-8">
             <h2 className="text-3xl text-title-color text-center font-semibold">Get in Touch</h2>
@@ -31,20 +18,20 @@ export default function Contact() {
 
                 <div className="">
                     <h3 className="text-xl text-center font-medium mb-6 text-title-color">Write Me A Message</h3>
-                    <form ref={form.current} onSubmit={sendEmail} className="sm:w-96 max-md:mx-auto">
+                    <form className="sm:w-96 max-md:mx-auto">
                         <div className="relative mb-8 h-16">
                             <label htmlFor="name" className="absolute -top-3 left-5 text-xs p-1 bg-body-color z-20">Name</label>
-                            <input type="name" name="name"required placeholder="Enter Your Name" className="absolute top-0 left-0 w-full h-full border-2 border-black/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10" />
+                            <input type="name" name="name" placeholder="Enter Your Name" className="absolute top-0 left-0 w-full h-full border-2 border-black/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10" />
                         </div>
                         <div className="relative mb-8 h-16">
                             <label htmlFor="email" className="absolute -top-3 left-5 text-xs p-1 bg-body-color z-20">Email</label>
-                            <input type="email" name="email"required placeholder="Enter Your Email" className="absolute top-0 left-0 w-full h-full border-2 border-black/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10" />
+                            <input type="email" name="email" required placeholder="Enter Your Email" className="absolute top-0 left-0 w-full h-full border-2 border-black/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10" />
                         </div>
                         <div className="relative mb-8 h-44">
                             <label htmlFor="message" className="absolute -top-3 left-5 text-xs p-1 bg-body-color z-20">Message</label>
-                            <textarea name="message"required cols={30} rows={10} placeholder="Enter Your Message" className="absolute top-0 left-0 w-full h-full border-2 border-black/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10 resize-none"></textarea>
+                            <textarea name="message" required cols={30} rows={10} placeholder="Enter Your Message" className="absolute top-0 left-0 w-full h-full border-2 border-black/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10 resize-none"></textarea>
                         </div>
-                        <button className="bg-title-color text-container-color py-4 md:py-5 px-7 md:px-8 rounded-2xl font-medium hover:bg-title-color-dark inline-flex items-center">
+                        <button disabled className="bg-title-color text-container-color py-4 md:py-5 px-7 md:px-8 rounded-2xl font-medium hover:bg-title-color-dark inline-flex items-center cursor-pointer">
                             Send Message
                             <svg className="ml-2"
                                 xmlns="http://www.w3.org/2000/svg"
