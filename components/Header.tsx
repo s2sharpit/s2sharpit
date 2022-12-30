@@ -7,8 +7,8 @@ export default function Header() {
     const [menu, showMenu] = useState(false);
 
     return (
-        <header id='header' className="w-full fixed max-md:bottom-0 md:top-0 left-0 righ z-50 bg-container-color md:bg-body-color">
-            <nav className="max-w-4xl mx-4 sm:mx-6 lg:m-auto h-12 md:h-16 flex justify-between items-center gap-4 bg-inherit">
+        <header id='header' className="w-full fixed max-md:bottom-0 md:top-0 left-0 z-50 bg-container-color md:bg-body-color">
+            <nav className="max-w-4xl md:px-4 mx-4 sm:mx-6 md:m-auto h-12 md:h-16 flex justify-between items-center gap-4 bg-inherit">
                 <Link href="" className="text-title-color font-medium hover:text-title-color-dark">s2sharpit</Link>
 
                 <div className={(menu ? "bottom-0" : "-bottom-full") + " fixed md:static left-0 w-full bottom-0 md:w-fit bg-body-color pt-8 md:pt-0 px-2 sm:px-6 md:px-0 pb-14 md:pb-0 shadow-[0_-1px_4px_rgba(0,0,0,0.15)] md:shadow-none rounded-t-3xl md:rounded-none transition-all md:transition-none duration-300"}>

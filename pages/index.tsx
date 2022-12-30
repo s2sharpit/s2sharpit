@@ -9,6 +9,7 @@ import Qualification from '../components/Qualification'
 import Testimonials from '../components/Testimonials'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import Projects from '../components/Projects'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -32,6 +33,7 @@ export default function Home() {
         <Skills />
         <Services />
         <Qualification />
+        <Projects />
         <Testimonials />
         <Contact />
         <Footer />
