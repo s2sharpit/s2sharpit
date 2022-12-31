@@ -1,6 +1,7 @@
 import { useState } from "react";
 import qualifiData from "../data/qualifiData";
 import { BusinessCenter, BusinessCenterOutlined, CalendarMonthOutlined, School, SchoolOutlined } from "@mui/icons-material";
+import Link from "next/link";
 
 let toggle = false;
 export default function Qualification() {
@@ -12,11 +13,11 @@ export default function Qualification() {
 
             <div className="max-w-3xl mx-6 md:mx-auto">
                 <div className="flex justify-center mb-8 md:text-lg">
-                    <div onClick={()=>setState(1)} className={(state === 1 ? "text-title-color-dark" : "text-title-color") + " inline-flex items-center font-medium mx-3 sm:mx-4 cursor-pointer hover:text-title-color-dark"}>
-                        { state === 1 ? <School /> : <SchoolOutlined />}
+                    <div onClick={() => setState(1)} className={(state === 1 ? "text-title-color-dark" : "text-title-color") + " inline-flex items-center font-medium mx-3 sm:mx-4 cursor-pointer hover:text-title-color-dark"}>
+                        {state === 1 ? <School /> : <SchoolOutlined />}
                         <span className="ml-1">Education</span>
                     </div>
-                    <div onClick={()=>setState(2)} className={(state === 2 ? "text-title-color-dark" : "text-title-color") + " inline-flex items-center font-medium mx-3 sm:mx-4 cursor-pointer hover:text-title-color-dark"}>
+                    <div onClick={() => setState(2)} className={(state === 2 ? "text-title-color-dark" : "text-title-color") + " inline-flex items-center font-medium mx-3 sm:mx-4 cursor-pointer hover:text-title-color-dark"}>
                         {state === 2 ? <BusinessCenter /> : <BusinessCenterOutlined />}
                         <span className="ml-1">Certifications</span>
                     </div>
@@ -25,7 +26,6 @@ export default function Qualification() {
                 <div className="grid sm:grid-cols-[0.7fr] md:grid-cols-[0.5fr] justify-center">
                     {/* 2 times */}
                     {qualifiData.map((data) => <Qualifi key={data.key} data={data} state={state} />)}
-
                 </div>
             </div>
         </section>
@@ -33,7 +33,7 @@ export default function Qualification() {
 }
 
 function Qualifi({ data, state }: { data: any, state: number }) {
-    { toggle = false }
+    toggle = false;
     return (
         <div className={(state === data.key ? "" : "hidden")}>
             {/* vary times */}
@@ -44,22 +44,18 @@ function Qualifi({ data, state }: { data: any, state: number }) {
 }
 
 function Quali({ data }: { data: any }) {
-    { toggle = !toggle }
+    toggle =! toggle;
     return (
         <div className="laChild grid grid-cols-[1fr_max-content_1fr] gap-2 md:gap-x-6">
-            <div className={(toggle ? "hidden" : " ")}></div>
-            <div className={(toggle ? "hidden" : "")}>
+            <div className={(toggle ? "hidden" : "")}></div>
+            <div className={(toggle ? "order-last" : "")}>
                 <span className="inline-block h-[13px] w-[13px] bg-text-color rounded-full"></span>
                 <div className="lChild w-[1px] h-full bg-text-color -translate-y-2 translate-x-[6px]"></div>
             </div>
             <div>
-                <h3 className="font-medium text-title-color">{data.name}</h3>
-                <span className="inline-block text-sm mb-4">{data.desc}</span>
+                <Link href={data.url ? data.url : "javascript:void(0)"} target="_blank" className={(!data.url && "pointer-events-none") + " font-medium text-title-color hover:text-title-color-dark"}>{data.name}</Link>
+                <div className="text-sm mb-4">{data.desc}</div>
                 <div className="text-sm"><CalendarMonthOutlined fontSize="inherit" className="mb-1 mr-1" />{data.duration}</div>
-            </div>
-            <div className={(toggle ? "" : "hidden")}>
-                <span className="inline-block h-[13px] w-[13px] bg-text-color rounded-full"></span>
-                <div className="lChild w-[1px] h-full bg-text-color -translate-y-2 translate-x-[6px]"></div>
             </div>
         </div>
     )

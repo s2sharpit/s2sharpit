@@ -8,7 +8,7 @@ export default function Projects() {
     return (
         <section id="projects" className="pt-8 sm:pt-24 pb-8 px-8">
             <h2 className="text-3xl text-title-color text-center font-semibold">Projects</h2>
-            <span className="block mb-16 text-text-color text-center">Most Recent Work</span>
+            <span className="block mb-16 text-text-color text-center">Most Recent Works</span>
 
             <div className="max-w-4xl mx-auto">
 
