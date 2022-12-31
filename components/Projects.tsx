@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import projectsData from "../data/projectsjData";
-import { ArrowForward } from "@mui/icons-material";
+import { GitHub, OutboundOutlined } from "@mui/icons-material";
 import { useState } from "react";
 
 export default function Projects() {
@@ -29,11 +29,16 @@ const Project = ({ data }: { data: any }) => {
     return (
         <div className="bg-container-color border border-black/10 p-5 rounded-2xl">
             <Image src={data.img} alt={data.title + "_img"} width={1000} height={1000} className="h-48 w-full rounded-2xl border border-black/10" />
-            <h3 className="text-xl text-title-color font-medium mt-5">{data.title}</h3>
-            <Link href={data.url} target="_blank" className="btn text-sm inline-flex items-center gap-x-1 cursor-pointer">
-                Demo
-                <ArrowForward fontSize="inherit" className="btnIcon transition duration-300" />
-            </Link>
+            <div className="flex mt-5 items-center justify-between">
+                <div className="text-sm">
+                    <h3 className="text-xl text-title-color font-medium">{data.title}</h3>
+                    {data.techstack}
+                </div>
+                <div className="inline-flex items-center gap-x-3 text-title-color">
+                    <Link href={data.github} target="_blank" className="text-[1.7rem] hover:text-title-color-dark"><GitHub fontSize="inherit" /></Link>
+                    <Link href={data.url} target="_blank" className="text-3xl hover:text-title-color-dark"><OutboundOutlined fontSize="inherit" /></Link>
+                </div>
+            </div>
         </div>
     )
 }
