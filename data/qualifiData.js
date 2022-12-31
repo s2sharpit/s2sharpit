@@ -3,24 +3,19 @@ const qualifiData = [
         key: 1,
         quali: [
             {
-                name: "Web Design",
-                desc: "ITER, Siksha 'O' Anusandhan",
+                name: "B.Tech. CSE",
+                desc: "ITER, SOA, Odisha",
                 duration: "2021 - Present",
             },
             {
-                name: "Art Director",
-                desc: "Spain - Institute",
-                duration: "2020 - 2021",
+                name: "Senior Secondary Education",
+                desc: "Gurukul Kurukshetra, Haryana",
+                duration: "2019 - 2021",
             },
             {
-                name: "Web Development",
+                name: "Secondary Education",
                 desc: "ITER, SOA",
-                duration: "2018 - 2020",
-            },
-            {
-                name: "UX Expert",
-                desc: "ITER, SOA",
-                duration: "2017 - 2018",
+                duration: "2017 - 2019",
             },
         ],
     },

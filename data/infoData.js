@@ -1,20 +1,20 @@
-import { BusinessCenterOutlined, SupportAgentOutlined, WorkspacePremiumOutlined } from "@mui/icons-material";
+import { BusinessCenterOutlined, ImageOutlined, WorkspacePremiumOutlined } from "@mui/icons-material";
 
 const infoData = [
     {
         title: "Experience",
-        subTitle: "5 Years Working",
+        subTitle: "3+ Years",
         icon: <WorkspacePremiumOutlined className="text-title-color mb-2" />,
     },
     {
         title: "Completed",
         subTitle: "22+ Projects",
-        icon: <BusinessCenterOutlined className="text-title-color mb-2" />,
+        icon: <ImageOutlined className="text-title-color mb-2" />,
     },
     {
-        title: "Support",
-        subTitle: "Online 24/7",
-        icon: <SupportAgentOutlined className="text-title-color mb-2" />,
+        title: "Expertise",
+        subTitle: "3+ Services",
+        icon: <BusinessCenterOutlined className="text-title-color mb-2" />,
     },
 ]
 
