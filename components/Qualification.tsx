@@ -1,6 +1,6 @@
 import { useState } from "react";
 import qualifiData from "../data/qualifiData";
-import { BusinessCenterOutlined, CalendarMonthOutlined, School, SchoolOutlined } from "@mui/icons-material";
+import { BusinessCenter, BusinessCenterOutlined, CalendarMonthOutlined, School, SchoolOutlined } from "@mui/icons-material";
 
 let toggle = false;
 export default function Qualification() {
@@ -13,12 +13,12 @@ export default function Qualification() {
             <div className="max-w-3xl mx-6 md:mx-auto">
                 <div className="flex justify-center mb-8 md:text-lg">
                     <div onClick={()=>setState(1)} className={(state === 1 ? "text-title-color-dark" : "text-title-color") + " inline-flex items-center font-medium mx-3 sm:mx-4 cursor-pointer hover:text-title-color-dark"}>
-                        <SchoolOutlined className="mr-1" />
-                        Education
+                        { state === 1 ? <School /> : <SchoolOutlined />}
+                        <span className="ml-1">Education</span>
                     </div>
                     <div onClick={()=>setState(2)} className={(state === 2 ? "text-title-color-dark" : "text-title-color") + " inline-flex items-center font-medium mx-3 sm:mx-4 cursor-pointer hover:text-title-color-dark"}>
-                        <BusinessCenterOutlined className="mr-1" />
-                        Certifications
+                        {state === 2 ? <BusinessCenter /> : <BusinessCenterOutlined />}
+                        <span className="ml-1">Certifications</span>
                     </div>
                 </div>
 

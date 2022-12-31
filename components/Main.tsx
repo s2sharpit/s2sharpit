@@ -6,7 +6,7 @@ export default function Main() {
     return (
         <section id="home" className="pt-8 sm:pt-24 pb-8 px-8">
             <div className="max-w-4xl mx-auto grid gap-10">
-                <div className="grid gap-5 md:gap-6 grid-cols-[0.5fr_2fr] sm:grid-cols-[100px_repeat(2,1fr)] md:grid-cols-[116px_repeat(2,1fr)] pt-14 sm:pt-24 items-center">
+                <div className="grid gap-y-12 gap-x-5 md:gap-x-6 grid-cols-[0.5fr_2fr] sm:grid-cols-[100px_repeat(2,1fr)] md:grid-cols-[116px_repeat(2,1fr)] pt-14 sm:pt-24 items-center">
                     <div className='grid gap-6 w-fit'>
                         <Link target='_blank' className="text-title-color hover:text-title-color-dark text-3xl" href="https://www.linkedin.com/in/s2sharpit"><LinkedIn fontSize="inherit" /></Link>
                         <Link target='_blank' className="text-title-color hover:text-title-color-dark text-3xl" href="https://github.com/s2sharpit"><GitHub fontSize="inherit" /></Link>

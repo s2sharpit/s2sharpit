@@ -9,7 +9,7 @@ export default function About() {
             <span className="block mb-16 text-text-color text-center">My Introduction</span>
 
             <div className="max-w-4xl mx-auto grid gap-6 max-md:gap-y-10 grid-cols-1 md:grid-cols-2 items-center gap-x-16">
-                <Image src={"/s2sharpit.jpeg"} width={400} height={400} alt="about_img" className="w-56 md:w-80 rounded-3xl justify-self-center grayscale" />
+                <Image src={"/s2sharpit.jpeg"} width={400} height={400} alt="about_img" className="w-56 md:w-80 rounded-3xl justify-self-center grayscale hover:grayscale-0 transition duration-300" />
 
                 <div className="max-md:text-center">
                 <div className="grid gap-2 grid-cols-2 xs:grid-cols-3 mx-auto max-w-md mb-8">

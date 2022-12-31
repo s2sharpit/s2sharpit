@@ -2,7 +2,7 @@ import { Code, NoteAltOutlined, ViewQuiltOutlined } from "@mui/icons-material";
 
 const serviceData = [
     {
-        title: "Product Designer",
+        title: "UI/UX Designer",
         icon: <ViewQuiltOutlined fontSize="large" className="block mb-4" />,
         ul: [
             {li: "I develop the user interface."},
@@ -13,7 +13,7 @@ const serviceData = [
         ],
     },
     {
-        title: "UI/UX Designer",
+        title: "Web Developer",
         icon: <Code fontSize="large" className="block mb-4" />,
         ul: [
             {li: "I develop the user interface."},

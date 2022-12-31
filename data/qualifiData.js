@@ -14,7 +14,7 @@ const qualifiData = [
             },
             {
                 name: "Secondary Education",
-                desc: "ITER, SOA",
+                desc: "Gurukul Kurukshetra, Haryana",
                 duration: "2017 - 2019",
             },
         ],

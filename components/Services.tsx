@@ -8,7 +8,7 @@ export default function Services() {
             <h2 className="text-3xl text-title-color text-center font-semibold">Services</h2>
             <span className="block mb-16 text-text-color text-center">What I Offer</span>
 
-            <div className="max-w-4xl mx-auto grid gap-6 sm:grid-cols-[repeat(2,218px)] md:grid-cols-[repeat(3,218px)] lg:grid-cols-[repeat(3,270px)] justify-center gap-x-9">
+            <div className="max-w-4xl mx-auto grid gap-6 xs:grid-cols-[350px] sm:grid-cols-[repeat(2,218px)] md:grid-cols-[repeat(3,218px)] lg:grid-cols-[repeat(3,270px)] justify-center gap-x-9">
                 {serviceData.map(data => <Service key={data.title} data={data} />)}
             </div>
         </section>
@@ -18,10 +18,10 @@ export default function Services() {
 function Service({ data }: { data: any }) {
     const [state, setState] = useState(false);
     return (
-        <div className="relative bg-container-color pt-14 sm:pt-24 pb-5 sm:pb-8 pl-6 sm:pl-10 max-sm:pr-2 border border-black/10 rounded-2xl">
+        <div className="relative bg-container-color pt-12 sm:pt-24 pb-5 sm:pb-8 max-sm:px-6 sm:pl-10 border border-black/10 rounded-2xl">
             <div className="text-title-color">
                 {data.icon}
-                <h3 className="text-xl mb-4 font-medium w-1/2">{data.title}</h3>
+                <h3 className="text-xl mb-4 font-medium sm:w-1/2">{data.title}</h3>
             </div>
             <span onClick={()=>setState(true)} className="btn text-title-color text-sm inline-flex items-center gap-x-1 cursor-pointer">
                 View More

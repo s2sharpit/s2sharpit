@@ -17,7 +17,7 @@ export default function Projects() {
                     <li className="hover:text-title-color-dark py-1 px-3 cursor-pointer rounded-lg">Web</li>
                 </ul> */}
 
-                <div className="grid gap-6 md:grid-cols-2 sm:gap-8 md:gap-12 justify-center md:px-8 lg:px-20">
+                <div className="grid gap-6 xs:grid-cols-[350px] md:grid-cols-2 sm:gap-8 md:gap-12 justify-center md:px-8 lg:px-20">
                     {projectsData.map(data => <Project key={data.title} data={data} />)}
                 </div>
             </div>
@@ -28,13 +28,12 @@ export default function Projects() {
 const Project = ({ data }: { data: any }) => {
     return (
         <div className="bg-container-color border border-black/10 p-5 rounded-2xl">
-            <Image src={data.img} alt={data.title + "_img"} width={1000} height={1000} className="h-48 w-full rounded-2xl border border-black/10 p-0 m-0" />
+            <Image src={data.img} alt={data.title + "_img"} width={1000} height={1000} className="h-48 w-full rounded-2xl border border-black/10" />
             <h3 className="text-xl text-title-color font-medium mt-5">{data.title}</h3>
             <Link href={data.url} target="_blank" className="btn text-sm inline-flex items-center gap-x-1 cursor-pointer">
                 Demo
                 <ArrowForward fontSize="inherit" className="btnIcon transition duration-300" />
             </Link>
-            {/* <small className="block text-justify">{ data.para }</small> */}
         </div>
     )
 }

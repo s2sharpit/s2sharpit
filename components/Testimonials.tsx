@@ -15,17 +15,15 @@ export default function Testimonials() {
             <h2 className="text-4xl text-title-color text-center font-semibold">Testimonials</h2>
             <span className="block mb-16 text-text-color text-center">My Client Say</span>
 
-            <Swiper className="lg:w-[750px]"
-                loop={true}
+            <Swiper className="max-xs:w-full max-md:w-[350px] lg:w-[750px]"
+                // loop={true}
                 grabCursor={true}
                 spaceBetween={24}
                 pagination={{
                   clickable: true,
                 }}
                 breakpoints={{
-                  576: {
-                    slidesPerView: 2,
-                  },
+                  
                   768: {
                     slidesPerView: 2,
                     spaceBetween: 48,
