@@ -54,7 +54,7 @@ export default function About() {
 
 function Box({ data }: { data: any }) {
     return (
-        <div className="bg-container-color border-black/10 border rounded-xl text-center py-3 md:py-5 px-2 md:px-4">
+        <div className="bg-container-color border-border-color/10 border rounded-xl text-center py-3 md:py-5 px-2 md:px-4">
             {data.icon}
             <h3 className="text-sm font-medium text-title-color">{data.title}</h3>
             <span className="text-xs">{data.subTitle}</span>

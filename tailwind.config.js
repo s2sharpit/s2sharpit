@@ -22,6 +22,9 @@ module.exports = {
         "title-color-dark": "var(--title-color-dark)",
         "body-color": "var(--body-color)",
         "text-color": "var(--text-color)",
+        "border-color": ({ opacityValue }) => {
+          return `rgba(var(--border-color), ${opacityValue})`
+        },
       },
       boxShadow: {
         profile: 'inset 0 0 0 6px rgb(255 255 255 / 30%)',

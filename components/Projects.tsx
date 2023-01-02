@@ -27,8 +27,8 @@ export default function Projects() {
 
 const Project = ({ data }: { data: any }) => {
     return (
-        <div className="bg-container-color border border-black/10 p-5 rounded-2xl">
-            <Image src={data.img} alt={data.title + "_img"} width={1000} height={1000} className="h-48 w-full rounded-2xl border border-black/10" />
+        <div className="bg-container-color border border-border-color/10 p-5 rounded-2xl">
+            <Image src={data.img} alt={data.title + "_img"} width={1000} height={1000} className="h-48 w-full rounded-2xl border border-border-color/10" />
             <div className="flex mt-5 items-center justify-between">
                 <div className="text-sm">
                     <h3 className="text-xl text-title-color font-medium">{data.title}</h3>

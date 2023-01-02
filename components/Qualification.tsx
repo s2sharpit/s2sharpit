@@ -36,9 +36,7 @@ function Qualifi({ data, state }: { data: any, state: number }) {
     toggle = false;
     return (
         <div className={(state === data.key ? "" : "hidden")}>
-            {/* vary times */}
             {(data.quali).map((data: any) => <Quali key={data.name} data={data} />)}
-
         </div>
     )
 }
@@ -53,7 +51,7 @@ function Quali({ data }: { data: any }) {
                 <div className="lChild w-[1px] h-full bg-text-color -translate-y-2 translate-x-[6px]"></div>
             </div>
             <div>
-                <Link href={data.url ? data.url : "javascript:void(0)"} target="_blank" className={(!data.url && "pointer-events-none") + " font-medium text-title-color hover:text-title-color-dark"}>{data.name}</Link>
+                <Link href={data.url || ""} target="_blank" className={(!data.url && "pointer-events-none") + " font-medium text-title-color hover:text-title-color-dark"}>{data.name}</Link>
                 <div className="text-sm mb-4">{data.desc}</div>
                 <div className="text-sm"><CalendarMonthOutlined fontSize="inherit" className="mb-1 mr-1" />{data.duration}</div>
             </div>

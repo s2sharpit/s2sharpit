@@ -21,15 +21,15 @@ export default function Contact() {
                     <form className="sm:w-96 max-md:mx-auto">
                         <div className="relative mb-8 h-16">
                             <label htmlFor="name" className="absolute -top-3 left-5 text-xs p-1 bg-body-color z-20">Name</label>
-                            <input type="name" name="name" placeholder="Enter Your Name" className="absolute top-0 left-0 w-full h-full border-2 border-black/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10" />
+                            <input type="name" name="name" placeholder="Enter Your Name" className="absolute top-0 left-0 w-full h-full border-2 border-border-color/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10" />
                         </div>
                         <div className="relative mb-8 h-16">
                             <label htmlFor="email" className="absolute -top-3 left-5 text-xs p-1 bg-body-color z-20">Email</label>
-                            <input type="email" name="email" required placeholder="Enter Your Email" className="absolute top-0 left-0 w-full h-full border-2 border-black/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10" />
+                            <input type="email" name="email" required placeholder="Enter Your Email" className="absolute top-0 left-0 w-full h-full border-2 border-border-color/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10" />
                         </div>
                         <div className="relative mb-8 h-44">
                             <label htmlFor="message" className="absolute -top-3 left-5 text-xs p-1 bg-body-color z-20">Message</label>
-                            <textarea name="message" required cols={30} rows={10} placeholder="Enter Your Message" className="absolute top-0 left-0 w-full h-full border-2 border-black/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10 resize-none"></textarea>
+                            <textarea name="message" required cols={30} rows={10} placeholder="Enter Your Message" className="absolute top-0 left-0 w-full h-full border-2 border-border-color/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10 resize-none"></textarea>
                         </div>
                         <button disabled className="bg-title-color text-container-color py-4 md:py-5 px-7 md:px-8 rounded-2xl font-medium hover:bg-title-color-dark inline-flex items-center cursor-pointer">
                             Send Message
@@ -59,7 +59,7 @@ export default function Contact() {
 
 function Card({ data }: { data: any }) {
     return (
-        <div className="bg-container-color border border-black/10 p-4 rounded-xl text-center">
+        <div className="bg-container-color border border-border-color/10 p-4 rounded-xl text-center">
             {data.icon}
             <h3 className="text-sm font-medium">{data.title}</h3>
             <span className="text-sm block mb-3">{data.desc}</span>

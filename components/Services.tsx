@@ -18,7 +18,7 @@ export default function Services() {
 function Service({ data }: { data: any }) {
     const [state, setState] = useState(false);
     return (
-        <div className="relative bg-container-color pt-12 sm:pt-24 pb-5 sm:pb-8 max-sm:px-6 sm:pl-10 border border-black/10 rounded-2xl">
+        <div className="relative bg-container-color pt-12 sm:pt-24 pb-5 sm:pb-8 max-sm:px-6 sm:pl-10 border border-border-color/10 rounded-2xl">
             <div className="text-title-color">
                 {data.icon}
                 <h3 className="text-xl mb-4 font-medium sm:w-1/2">{data.title}</h3>
