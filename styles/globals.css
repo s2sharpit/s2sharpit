@@ -17,6 +17,7 @@
     --body-color: hsl(var(--hue), var(--sat), 98%);
     --container-color: #fff;
     --border-color: 0, 0, 0;
+    --bg-color: rgba(0, 0, 0, 0.5);
   }
 
   [data-theme='dark'] {
@@ -26,6 +27,7 @@
     --title-color: hsl(var(--hue), var(--sat), 90%);
     --title-color-dark: #fff;
     --border-color: 255, 255, 255;
+    --bg-color: rgba(255, 255, 255, 0.1);
   }
 
   html,

@@ -22,6 +22,7 @@ module.exports = {
         "title-color-dark": "var(--title-color-dark)",
         "body-color": "var(--body-color)",
         "text-color": "var(--text-color)",
+        "bg-color": "var(--bg-color)",
         "border-color": ({ opacityValue }) => {
           return `rgba(var(--border-color), ${opacityValue})`
         },
