@@ -13,7 +13,7 @@
     --sat: 0%;
     --title-color: hsl(var(--hue), var(--sat), 20%);
     --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-    --text-color: hsl(var(--hue), var(--sat), 46%);
+    --text-color: hsl(var(--hue), var(--sat), 40%);
     --body-color: hsl(var(--hue), var(--sat), 98%);
     --container-color: #fff;
     --border-color: 0, 0, 0;
@@ -23,7 +23,7 @@
   [data-theme='dark'] {
     --body-color: hsl(var(--hue), var(--sat), 3%);
     --container-color: hsl(var(--hue), var(--sat), 0%);
-    --text-color: hsl(var(--hue), var(--sat), 46%);
+    --text-color: hsl(var(--hue), var(--sat), 56%);
     --title-color: hsl(var(--hue), var(--sat), 90%);
     --title-color-dark: #fff;
     --border-color: 255, 255, 255;
@@ -54,6 +54,10 @@
 
   .laChild:last-child .lChild {
     @apply hidden;
+  }
+
+  b {
+    @apply font-medium text-title-color;
   }
 
 }

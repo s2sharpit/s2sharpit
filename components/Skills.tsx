@@ -17,7 +17,7 @@ export default function Skills() {
 function End({ data }: { data: any }) {
     return (
         <div className="bg-container-color border border-border-color/10 p-5 xs:p-6 lg:p-10 rounded-3xl">
-            <h3 className="font-medium text-center mb-6">{data.title} Developer</h3>
+            <h3 className="font-medium text-title-color text-center mb-6">{data.title} Developer</h3>
             <div className="grid grid-cols-2 gap-x-10 gap-y-4 w-fit mx-auto">
                 {(data.end).map((data: any) => <Skill key={data.name} data={data} />)}
             </div>
