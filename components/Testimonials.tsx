@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 
 export default function Testimonials() {
-    const [mounted, setMounted] = useState(false);
+    const [mounted, setMounted] = useState<boolean>(false);
 
     useEffect(() => {
         setMounted(true);

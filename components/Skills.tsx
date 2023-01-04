@@ -28,7 +28,7 @@ function End({ data }: { data: any }) {
 function Skill({ data }: { data: any }) {
     return (
         <div className="flex gap-x-2">
-            <VerifiedOutlined fontSize="small" className="text-title-color" />
+            <VerifiedOutlined fontSize="small" className="text-title-color mt-0.5" />
             <div>
                 <h3 className="max-xs:text-sm font-medium text-title-color">{data.name}</h3>
                 <span className="text-xs">{data.level}</span>

@@ -16,7 +16,7 @@ export default function Services() {
 }
 
 function Service({ data }: { data: any }) {
-    const [state, setState] = useState(false);
+    const [state, setState] = useState<boolean>(false);
     return (
         <div className="relative bg-container-color pt-12 sm:pt-24 pb-5 sm:pb-8 max-sm:px-6 sm:pl-10 border border-border-color/10 rounded-2xl">
             <div className="text-title-color">

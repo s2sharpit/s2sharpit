@@ -2,7 +2,6 @@ import Image from "next/image"
 import Link from "next/link"
 import projectsData from "../data/projectsjData";
 import { GitHub, OutboundOutlined } from "@mui/icons-material";
-import { useState } from "react";
 
 export default function Projects() {
     return (

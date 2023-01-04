@@ -5,7 +5,7 @@ import Link from "next/link";
 
 let toggle = false;
 export default function Qualification() {
-    const [state, setState] = useState(1);
+    const [state, setState] = useState<number>(1);
     return (
         <section id="qaulification" className="pt-8 sm:pt-24 pb-8 px-8">
             <h2 className="text-3xl text-title-color text-center font-semibold">Qualification</h2>
