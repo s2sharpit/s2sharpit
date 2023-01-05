@@ -5,8 +5,8 @@ import { GitHub, OutboundOutlined } from "@mui/icons-material";
 
 export default function Projects() {
     return (
-        <section id="projects" className="pt-8 sm:pt-24 pb-8 px-8">
-            <h2 className="text-3xl text-title-color text-center font-semibold">Projects</h2>
+        <section id="projects" className="section">
+            <h2 className="title">Projects</h2>
             <span className="block mb-16 text-text-color text-center">Most Recent Works</span>
 
             <div className="max-w-4xl mx-auto">
@@ -16,7 +16,7 @@ export default function Projects() {
                     <li className="hover:text-title-color-dark py-1 px-3 cursor-pointer rounded-lg">Web</li>
                 </ul> */}
 
-                <div className="grid gap-6 xs:grid-cols-[350px] md:grid-cols-2 sm:gap-8 md:gap-12 justify-center md:px-8 lg:px-20">
+                <div className="grid gap-6 xs:grid-cols-[350px] md:grid-cols-2 sm:gap-8 md:gap-12 justify-center lg:px-8">
                     {projectsData.map(data => <Project key={data.title} data={data} />)}
                 </div>
             </div>

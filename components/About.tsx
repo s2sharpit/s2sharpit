@@ -4,15 +4,15 @@ import Link from "next/link";
 
 export default function About() {
     return (
-        <section id="about" className="pt-8 sm:pt-24 pb-8 px-8">
-            <h2 className="text-3xl text-title-color text-center font-semibold">About Me</h2>
+        <section id="about" className="section">
+            <h2 className="title">About Me</h2>
             <span className="block mb-16 text-text-color text-center">My Introduction</span>
 
-            <div className="max-w-4xl mx-auto grid gap-6 max-md:gap-y-10 grid-cols-1 md:grid-cols-[0.9fr_1.2fr] items-center gap-x-8">
-                <Image src={"/s2sharpit.jpeg"} width={400} height={400} alt="about_img" className="w-56 md:w-80 rounded-3xl justify-self-center" />
+            <div className="max-w-4xl mx-auto grid gap-6 max-md:gap-y-10 grid-cols-1 md:grid-cols-[0.9fr_1.1fr] items-center gap-x-8">
+                <Image src={"/s2sharpit.jpeg"} width={400} height={400} alt="about_img" className="w-56 md:w-80 rounded-3xl max-md:justify-self-center" />
 
                 <div className="max-md:text-center">
-                    <div className="grid gap-2 grid-cols-2 xs:grid-cols-3 mx-auto max-w-md mb-8">
+                    <div className="max-w-md grid gap-2 grid-cols-2 xs:grid-cols-3 mx-auto max-w-d mb-8">
                         {infoData.map(data => <Box key={data.title} data={data} />)}
                     </div>
 

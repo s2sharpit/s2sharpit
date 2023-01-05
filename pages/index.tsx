@@ -28,14 +28,16 @@ export default function Home() {
       </Head>
       <main className={`${poppins.variable} font-sans ` + "text-text-color bg-body-color"}>
         <Header />
+        <div className='px-8 max-w-4xl mx-auto'>
         <Main />
-        <About />
-        <Skills />
-        <Services />
-        <Qualification />
-        <Projects />
-        <Testimonials />
-        <Contact />
+          <About />
+          <Skills />
+          <Services />
+          <Qualification />
+          <Projects />
+          <Testimonials />
+          <Contact />
+        </div>
         <Footer />
       </main>
     </>

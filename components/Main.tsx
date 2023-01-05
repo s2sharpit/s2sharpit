@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function Main() {
     return (
-        <section id="home" className="pt-8 sm:pt-24 pb-8 px-8">
-            <div className="max-w-4xl mx-auto grid gap-10">
-                <div className="grid gap-y-12 gap-x-5 md:gap-x-6 grid-cols-[0.5fr_2fr] sm:grid-cols-[100px_repeat(2,1fr)] md:grid-cols-[116px_repeat(2,1fr)] pt-14 sm:pt-24 items-center">
+        <section id="home" className="pt-8 sm:pt-24 pb-8">
+            <div className="grid gap-10">
+                <div className="grid gap-y-12 gap-x-5 md:gap-x-9 lg:gap-x-12 grid-cols-[0.5fr_2fr] sm:grid-cols-[100px_repeat(2,1fr)] md:grid-cols-[65px_1fr_max-content] pt-14 sm:pt-24 items-center">
                     <div className='grid gap-6 w-fit'>
                         <Link target='_blank' className="text-title-color hover:text-title-color-dark text-3xl" href="https://www.linkedin.com/in/s2sharpit"><LinkedIn fontSize="inherit" /></Link>
                         <Link target='_blank' className="text-title-color hover:text-title-color-dark text-3xl" href="https://github.com/s2sharpit"><GitHub fontSize="inherit" /></Link>
@@ -16,9 +16,9 @@ export default function Main() {
 
                     <div className="max-xs:ml-0 max-sm:ml-6 bg-[url('../public/s2sharpit.jpeg')] bg-no-repeat bg-center bg-cover shadow-profile sm:shadow-smProfile sm:order-1 sm:justify-self-center w-52 sm:w-64 md:w-72 h-52 sm:h-64 md:h-72 animate-profile -scale-x-100"></div>
 
-                    <div className="max-sm:ml-6 max-sm:col-span-3">
-                        <h1 className="text-4xl lg:text-5xl mb-3 font-semibold text-title-color">Tushar Saini
-                            <Image src={"hand.svg"} width={40} height={40} alt="hand_pic" className="ml-2 inline-block pb-1 h-9 md:h-full animate-wave origin-bottom" />
+                    <div className="max-xs:ml-4 max-sm:ml-6 max-sm:col-span-3">
+                        <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 font-semibold text-title-color">Tushar Saini
+                            <Image src={"/svg/hand.svg"} width={40} height={40} alt="hand_pic" className="ml-2 inline-block pb-1 h-9 md:h-full animate-wave origin-bottom" />
                         </h1>
                         <h3 className="relative text-title-color text-xl pl-14 md:pl-20 font-normal mb-4 md:mb-3 before:content-start before:absolute before:w-10 md:before:w-16 before:h-[1px] before:bg-text-color before:left-0 before:top-3 md:before:top-4">Software Engineer</h3>
                         <p className="max-w-sm text-justify mb-10 md:mb-12 text-text-color">I like creating <b>delightful, magical,</b> and <b>accessible</b> art with code, from <b>Bhubaneswar, Bharat</b>.</p>
@@ -44,7 +44,7 @@ export default function Main() {
                     </div>
                 </div>
 
-                <div className="ml-28 md:ml-36 max-sm:hidden">
+                <div className="ml-[7.5rem] md:ml-28 max-sm:hidden">
                     <a href="#about" className="scroll inline-flex items-center">
                         <svg
                             width="32px"

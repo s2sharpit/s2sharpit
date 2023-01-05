@@ -18,11 +18,11 @@ export default function Testimonials() {
     }, []);
 
     return (
-        <section id="testimonials" className="pt-8 sm:pt-24 pb-8 px-8 max-w-4xl mx-auto">
-            <h2 className="text-4xl text-title-color text-center font-semibold">Testimonials</h2>
+        <section id="testimonials" className="section">
+            <h2 className="title">Testimonials</h2>
             <span className="block mb-16 text-text-color text-center">My Client Say</span>
 
-            <Swiper className="max-xs:w-full max-md:w-[350px] lg:w-[750px]"
+            <Swiper className="max-xs:w-full max-md:w-[348px] lg:w-[768px]"
                 loop={mounted ? true : false}
                 grabCursor={true}
                 spaceBetween={24}
