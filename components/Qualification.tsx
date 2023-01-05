@@ -7,9 +7,9 @@ let toggle = false;
 export default function Qualification() {
     const [state, setState] = useState<number>(1);
     return (
-        <section id="qualification" className="section">
+        <section id="qualification">
             <h2 className="title">Qualification</h2>
-            <span className="block mb-16 text-text-color text-center">My Personal Journey</span>
+            <span className="subTitle">My Personal Journey</span>
 
                 <div className="flex justify-center mb-8 md:text-lg">
                     <div onClick={() => setState(1)} className={(state === 1 ? "text-title-color-dark" : "text-title-color") + " inline-flex items-center font-medium mx-3 sm:mx-4 cursor-pointer hover:text-title-color-dark"}>

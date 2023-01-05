@@ -37,7 +37,7 @@ export default function Header() {
                             <li key={data.name}><a href={"#" + data.name} onClick={()=>setMenu(false)} className="flex flex-col items-center text-sm text-title-color font-medium transition duration-300 hover:text-title-color-dark capitalize"><span className='md:hidden'>{data.icon}</span> {data.name}</a></li>
                         ))}
                     </ul>
-                    <span className="md:hidden"><Close onClick={()=>setMenu(false)} fontSize="large" className='absolute right-4 bottom-3 cursor-pointer text-title-color hover:text-title-color-dark p-0.5' /></span>
+                    <span className="md:hidden"><Close onClick={()=>setMenu(false)} fontSize="large" className='absolute right-4 bottom-3 cursor-pointer text-title-color hover:text-title-color-dark p-1' /></span>
                 </div>
                 <span className="md:hidden"><GridViewOutlined onClick={()=>setMenu(true)} fontSize="large" className='text-title-color font-medium p-1' /></span>
             </nav>

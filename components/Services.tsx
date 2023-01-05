@@ -4,9 +4,9 @@ import { SetStateAction, useState } from "react";
 
 export default function Services() {
     return (
-        <section id="services" className="section">
+        <section id="services">
             <h2 className="title">Services</h2>
-            <span className="block mb-16 text-text-color text-center">What I Offer</span>
+            <span className="subTitle">What I Offer</span>
 
             <div className="max-w-4xl mx-auto grid gap-6 xs:grid-cols-[350px] sm:grid-cols-[repeat(2,218px)] md:grid-cols-3 g:grid-cols-[repeat(3,240px)] justify-center md:justify-between gap-x-9 lg:gap-x-11">
                 {serviceData.map(data => <Service key={data.title} data={data} />)}

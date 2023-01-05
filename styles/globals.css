@@ -44,12 +44,16 @@
     @apply scroll-smooth;
   }
 
-  .section {
+  section {
     @apply pt-8 sm:pt-24 pb-8;
   }
 
   .title {
     @apply text-3xl md:text-4xl text-title-color text-center font-semibold;
+  }
+
+  .subTitle {
+    @apply block mb-16 text-text-color text-center;
   }
 
   .scroll:hover .wheel {

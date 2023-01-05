@@ -3,9 +3,9 @@ import skillData from "../data/skillData";
 
 export default function Skills() {
     return (
-        <section id="skills" className="section">
+        <section id="skills">
             <h2 className="title">Skills</h2>
-            <span className="block mb-16 text-text-color text-center">My Technical Level</span>
+            <span className="subTitle">My Technical Level</span>
 
             <div className="grid gap-6 md:grid-cols-2 gap-x-8 md:gap-x-16 justify-center md:px-8">
                 {skillData.map(data => <End key={data.title} data={data} />)}

@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function About() {
     return (
-        <section id="about" className="section">
+        <section id="about">
             <h2 className="title">About Me</h2>
-            <span className="block mb-16 text-text-color text-center">My Introduction</span>
+            <span className="subTitle">My Introduction</span>
 
             <div className="max-w-4xl mx-auto grid gap-6 max-md:gap-y-10 grid-cols-1 md:grid-cols-[0.9fr_1.1fr] items-center gap-x-8">
                 <Image src={"/s2sharpit.jpeg"} width={400} height={400} alt="about_img" className="w-56 md:w-80 rounded-3xl max-md:justify-self-center" />

@@ -18,9 +18,9 @@ export default function Testimonials() {
     }, []);
 
     return (
-        <section id="testimonials" className="section">
+        <section id="testimonials">
             <h2 className="title">Testimonials</h2>
-            <span className="block mb-16 text-text-color text-center">My Client Say</span>
+            <span className="subTitle">My Client Say</span>
 
             <Swiper className="max-xs:w-full max-md:w-[348px] lg:w-[768px]"
                 loop={mounted ? true : false}

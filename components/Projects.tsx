@@ -5,9 +5,9 @@ import { GitHub, OutboundOutlined } from "@mui/icons-material";
 
 export default function Projects() {
     return (
-        <section id="projects" className="section">
+        <section id="projects">
             <h2 className="title">Projects</h2>
-            <span className="block mb-16 text-text-color text-center">Most Recent Works</span>
+            <span className="subTitle">Most Recent Works</span>
 
             <div className="max-w-4xl mx-auto">
 

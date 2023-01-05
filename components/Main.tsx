@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Main() {
     return (
-        <section id="home" className="pt-8 sm:pt-24 pb-8">
+        <section id="home">
             <div className="grid gap-10">
                 <div className="grid gap-y-12 gap-x-5 md:gap-x-9 lg:gap-x-12 grid-cols-[0.5fr_2fr] sm:grid-cols-[100px_repeat(2,1fr)] md:grid-cols-[65px_1fr_max-content] pt-14 sm:pt-24 items-center">
                     <div className='grid gap-6 w-fit'>

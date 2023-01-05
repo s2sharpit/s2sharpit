@@ -4,9 +4,9 @@ import { ArrowForward } from "@mui/icons-material";
 
 export default function Contact() {
     return (
-        <section id="contact" className="section">
+        <section id="contact">
             <h2 className="title">Get in Touch</h2>
-            <span className="block mb-16 text-text-color text-center">Contact Me</span>
+            <span className="subTitle">Contact Me</span>
 
             <div className="max-w-4xl mx-auto grid max-sm:grid-cols-1 md:grid-cols-[repeat(2,max-content)] justify-center max-md:gap-y-14 gap-x-12 lg:gap-x-24 pb-12">
                 <div className="">
