@@ -70,8 +70,6 @@
 
 }
 
-
-
 .swiper-pagination-bullet {
   background: var(--text-color) !important;
 }
@@ -79,4 +77,3 @@
 .swiper-pagination-bullet-active {
   background: var(--title-color) !important;
 }
-
