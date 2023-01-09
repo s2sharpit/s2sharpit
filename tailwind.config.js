@@ -30,6 +30,7 @@ module.exports = {
       boxShadow: {
         profile: 'inset 0 0 0 6px rgb(255 255 255 / 30%)',
         smProfile: 'inset 0 0 0 8px rgb(255 255 255 / 30%)',
+        header: '0 -1px 4px rgba(0, 0, 0, 0.15)',
       },
       keyframes: {
         profile: {
@@ -41,9 +42,6 @@ module.exports = {
           '30%': { transform: 'translateY(3.75rem)' },
         },
         wave: {
-          // '0%, 50%, 100%': {transform: 'rotate(0)'},
-          // '25%': {transform: 'rotate(-12deg)'},
-          // '75%': {transform: 'rotate(12deg)'},
           '0%': { transform: 'rotate(0.0deg)' },
           '10%': { transform: 'rotate(-10.0deg)' },
           '20%': { transform: 'rotate(12.0deg)' },
@@ -51,7 +49,7 @@ module.exports = {
           '40%': { transform: 'rotate(9.0deg)' },
           '50%': { transform: 'rotate(0.0deg)' },
           '100%': { transform: 'rotate(0.0deg)' },
-        }
+        },
       },
       animation: {
         profile: 'profile 4s ease-in-out infinite',
