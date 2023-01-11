@@ -1,24 +1,46 @@
 import Link from "next/link";
 import contactData from "../data/contactData";
 import { ArrowForward } from "@mui/icons-material";
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
+    const form = useRef<HTMLFormElement>(null);
+
+    const [state, setState] = useState<boolean>();
+
+    const handleToggle = (toggle: boolean) => {
+        setState(toggle);
+        setTimeout(() => setState(undefined), 2000);
+    }
+
+    const sendEmail = (e: any) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(process.env.NEXT_PUBLIC_SERVICE_ID ?? '', process.env.NEXT_PUBLIC_TEMPLATE_ID ?? '', form.current ?? '', process.env.NEXT_PUBLIC_KEY ?? '')
+            .then(
+                result => handleToggle(true),
+                error => handleToggle(false)
+            )
+        e.target.reset();
+    };
     return (
         <section id="contact">
             <h2 className="title">Get in Touch</h2>
             <span className="subTitle">Contact Me</span>
 
             <div className="max-w-4xl mx-auto grid max-sm:grid-cols-1 md:grid-cols-[repeat(2,max-content)] justify-center max-md:gap-y-14 gap-x-12 lg:gap-x-24 pb-12">
-                <div className="">
+                <div>
                     <h3 className="text-xl text-center font-medium mb-6 text-title-color">Talk to Me</h3>
                     <div className="grid gap-y-4 grid-cols-1 sm:grid-cols-[300px] max-md:justify-center">
                         {contactData.map(data => <Card key={data.title} data={data} />)}
                     </div>
                 </div>
 
-                <div className="">
+                <div>
                     <h3 className="text-xl text-center font-medium mb-6 text-title-color">Write Me A Testimonial</h3>
-                    <form className="sm:w-96 max-md:mx-auto">
+                    <form ref={form} onSubmit={sendEmail} className="sm:w-96 max-md:mx-auto">
                         <div className="relative mb-8 h-16">
                             <label htmlFor="name" className="absolute -top-3 left-5 text-xs p-1 bg-body-color z-20">Name</label>
                             <input type="name" name="name" required placeholder="Enter Your Name" className="absolute top-0 left-0 w-full h-full border-2 border-border-color/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10" />
@@ -27,16 +49,13 @@ export default function Contact() {
                             <label htmlFor="email" className="absolute -top-3 left-5 text-xs p-1 bg-body-color z-20">Email</label>
                             <input type="email" name="email" required placeholder="Enter Your Email" className="absolute top-0 left-0 w-full h-full border-2 border-border-color/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10" />
                         </div>
-                        {/* <div className="relative mb-8 h-16">
-                            <input type="file" name="file" required placeholder="Enter Your Email" className="absolute top-0 left-0 w-full h-full border-2 border-border-color/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10" />
-                        </div> */}
                         <div className="relative mb-8 h-44">
                             <label htmlFor="message" className="absolute -top-3 left-5 text-xs p-1 bg-body-color z-20">Testimonial</label>
                             <textarea name="message" required cols={30} rows={10} placeholder="Enter Your Testinomail" className="absolute top-0 left-0 w-full h-full border-2 border-border-color/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10 resize-none"></textarea>
                         </div>
-                        <button disabled className="bg-title-color text-container-color py-4 md:py-5 px-7 md:px-8 rounded-2xl font-medium hover:bg-title-color-dark inline-flex items-center cursor-pointer">
-                            Send Message
-                            <svg className="ml-2"
+                        <button className={(state !== undefined ? (state ? "bg-[#379237]" : "bg-red-500") : "bg-title-color hover:bg-title-color-dark") + " text-container-color py-4 md:py-5 px-7 md:px-8 rounded-2xl font-medium  inline-flex items-center cursor-pointer transition-all"}>
+                            {state !== undefined ? (state ? "Message Sent" : "Message Not Send") : "Send Message"}
+                            <svg className={(state && "hidden") + " ml-2"}
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
                                 height="24"
