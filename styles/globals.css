@@ -56,18 +56,6 @@
     @apply block mb-16 text-text-color text-center;
   }
 
-  .scroll:hover .wheel {
-    @apply animate-wheel;
-  }
-
-  .btn:hover .btnIcon {
-    @apply translate-x-1;
-  }
-
-  .laChild:last-child .lChild {
-    @apply hidden;
-  }
-
   b {
     @apply font-medium text-title-color;
   }

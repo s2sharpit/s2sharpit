@@ -67,9 +67,11 @@ function Card({ data }: { data: any }) {
             <h3 className="text-sm font-medium">{data.title}</h3>
             <span className="text-sm block mb-3">{data.desc}</span>
 
-            <Link href={data.url} className="btn text-text-color text-sm inline-flex items-center justify-center gap-x-1">
+            <Link href={data.url} className="group text-text-color text-sm inline-flex items-center justify-center gap-x-1">
                 Write Me
-                <ArrowForward fontSize="inherit" className="btnIcon transition duration-300" />
+                <span className="transition duration-300 group-hover:translate-x-1">
+                    <ArrowForward fontSize="inherit" />
+                </span>
             </Link>
         </div>
     )

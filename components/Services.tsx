@@ -23,14 +23,16 @@ function Service({ data }: { data: any }) {
                 {data.icon}
                 <h3 className="text-xl mb-4 font-medium sm:w-1/2">{data.title}</h3>
             </div>
-            <span onClick={()=>setState(true)} className="btn text-title-color text-sm inline-flex items-center gap-x-1 cursor-pointer">
+            <span onClick={() => setState(true)} className="group text-title-color text-sm inline-flex items-center gap-x-1 cursor-pointer">
                 View More
-                <ArrowForward fontSize="inherit" className="btnIcon transition duration-300" />
+                <span className="transition duration-300 group-hover:translate-x-1">
+                    <ArrowForward fontSize="inherit" />
+                </span>
             </span>
 
             <div className={(state ? "opacity-100 visible" : "opacity-0 invisible") + " fixed top-0 left-0 right-0 bottom-0 bg-bg-color z-[500] flex justify-center items-center max-sm:pt-16 px-6 sm:px-4 max-sm:pb-10 transition duration-300"}>
                 <div className="w-[500px] relative bg-container-color pt-16 pb-10 px-10 rounded-3xl">
-                    <Close fontSize="small" onClick={()=>setState(false)} className="absolute top-6 right-6 text-title-color cursor-pointer" />
+                    <Close fontSize="small" onClick={() => setState(false)} className="absolute top-6 right-6 text-title-color cursor-pointer" />
                     <h3 className="text-center text-lg font-medium mb-4 text-title-color">{data.title}</h3>
                     <p className="text-center text-sm sm:px-10 md:px-14 mb-8">Service with more than 3 years of experience.Providing quality work to clients and companies.</p>
 
