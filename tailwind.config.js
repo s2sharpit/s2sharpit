@@ -30,7 +30,7 @@ module.exports = {
       boxShadow: {
         profile: 'inset 0 0 0 6px rgb(255 255 255 / 30%)',
         smProfile: 'inset 0 0 0 8px rgb(255 255 255 / 30%)',
-        header: '0 -1px 4px rgba(0, 0, 0, 0.15)',
+        header: '0 -1px 4px rgba(var(--border-color), 0.15)',
       },
       keyframes: {
         profile: {
