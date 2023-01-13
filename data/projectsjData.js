@@ -4,7 +4,7 @@ const projectsData =  [
         img: "/project/project_1.png",
         techstack: "ReactJs, TailwindCSS",
         github: "https://github.com/s2sharpit/school",
-        url: "https://s2sharpit.me/school/",
+        url: "https://gh.s2sharpit.me/school/",
     },
     {
         title: "Tic-tac-toe",

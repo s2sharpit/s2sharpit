@@ -39,7 +39,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                    <h3 className="text-xl text-center font-medium mb-6 text-title-color">Write Me A Testimonial</h3>
+                    <h3 className="text-xl text-center font-medium mb-6 text-title-color">Write Me A Message</h3>
                     <form ref={form} onSubmit={sendEmail} className="sm:w-96 max-md:mx-auto">
                         <div className="relative mb-8 h-16">
                             <label htmlFor="name" className="absolute -top-3 left-5 text-xs p-1 bg-body-color z-20">Name</label>
@@ -50,8 +50,8 @@ export default function Contact() {
                             <input type="email" name="email" required placeholder="Enter Your Email" className="absolute top-0 left-0 w-full h-full border-2 border-border-color/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10" />
                         </div>
                         <div className="relative mb-8 h-44">
-                            <label htmlFor="message" className="absolute -top-3 left-5 text-xs p-1 bg-body-color z-20">Testimonial</label>
-                            <textarea name="message" required cols={30} rows={10} placeholder="Enter Your Testinomail" className="absolute top-0 left-0 w-full h-full border-2 border-border-color/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10 resize-none"></textarea>
+                            <label htmlFor="message" className="absolute -top-3 left-5 text-xs p-1 bg-body-color z-20">Message</label>
+                            <textarea name="message" required cols={30} rows={10} placeholder="Enter Your Message" className="absolute top-0 left-0 w-full h-full border-2 border-border-color/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10 resize-none"></textarea>
                         </div>
                         <button className={(state !== undefined ? (state ? "bg-[#379237]" : "bg-red-500") : "bg-title-color hover:bg-title-color-dark") + " text-container-color py-4 md:py-5 px-7 md:px-8 rounded-2xl font-medium  inline-flex items-center cursor-pointer transition-all"}>
                             {state !== undefined ? (state ? "Message Sent" : "Message Not Send") : "Send Message"}
