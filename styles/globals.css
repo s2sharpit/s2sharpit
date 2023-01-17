@@ -36,6 +36,15 @@
     overflow-x: hidden;
   }
 
+    ::-webkit-scrollbar {
+      width: 0.7rem;
+    }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--bg-color);
+    border-radius: 0.3rem;
+  }
+
 }
 
 @layer components {
