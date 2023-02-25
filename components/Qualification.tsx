@@ -5,7 +5,7 @@ import Link from "next/link";
 
 let toggle = false;
 export default function Qualification() {
-    const [state, setState] = useState<number>(1);
+    const [state, setState] = useState(1);
     return (
         <section id="qualification">
             <h2 className="title">Qualification</h2>
@@ -40,16 +40,16 @@ function Qualifi({ data, state }: { data: any, state: number }) {
 }
 
 function Quali({ data }: { data: any }) {
-    toggle = !toggle;
+    toggle =! toggle;
     return (
         <div className="group grid grid-cols-[1fr_max-content_1fr] gap-2 gap-x-6">
-            <div className={(toggle ? "hidden" : "")}></div>
-            <div className={(toggle ? "order-last" : "")}>
+            <div className={`${toggle && "hidden"}`}></div>
+            <div className={`${toggle && "order-last"}`}>
                 <span className="inline-block h-[13px] w-[13px] bg-text-color rounded-full"></span>
                 <div className="group-last:hidden w-[1px] h-full bg-text-color -translate-y-2 translate-x-[6px]"></div>
             </div>
             <div>
-                <Link href={data.url || ""} target="_blank" className={(!data.url && "pointer-events-none") + " font-medium text-title-color hover:text-title-color-dark"}>{data.name}</Link>
+                <Link href={data.url || ""} target="_blank" className={`${!data.url && "pointer-events-none"} font-medium text-title-color hover:text-title-color-dark`}>{data.name}</Link>
                 <div className="text-sm mb-4">{data.desc}</div>
                 <div className="text-sm"><CalendarMonthOutlined fontSize="inherit" className="mb-1 mr-1" />{data.duration}</div>
             </div>

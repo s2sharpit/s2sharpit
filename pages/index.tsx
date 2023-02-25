@@ -9,7 +9,7 @@ import Qualification from '../components/Qualification'
 import Testimonials from '../components/Testimonials'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
-import Projects from '../components/Projects'
+import Portfolio from '../components/Portfolio'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -26,7 +26,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/ts.ico" />
       </Head>
-      <main className={`${poppins.variable} font-sans ` + "text-text-color bg-body-color"}>
+      <main className={`${poppins.variable} font-sans text-text-color bg-body-color`}>
         <Header />
         <div className='px-8 max-w-4xl mx-auto'>
         <Main />
@@ -34,7 +34,7 @@ export default function Home() {
           <Skills />
           <Services />
           <Qualification />
-          <Projects />
+          <Portfolio />
           <Testimonials />
           <Contact />
         </div>

@@ -16,7 +16,7 @@ export default function Main() {
 
                     <div className="max-xs:ml-0 max-sm:ml-6 bg-[url('../public/s2sharpit.jpeg')] bg-no-repeat bg-center bg-cover shadow-profile sm:shadow-smProfile sm:order-1 sm:justify-self-center w-52 sm:w-64 md:w-72 h-52 sm:h-64 md:h-72 animate-profile -scale-x-100"></div>
 
-                    <div className="max-xs:ml-4 max-sm:ml-6 max-sm:col-span-3">
+                    <div className="max-xs:mx-4 max-sm:mx-6 max-sm:col-span-3">
                         <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 font-semibold text-title-color">Tushar Saini
                             <svg className="ml-2 inline-block pb-1 h-9 md:h-full animate-wave origin-bottom"
                                 width="40"
@@ -67,8 +67,9 @@ export default function Main() {
                                 ></path>
                             </svg>
                         </h1>
-                        <h3 className="relative text-title-color text-xl pl-14 md:pl-20 font-normal mb-4 md:mb-3 before:content-start before:absolute before:w-10 md:before:w-16 before:h-[1px] before:bg-text-color before:left-0 before:top-3 md:before:top-4">Software Engineer</h3>
-                        <p className="max-w-sm text-justify mb-10 md:mb-12 text-text-color">I like creating <b>delightful, magical,</b> and <b>accessible</b> art with code, from <b>Bhubaneswar, Bharat</b>.</p>
+                        <h3 className="relative text-title-color text-xl pl-14 md:pl-20 font-normal mb-4md:mb-3 before:content-start before:absolute before:w-10 md:before:w-16 before:h-[1px] before:bg-text-color before:left-0 before:top-3 md:before:top-4">Software Engineer</h3>
+                        <h5 className="text-text-color font-medium my-1 md:my-2">Bhubaneswar, Bharat</h5>
+                        <p className="max-w-sm text-justify mb-10 md:mb-12 text-text-color">I like creating <b>delightful, magical,</b> and <b>accessible</b> art with code.</p>
                         <a href="#contact" className="bg-title-color text-container-color py-4 md:py-5 px-7 md:px-8 rounded-2xl font-medium hover:bg-title-color-dark inline-flex items-center">
                             Say Hello
                             <svg className="ml-2"

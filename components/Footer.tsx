@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer id="footer" className="bg-container-color border border-black/10">
+        <footer id="footer" className="bg-container-color border-t border-t-border-color/10">
             <div className="max-w-4xl mx-auto pt-8 pb-24">
                 <a href="#home" className="block text-title-color text-center mb-8 text-2xl font-medium">Tushar Saini</a>
                 <ul className="flex justify-center gap-x-6 mb-8">

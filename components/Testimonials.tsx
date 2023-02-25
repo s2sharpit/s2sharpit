@@ -10,8 +10,15 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper";
 
+interface TestimonialData {
+    id: number;
+    image: string;
+    title: string;
+    description: string;
+}
+
 export default function Testimonials() {
-    const [mounted, setMounted] = useState<boolean>(false);
+    const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
         setMounted(true);
@@ -38,7 +45,7 @@ export default function Testimonials() {
                 }}
                 modules={[Pagination]}
             >
-                {testimonialsData.map(({ id, image, title, description }: {id: number, image: string , title: string , description: string}) => {
+                {testimonialsData.map(({ id, image, title, description }: TestimonialData) => {
                     return (
                         <SwiperSlide key={id} className="bg-container-color border border-border-color/10 py-5 md:py-6 px-6 md:px-8 rounded-3xl mb-12">
                             <Image src={image} alt={"testimonial" + id} width={100} height={100} className="w-14 rounded-full mb-4" />

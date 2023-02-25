@@ -8,7 +8,7 @@ export default function Services() {
             <h2 className="title">Services</h2>
             <span className="subTitle">What I Offer</span>
 
-            <div className="max-w-4xl mx-auto grid gap-6 xs:grid-cols-[350px] sm:grid-cols-[repeat(2,218px)] md:grid-cols-3 g:grid-cols-[repeat(3,240px)] justify-center md:justify-between gap-x-9 lg:gap-x-11">
+            <div className="max-w-4xl mx-auto grid gap-6 xs:grid-cols-[350px] sm:grid-cols-[repeat(2,218px)] md:grid-cols-3 lg:grid-cols-[repeat(3,240px)] justify-center md:justify-between gap-x-9 lg:gap-x-11">
                 {serviceData.map(data => <Service key={data.title} data={data} />)}
             </div>
         </section>
@@ -16,7 +16,7 @@ export default function Services() {
 }
 
 function Service({ data }: { data: any }) {
-    const [state, setState] = useState<boolean>(false);
+    const [state, setState] = useState(false);
     return (
         <div className="relative bg-container-color pt-12 sm:pt-24 pb-5 sm:pb-8 max-sm:px-6 sm:pl-10 border border-border-color/10 rounded-2xl">
             <div className="text-title-color">

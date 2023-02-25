@@ -18,7 +18,7 @@ const navData = [
         icon: <BusinessCenterOutlined fontSize="small" />,
     },
     {
-        name: "projects",
+        name: "portfolio",
         icon: <ImageOutlined fontSize="small" />,
     },
     {

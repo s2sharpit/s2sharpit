@@ -7,25 +7,23 @@
   :root {
   
     /*========== Colors ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
+    /*Color mode hex #RRGGBB */
     
-    --hue: 0;
-    --sat: 0%;
-    --title-color: hsl(var(--hue), var(--sat), 20%);
-    --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-    --text-color: hsl(var(--hue), var(--sat), 40%);
-    --body-color: hsl(var(--hue), var(--sat), 98%);
+    --title-color: 	#333333;
+    --title-color-dark: #000;
+    --text-color: #666666;
+    --body-color: #fafafa;
     --container-color: #fff;
     --border-color: 0, 0, 0;
     --bg-color: rgba(0, 0, 0, 0.5);
   }
 
   [data-theme='dark'] {
-    --body-color: hsl(var(--hue), var(--sat), 3%);
-    --container-color: hsl(var(--hue), var(--sat), 0%);
-    --text-color: hsl(var(--hue), var(--sat), 56%);
-    --title-color: hsl(var(--hue), var(--sat), 90%);
+    --title-color: #d9d9d9;
     --title-color-dark: #fff;
+    --text-color: #999999;
+    --body-color: #080808;
+    --container-color: #000;
     --border-color: 255, 255, 255;
     --bg-color: rgba(255, 255, 255, 0.1);
   }

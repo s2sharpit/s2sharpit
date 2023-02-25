@@ -17,8 +17,7 @@ export default function Contact() {
     const sendEmail = (e: any) => {
         e.preventDefault();
 
-        emailjs
-            .sendForm(process.env.NEXT_PUBLIC_SERVICE_ID ?? '', process.env.NEXT_PUBLIC_TEMPLATE_ID ?? '', form.current ?? '', process.env.NEXT_PUBLIC_KEY ?? '')
+        emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID ?? '', process.env.NEXT_PUBLIC_TEMPLATE_ID ?? '', form.current ?? '', process.env.NEXT_PUBLIC_KEY ?? '')
             .then(
                 result => handleToggle(true),
                 error => handleToggle(false)
@@ -53,9 +52,9 @@ export default function Contact() {
                             <label htmlFor="message" className="absolute -top-3 left-5 text-xs p-1 bg-body-color z-20">Message</label>
                             <textarea name="message" required cols={30} rows={10} placeholder="Enter Your Message" className="absolute top-0 left-0 w-full h-full border-2 border-border-color/30 bg-transparent text-text-color outline-none rounded-xl p-6 z-10 resize-none"></textarea>
                         </div>
-                        <button className={(state !== undefined ? (state ? "bg-[#379237]" : "bg-red-500") : "bg-title-color hover:bg-title-color-dark") + " text-container-color py-4 md:py-5 px-7 md:px-8 rounded-2xl font-medium  inline-flex items-center cursor-pointer transition-all"}>
-                            {state !== undefined ? (state ? "Message Sent" : "Message Not Send") : "Send Message"}
-                            <svg className={(state && "hidden") + " ml-2"}
+                        <button className={`${(state !== undefined ? (state ? "bg-green-500" : "bg-red-500") : "bg-title-color hover:bg-title-color-dark")} text-container-color py-4 md:py-5 px-7 md:px-8 rounded-2xl font-medium inline-flex items-center cursor-pointer transition-all`}>
+                            {`${state !== undefined ? (state ? "Message Sent" : "Message Not Send") : "Send Message"}`}
+                            <svg className={`${state && "hidden"} ml-2}`}
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
                                 height="24"
