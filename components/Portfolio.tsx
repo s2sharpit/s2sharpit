@@ -44,15 +44,15 @@ export default function Portfolio() {
 const Project = ({ data }: { data: any }) => {
     return (
         <div className="bg-container-color border border-border-color/10 p-5 rounded-2xl">
-            <Image src={data.img} alt={data.title + "_img"} width={1000} height={1000} className="h-48 w-full rounded-2xl border border-border-color/10" />
+            <Image src={`/portfolio/${data.img}.png`} alt={data.title + "_img"} width={1000} height={1000} className="h-48 w-full rounded-2xl border border-border-color/10" />
             <div className="flex mt-5 items-center justify-between">
                 <div className="text-sm">
                     <h3 className="text-xl text-title-color font-medium">{data.title}</h3>
                     {data.techstack}
                 </div>
                 <div className="inline-flex items-center gap-x-3 text-title-color">
-                    <Link href={data.github} target="_blank" className="text-[1.7rem] hover:text-title-color-dark"><GitHub fontSize="inherit" /></Link>
-                    <Link href={data.url} target="_blank" className="text-3xl hover:text-title-color-dark"><OutboundOutlined fontSize="inherit" /></Link>
+                    <Link href={data.github} target="_blank" className="text-[1.7rem] hover:text-title-color-dark" aria-label="link"><GitHub fontSize="inherit" /></Link>
+                    <Link href={data.url} target="_blank" className="text-3xl hover:text-title-color-dark" aria-label="link"><OutboundOutlined fontSize="inherit" /></Link>
                 </div>
             </div>
         </div>

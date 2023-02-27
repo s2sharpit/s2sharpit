@@ -1,7 +1,7 @@
 const portfolioData =  [
     {
         title: "School Website",
-        img: "/project/project_1.png",
+        img: "1",
         techstack: "ReactJs, TailwindCSS",
         type: "Web",
         github: "https://github.com/s2sharpit/school",
@@ -9,7 +9,7 @@ const portfolioData =  [
     },
     {
         title: "Tic-tac-toe",
-        img: "/project/project_2.png",
+        img: "2",
         techstack: "NextJs, TypeScript",
         type: "Web",
         github: "https://github.com/s2sharpit/tic-tac-toe",
@@ -17,7 +17,7 @@ const portfolioData =  [
     },
     {
         title: "ARB Bookings",
-        img: "/project/project_3.png",
+        img: "3",
         techstack: "MERN Stack",
         type: "Web",
         github: "https://github.com/s2sharpit/booking_app",
@@ -25,7 +25,7 @@ const portfolioData =  [
     },
     {
         title: "s2sharpit's admin",
-        img: "/project/project_4.png",
+        img: "4",
         techstack: "ReactJs, SASS",
         type: "Web",
         github: "https://github.com/s2sharpit/react-admin-panel",

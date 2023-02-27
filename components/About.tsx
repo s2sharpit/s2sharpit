@@ -9,7 +9,7 @@ export default function About() {
             <span className="subTitle">My Introduction</span>
 
             <div className="max-w-4xl mx-auto grid gap-6 max-md:gap-y-10 grid-cols-1 md:grid-cols-[0.9fr_1.1fr] items-center gap-x-8">
-                <Image src={"/s2sharpit.jpeg"} width={400} height={400} alt="about_img" className="w-56 md:w-80 rounded-3xl max-md:justify-self-center" />
+                <Image src={"/s2sharpit.webp"} width={400} height={400} alt="about_img" className="w-56 md:w-80 rounded-3xl max-md:justify-self-center" />
 
                 <div className="max-md:text-center">
                     <div className="max-w-md grid gap-2 grid-cols-2 xs:grid-cols-3 mx-auto max-w-d mb-8">
