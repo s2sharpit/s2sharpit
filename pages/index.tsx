@@ -13,7 +13,7 @@ import Portfolio from '../components/Portfolio'
 
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['400', '500', '700'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-poppins',
 })
 
@@ -24,7 +24,6 @@ export default function Home() {
         <title>Tushar Saini - s2sharpit</title>
         <meta name="description" content="Welcome to Tushar Saini portfolio, also known as s2sharpit." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="google-site-verification" content="VkrdK7Y0m1BTCP8B3h0qiQqBZpcaavqhlFydOtEQ7hw" />
         <link rel="icon" href="/ts.ico" />
       </Head>
       <main className={`${poppins.variable} font-sans text-text-color bg-body-color`}>

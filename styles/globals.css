@@ -16,6 +16,7 @@
     --container-color: #fff;
     --border-color: 0, 0, 0;
     --bg-color: rgba(0, 0, 0, 0.5);
+    --scrollBar-color: #f0f0f0;
   }
 
   [data-theme='dark'] {
@@ -26,6 +27,7 @@
     --container-color: #000;
     --border-color: 255, 255, 255;
     --bg-color: rgba(255, 255, 255, 0.1);
+    --scrollBar-color: #121212;
   }
 
   html,
@@ -36,6 +38,8 @@
 
     ::-webkit-scrollbar {
       width: 0.7rem;
+      background: var(--scrollBar-color);
+      border-left: 1px solid rgba(var(--border-color), 0.05);
     }
 
   ::-webkit-scrollbar-thumb {
@@ -47,16 +51,12 @@
 
 @layer components {
 
-  html {
-    @apply scroll-smooth;
-  }
-
   section {
     @apply pt-8 sm:pt-24 pb-8;
   }
 
   .title {
-    @apply text-3xl md:text-4xl text-title-color text-center font-semibold;
+    @apply text-3xl md:text-4xl text-title-color text-center font-bold;
   }
 
   .subTitle {

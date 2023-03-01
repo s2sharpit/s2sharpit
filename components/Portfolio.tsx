@@ -29,7 +29,7 @@ export default function Portfolio() {
                           className={`${activeIndex === index 
                             ? "bg-title-color-dark text-container-color"
                             : "hover:text-title-color-dark"}
-                            py-1 px-3 cursor-pointer rounded-lg`}
+                            py-1 px-3 hover:cursor-pointer rounded-lg`}
                         >{d}</li>
                     )}
                 </ul>

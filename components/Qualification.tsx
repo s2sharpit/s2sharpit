@@ -12,11 +12,11 @@ export default function Qualification() {
             <span className="subTitle">My Personal Journey</span>
 
             <div className="flex justify-center mb-8 md:text-lg">
-                <div onClick={() => setState(1)} className={(state === 1 ? "text-title-color-dark" : "text-title-color") + " inline-flex items-center font-medium mx-3 sm:mx-4 cursor-pointer hover:text-title-color-dark"}>
+                <div onClick={() => setState(1)} className={(state === 1 ? "text-title-color-dark" : "text-title-color") + " inline-flex items-center font-medium mx-3 sm:mx-4 hover:cursor-pointer hover:text-title-color-dark"}>
                     {state === 1 ? <School /> : <SchoolOutlined />}
                     <span className="ml-1">Education</span>
                 </div>
-                <div onClick={() => setState(2)} className={(state === 2 ? "text-title-color-dark" : "text-title-color") + " inline-flex items-center font-medium mx-3 sm:mx-4 cursor-pointer hover:text-title-color-dark"}>
+                <div onClick={() => setState(2)} className={(state === 2 ? "text-title-color-dark" : "text-title-color") + " inline-flex items-center font-medium mx-3 sm:mx-4 hover:cursor-pointer hover:text-title-color-dark"}>
                     {state === 2 ? <BusinessCenter /> : <BusinessCenterOutlined />}
                     <span className="ml-1">Certifications</span>
                 </div>

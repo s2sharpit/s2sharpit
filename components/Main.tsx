@@ -17,7 +17,7 @@ export default function Main() {
                     <div className="max-xs:ml-0 max-sm:ml-6 bg-[url('../public/s2sharpit.webp')] bg-no-repeat bg-center bg-cover shadow-profile sm:shadow-smProfile sm:order-1 sm:justify-self-center w-52 sm:w-64 md:w-72 h-52 sm:h-64 md:h-72 animate-profile -scale-x-100"></div>
 
                     <div className="max-xs:mx-4 max-sm:mx-6 max-sm:col-span-3">
-                        <h3 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 font-semibold text-title-color">Tushar Saini
+                        <h3 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 font-bold text-title-color">Tushar Saini
                             <svg className="ml-2 inline-block pb-1 h-9 md:h-full animate-wave origin-bottom"
                                 width="40"
                                 height="40"
