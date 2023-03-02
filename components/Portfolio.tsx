@@ -29,7 +29,7 @@ export default function Portfolio() {
                           className={`${activeIndex === index 
                             ? "bg-title-color-dark text-container-color"
                             : "hover:text-title-color-dark"}
-                            py-1 px-3 hover:cursor-pointer rounded-lg`}
+                            py-1 px-3 hover:cursor-pointer rounded-lg duration-300`}
                         >{d}</li>
                     )}
                 </ul>
@@ -51,8 +51,8 @@ const Project = ({ data }: { data: any }) => {
                     {data.techstack}
                 </div>
                 <div className="inline-flex items-center gap-x-3 text-title-color">
-                    <Link href={data.github} target="_blank" className="text-[1.7rem] hover:text-title-color-dark" aria-label="link"><GitHub fontSize="inherit" /></Link>
-                    <Link href={data.url} target="_blank" className="text-3xl hover:text-title-color-dark" aria-label="link"><OutboundOutlined fontSize="inherit" /></Link>
+                    <Link href={data.github} target="_blank" className="text-[1.7rem] hover:text-title-color-dark duration-300" aria-label="link"><GitHub fontSize="inherit" /></Link>
+                    <Link href={data.url} target="_blank" className="text-3xl hover:text-title-color-dark duration-300" aria-label="link"><OutboundOutlined fontSize="inherit" /></Link>
                 </div>
             </div>
         </div>

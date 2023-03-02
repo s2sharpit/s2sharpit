@@ -13,14 +13,14 @@ export default function Header() {
 
     const handleClickClose = useCallback((event: any, id: string) => {
         // event.preventDefault();
-        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+        document.getElementById(id)?.scrollIntoView();
         setMenu(false);
         setActiveNav(id);
     }, []);
     
     const handleClose = useCallback((e: any) => {
         if (menuRef.current && !menuRef.current?.contains(e.target)) {
-            setMenu(false)
+            setMenu(false);
         }
     }, [menuRef]);
     

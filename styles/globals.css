@@ -51,6 +51,10 @@
 
 @layer components {
 
+  html {
+    @apply scroll-smooth;
+  }
+
   section {
     @apply pt-8 sm:pt-24 pb-8;
   }

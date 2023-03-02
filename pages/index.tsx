@@ -21,10 +21,20 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Tushar Saini - s2sharpit</title>
-        <meta name="description" content="Welcome to Tushar Saini portfolio, also known as s2sharpit." />
+        <title>Tushar Saini - Portfolio</title>
+        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Welcome to Tushar Saini's portfolio, also known as s2sharpit." />
+        <meta name="image" content="https://s2sharpit.me/_next/image?url=%2Fs2sharpit.webp&w=828&q=75" />
+        <meta name="author" content="s2sharpit" />
+        <meta property="og:title" name="og:title" content="Tushar Saini - Portfolio" />
+        <meta property="og:type" name="og:type" content="website" />
+        <meta property="og:image" name="og:image" content="https://s2sharpit.me/_next/image?url=%2Fs2sharpit.webp&w=828&q=75" />
+        <meta property="og:url" name="og:url" content="https://s2sharpit.me" />
+        <meta property="og:description" name="og:description" content="Welcome to Tushar Saini's portfolio, also known as s2sharpit." />
+
         <link rel="icon" href="/ts.ico" />
+        <link rel="canonical" href="https://s2sharpit.me" />
       </Head>
       <main className={`${poppins.variable} font-sans text-text-color bg-body-color`}>
         <Header />

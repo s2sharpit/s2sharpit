@@ -18,7 +18,7 @@ export default function About() {
 
                     <p className="max-w-md mx-auto px-4 mb-8 md:mb-10 text-sm text-justify">I am a <b>software engineer</b> with <b>experience</b> in <b>web development</b> and <b>UI/UX design.</b> I have a passion for <b>creating intuitive</b> and <b>visually appealing</b> interfaces that <b>enhance</b> user experience. With a strong foundation in <b>computer science</b> and <b>design principles</b>, I can deliver <b>high-quality</b> products that meet the needs of my <b>clients.</b> I am always looking for new challenges and opportunities to learn and grow as a <b>developer</b>.</p>
 
-                    <Link target="_blank" href={"https://drive.google.com/file/d/16Bn8xX8vIYZ4tNV3Axu7T6dLeI4-dXQG/view?usp=sharing"} className="bg-title-color text-container-color mx-4 md:mx-8 py-4 md:py-5 px-7 md:px-8 rounded-2xl font-medium hover:bg-title-color-dark inline-flex items-center">
+                    <Link target="_blank" href={"https://drive.google.com/file/d/16Bn8xX8vIYZ4tNV3Axu7T6dLeI4-dXQG/view?usp=sharing"} className="bg-title-color text-container-color mx-4 md:mx-8 py-4 md:py-5 px-7 md:px-8 rounded-2xl font-medium hover:bg-title-color-dark inline-flex items-center duration-300">
                         Download CV
                         <svg
                             className="ml-2"
