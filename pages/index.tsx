@@ -27,6 +27,7 @@ export default function Home() {
         <meta name="description" content="Welcome to Tushar Saini's portfolio, also known as s2sharpit." />
         <meta name="image" content="https://s2sharpit.me/_next/image?url=%2Fs2sharpit.webp&w=828&q=75" />
         <meta name="author" content="s2sharpit" />
+        <meta name='keywords' content='s2sharpit,Tushar,Saini,TusharSaini,Tushars2sharpit,sainis2sharpit,portfolio,bharat' />
         <meta property="og:title" name="og:title" content="Tushar Saini - Portfolio" />
         <meta property="og:type" name="og:type" content="website" />
         <meta property="og:image" name="og:image" content="https://s2sharpit.me/_next/image?url=%2Fs2sharpit.webp&w=828&q=75" />
@@ -35,6 +36,7 @@ export default function Home() {
 
         <link rel="icon" href="/ts.ico" />
         <link rel="canonical" href="https://s2sharpit.me" />
+        <link rel="author" href="https://s2sharpit.me" />
       </Head>
       <main className={`${poppins.variable} font-sans text-text-color bg-body-color`}>
         <Header />
