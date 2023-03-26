@@ -5,7 +5,7 @@ const portfolioData =  [
         techstack: "ReactJs, TailwindCSS",
         type: "Web",
         github: "https://github.com/s2sharpit/school",
-        url: "https://gh.s2sharpit.me/school/",
+        url: "https://bsseniorsecondaryschool.in/",
     },
     {
         title: "Tic-tac-toe",
