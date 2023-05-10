@@ -18,7 +18,7 @@ const navData = [
     icon: <MdOutlineBusinessCenter />,
   },
   {
-    name: "portfolio",
+    name: "projects",
     icon: <MdOutlineImage />,
   },
   {

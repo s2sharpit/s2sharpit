@@ -1,4 +1,4 @@
-const portfolioData =  [
+const projectData =  [
     {
         title: "School Website",
         img: "1",
@@ -33,4 +33,4 @@ const portfolioData =  [
     },
 ]
 
-export default portfolioData;
+export default projectData;

@@ -4,7 +4,7 @@ import { useState } from "react";
 
 var val = 0;
 
-export default function Port() {
+export default function Proj() {
   const [activeIndex, setActiveIndex] = useState(val);
   const types = ["All", "Web", "App"];  
 

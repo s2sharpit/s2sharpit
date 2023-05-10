@@ -1,7 +1,5 @@
-import { Skills, About, Main, Services, Qualification } from "@/components/sections";
+import { Skills, About, Main, Services, Qualification, Projects } from "@/components/sections";
 import Contact from "@/components/sections/Contact";
-import Portfolio from "@/components/sections/Portfolio";
-
 export default function Home() {
   return (
     <main className="min-h-screen max-w-4xl mx-auto px-8">
@@ -10,7 +8,7 @@ export default function Home() {
       <Skills />
       <Services />
       <Qualification />
-      <Portfolio />
+      <Projects />
       <Contact />
     </main>
   );

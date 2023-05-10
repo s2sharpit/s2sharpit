@@ -1,28 +1,26 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaArrowCircleUp } from "react-icons/fa";
 import { Section, Subtle, Title, Wrapper } from "@/components/ui";
-import Port, { val } from "@/components/clients/Port";
-import portfolioData from "@/data/portfolioData";
+import Proj, { val } from "@/components/clients/Proj";
+import projectData from "@/data/projectData";
 import { useMemo } from "react";
 
-export default function Portfolio() {
+export default function Projects() {
   const types = useMemo(() => ["All", "Web", "App"], []);
   
   const filteredData = useMemo(() => {
-    return portfolioData.filter((data) => {
-      return val === 0 || data.type === types[val];
+    return projectData.filter((data) => {
+      return val === 0 || data.type === types[0];
     });
   }, [types]);
 
   return (
-    <Section id="portfolio">
-      <Title className="title">Portfolio</Title>
+    <Section id="projects">
+      <Title className="title">Projects</Title>
       <Subtle className="subTitle">Most Recent Works</Subtle>
       <Wrapper>
-        <Port />
+        <Proj />
         <div className="grid gap-6 xs:grid-cols-[350px] sm:grid-cols-[350px] md:grid-cols-2 sm:gap-8 md:gap-12 justify-center lg:px-8">
           {filteredData.map((data) => (
             <Project key={data.title} data={data} />

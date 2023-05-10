@@ -5,6 +5,9 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import navData from "@/data/navData";
 import { useTheme } from "next-themes";
 import { Button, Scroll } from "@/components/ui";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/Button";
 
 export default function Header() {
   const { theme, setTheme } = useTheme();
@@ -68,14 +71,20 @@ export default function Header() {
       className="max-md:shadow-header w-full fixed max-md:bottom-0 md:top-0 left-0 z-50 bg-white md:bg-neutral-50"
     >
       <nav className="max-w-4xl px-4 md:mx-auto h-14 md:h-16 flex justify-between items-center gap-4 bg-inherit">
-        <Button variant={'link'} className="lowercase" onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+        {/* <Button variant={'link'} className="lowercase" onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
           <abbr
             title="Change Theme"
             className="no-underline"
           >
             s2sharpit
           </abbr>
-        </Button>
+        </Button> */}
+        <Link
+          href={"/"}
+          className={cn(buttonVariants({ variant: "link" }), "lowercase")}
+        >
+          s2sharpit
+        </Link>
 
         <div
           className={`${

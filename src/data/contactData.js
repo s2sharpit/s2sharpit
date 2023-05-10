@@ -6,19 +6,19 @@ const contactData = [
         title: "Email",
         desc: "s2sharpit@gmail.com",
         url: "mailto:s2sharpit@gmail.com",
-        icon: <MdForwardToInbox className="text-title-color mb-1" />,
+        icon: <MdForwardToInbox />,
     },
     {
         title: "LinkedIn",
         desc: "s2sharpit",
         url: "https://www.linkedin.com/in/s2sharpit/",
-        icon: <FaLinkedin className="text-title-color mb-1" />,
+        icon: <FaLinkedin />,
     },
     {
         title: "Twitter",
         desc: "@s2sharpit",
         url: "https://twitter.com/s2sharpit",
-        icon: <FaTwitter className="text-title-color mb-1" />,
+        icon: <FaTwitter />,
     },
 ];
 
