@@ -3,17 +3,27 @@ import Link from "next/link";
 import { FaGithub, FaArrowCircleUp } from "react-icons/fa";
 import { Section, Subtle, Title, Wrapper } from "@/components/ui";
 import Proj, { val } from "@/components/clients/Proj";
-import projectData from "@/data/projectData";
 import { useMemo } from "react";
 
-export default function Projects() {
+interface Project {
+  title: string;
+  img: string;
+  techstack: string;
+  type: string;
+  github: string;
+  url: string;
+}
+
+export default async function Projects() {
   const types = useMemo(() => ["All", "Web", "App"], []);
-  
-  const filteredData = useMemo(() => {
-    return projectData.filter((data) => {
-      return val === 0 || data.type === types[0];
-    });
-  }, [types]);
+  let value = 0;
+
+  const req = await fetch("http://localhost:3000/api/projects");
+  const projectData: Project[] = await req.json();
+
+  const filteredData = await projectData.filter((data) => {    
+    return value === 0 || data.type === types[value];
+  });
 
   return (
     <Section id="projects">
@@ -31,14 +41,6 @@ export default function Projects() {
   );
 }
 
-interface Project {
-  title: string;
-  img: string;
-  techstack: string;
-  type: string;
-  github: string;
-  url: string;
-}
 
 const Project = ({ data }: { data: Project }) => {
   return (

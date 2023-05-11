@@ -3,9 +3,22 @@ import { MdOutlineCalendarMonth } from "react-icons/md";
 import Link from "next/link";
 import { Section, Subtle, Title, Wrapper } from "@/components/ui";
 import QualiCli, { val } from "@/components/clients/QualiCli";
-import qualifiData from "@/data/qualifiData";
 
-export default function Qualification() {
+interface Qualifi {
+  key: number;
+  quali: {
+    name: string;
+    desc: string;
+    duration: string;
+    url?: string;
+  }[];
+}
+
+export default async function Qualification() {
+
+  const req = await fetch("http://localhost:3000/api/quali");
+  const qualifiData: Qualifi[] = await req.json();
+
   return (
     <Section id="qualification">
       <Title className="title">Qualification</Title>
@@ -23,19 +36,8 @@ export default function Qualification() {
   );
 }
 
-interface Qualifi {
-  key: number;
-  quali: {
-    name: string;
-    desc: string;
-    duration: string;
-    url?: string;
-  }[];
-}
 function Qualifi({ data }: { data: Qualifi }) {
-  let toggle = false;
-  // console.log(getDynamicValue());
-  
+  let toggle = false;  
   
   function Quali({ data }: { data: Qualifi["quali"][number] }) {
     toggle = !toggle;

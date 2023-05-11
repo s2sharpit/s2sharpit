@@ -1,8 +1,17 @@
 import { MdOutlineVerified } from "react-icons/md";
-import skillData from "@/data/skillData";
 import { Section, Subtle, Title, Wrapper } from "@/components/ui";
 
-export default function Skills() {
+interface Skill {
+  title: string;
+  end: {
+    name: string;
+    level: string;
+  }[];
+};
+
+export default async function Skills() {
+    const req = await fetch("http://localhost:3000/api/skills");
+    const skillData: Skill[] = await req.json();
     return (
         <Section id="skills">
             <Title>Skills</Title>
@@ -14,15 +23,7 @@ export default function Skills() {
     )
 }
 
-interface End {
-    title: string;
-    end: {
-        name: string;
-        level: string;
-    }[]
-}
-
-function End({ data }: { data: End }) {
+function End({ data }: { data: Skill }) {
     return (
         <div className="container bg-white border p-5 xs:p-6 lg:p-10 rounded-3xl">
             <h3 className="font-medium text-neutral-700 text-center mb-6">{data.title}</h3>
@@ -33,7 +34,7 @@ function End({ data }: { data: End }) {
     )
 }
 
-function Skill({ data }: { data: End["end"][number] }) {
+function Skill({ data }: { data: Skill["end"][number] }) {
     return (
       <div className="flex gap-x-2">
         <MdOutlineVerified className="text-neutral-700 mt-0.5 text-xl" />
