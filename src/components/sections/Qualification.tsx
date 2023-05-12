@@ -1,4 +1,3 @@
-"use client";
 import { MdOutlineCalendarMonth } from "react-icons/md";
 import Link from "next/link";
 import { Section, Subtle, Title, Wrapper } from "@/components/ui";
