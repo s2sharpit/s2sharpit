@@ -17,8 +17,8 @@ interface Qualifi {
 export default async function Qualification() {
 
   const req = await fetch(`${process.env.URL}/api/quali`);
-  const qualifiData: Qualifi[] = (!req.ok) ? [] : await req.json();  
-
+  const qualifiData: Qualifi[] = (!req.ok) ? [] : await req.json();
+  
   return (
     <Section id="qualification">
       <Title className="title">Qualification</Title>
@@ -38,6 +38,7 @@ export default async function Qualification() {
 
 function Qualifi({ data }: { data: Qualifi }) {
   let toggle = false;  
+  const value = 1;
   
   function Quali({ data }: { data: Qualifi["quali"][number] }) {
     toggle = !toggle;
@@ -69,7 +70,7 @@ function Qualifi({ data }: { data: Qualifi }) {
 
   }
   return (
-    <div className={val === data.key ? "" : "hidden"}>
+    <div className={value === data.key ? "" : "hidden"}>
       {data.quali.map((data) => (
         <Quali key={data.name} data={data} />
       ))}
