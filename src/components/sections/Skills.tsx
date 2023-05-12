@@ -10,17 +10,23 @@ interface Skill {
 };
 
 export default async function Skills() {
-    const req = await fetch("http://localhost:3000/api/skills");
-    const skillData: Skill[] = await req.json();
-    return (
-        <Section id="skills">
-            <Title>Skills</Title>
-            <Subtle>My Technical Level</Subtle>
-            <Wrapper variant={'skill'}>
-                {skillData.map(data => <End key={data.title} data={data} />)}
-            </Wrapper>
-        </Section>
-    )
+  
+  const req = await fetch(`${process.env.URL}/api/skills`);
+  const skillData: Skill[] = await req.json();
+
+  // if (!qualifiData.ok) return [];
+
+  return (
+    <Section id="skills">
+      <Title>Skills</Title>
+      <Subtle>My Technical Level</Subtle>
+      <Wrapper variant={"skill"}>
+        {skillData.map((data) => (
+          <End key={data.title} data={data} />
+        ))}
+      </Wrapper>
+    </Section>
+  );
 }
 
 function End({ data }: { data: Skill }) {

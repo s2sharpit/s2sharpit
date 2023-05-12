@@ -16,8 +16,10 @@ interface Qualifi {
 
 export default async function Qualification() {
 
-  const req = await fetch("http://localhost:3000/api/quali");
+  const req = await fetch(`${process.env.URL}/api/quali`);
   const qualifiData: Qualifi[] = await req.json();
+
+  // if (!qualifiData.ok) return [];
 
   return (
     <Section id="qualification">

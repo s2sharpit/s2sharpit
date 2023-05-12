@@ -18,10 +18,12 @@ export default async function Projects() {
   const types = useMemo(() => ["All", "Web", "App"], []);
   let value = 0;
 
-  const req = await fetch("http://localhost:3000/api/projects");
+  const req = await fetch(`${process.env.URL}/api/projects`);
   const projectData: Project[] = await req.json();
 
-  const filteredData = await projectData.filter((data) => {    
+  // if (!qualifiData.ok) return [];
+
+  const filteredData = await projectData.filter((data) => {
     return value === 0 || data.type === types[value];
   });
 
