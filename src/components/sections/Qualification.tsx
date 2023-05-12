@@ -17,9 +17,7 @@ interface Qualifi {
 export default async function Qualification() {
 
   const req = await fetch(`${process.env.URL}/api/quali`);
-  const qualifiData: Qualifi[] = await req.json();
-
-  // if (!qualifiData.ok) return [];
+  const qualifiData: Qualifi[] = (!req.ok) ? [] : await req.json();  
 
   return (
     <Section id="qualification">
@@ -29,7 +27,7 @@ export default async function Qualification() {
         <QualiCli />
         <div className="max-w-sm mx-auto">
           {/* 2 times */}
-          {qualifiData.map((data) => (
+          {qualifiData.map((data: any) => (
             <Qualifi key={data.key} data={data} />
           ))}
         </div>

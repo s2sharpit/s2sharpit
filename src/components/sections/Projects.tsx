@@ -19,9 +19,7 @@ export default async function Projects() {
   let value = 0;
 
   const req = await fetch(`${process.env.URL}/api/projects`);
-  const projectData: Project[] = await req.json();
-
-  // if (!qualifiData.ok) return [];
+  const projectData: Project[] = !req.ok ? [] : await req.json();
 
   const filteredData = await projectData.filter((data) => {
     return value === 0 || data.type === types[value];

@@ -10,9 +10,9 @@ interface Skill {
 };
 
 export default async function Skills() {
-  
+
   const req = await fetch(`${process.env.URL}/api/skills`);
-  const skillData: Skill[] = await req.json();
+  const skillData: Skill[] = !req.ok ? [] : await req.json();
 
   // if (!qualifiData.ok) return [];
 
