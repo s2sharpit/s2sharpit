@@ -26,7 +26,7 @@ export default async function Qualification() {
         <QualiCli />
         <div className="max-w-sm mx-auto">
           {/* 2 times */}
-          {qualifiData.map((data: any) => (
+          {qualifiData.map((data) => (
             <Qualifi key={data.key} data={data} />
           ))}
         </div>
