@@ -1,8 +1,8 @@
-import Footer from '@/components/sections/Footer';
-import './globals.css'
-import { Poppins } from 'next/font/google'
-import Header from '@/components/sections/Header';
-import { Metadata } from 'next';
+import Footer from "@/components/sections/Footer";
+import "./globals.css";
+import { Poppins } from "next/font/google";
+import Header from "@/components/sections/Header";
+import { Metadata } from "next";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -15,11 +15,20 @@ export const metadata: Metadata = {
     default: "Tushar Saini",
     template: "%s | Tushar Saini",
   },
-  description: "Developer, Software Engineer, and UX Designer",
-  keywords: ['s2sharpit', 'Tushar', 'Saini', 'TusharSaini','Tushars2sharpit', 'sainis2sharpit', 'portfolio', 'bharat'],
+  description: "Software Engineer",
+  keywords: [
+    "s2sharpit",
+    "Tushar",
+    "Saini",
+    "TusharSaini",
+    "Tushars2sharpit",
+    "sainis2sharpit",
+    "portfolio",
+    "bharat",
+  ],
   openGraph: {
     title: "Tushar Saini",
-    description: "Developer, Software Engineer, and UX Designer",
+    description: "Software Engineer",
     url: "https://s2sharpit.me",
     siteName: "Tushar Saini",
     images: [
@@ -55,11 +64,13 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} text-neutral-500 bg-neutral-50 dark:bg-neutral-950`}>
+      <body
+        className={`${poppins.className} text-neutral-500 bg-neutral-50 dark:bg-neutral-950`}
+      >
         <Header />
         {children}
         <Footer />
