@@ -11,16 +11,24 @@ interface Project {
 }
 
 export default async function Projects() {
-  const req = await fetch(`${process.env.URL}/api/projects`);
-  const projectData: Project[] = !req.ok ? [] : await req.json();
+  try {
+    const req = await fetch(`${process.env.URL}/api/projects`);
+    if (!req.ok) {
+      throw new Error("Failed to fetch project data");
+    }
+    const projectData: Project[] = await req.json();
 
-  return (
-    <Section id="projects">
-      <Title className="title">Projects</Title>
-      <Subtle className="subTitle">Most Recent Works</Subtle>
-      <Wrapper>
-        <Proj projectData={projectData}/>
-      </Wrapper>
-    </Section>
-  );
+    return (
+      <Section id="projects">
+        <Title className="title">Projects</Title>
+        <Subtle className="subTitle">Most Recent Works</Subtle>
+        <Wrapper>
+          <Proj projectData={projectData} />
+        </Wrapper>
+      </Section>
+    );
+  } catch (error) {
+    console.error(error);
+    return <div>Error: Failed to fetch project data</div>;
+  }
 }
