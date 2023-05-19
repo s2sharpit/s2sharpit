@@ -60,13 +60,14 @@ export default function Contact() {
 
 function Card({ data }: { data: any }) {
     return (
-      <div className="bg-white border p-4 rounded-xl grid place-items-center">
+      <div className="container bg-white border p-4 rounded-xl grid place-items-center">
         <span className="text-2xl text-neutral-700">{data.icon}</span>
         <h3 className="text-sm font-medium">{data.title}</h3>
         <span className="text-sm block mb-3">{data.desc}</span>
 
         <Link
           href={data.url}
+          target="_blank"
           className="group text-sm inline-flex items-center gap-x-1"
         >
           Write Me

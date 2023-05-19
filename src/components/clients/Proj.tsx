@@ -4,6 +4,7 @@ import { FaGithub, FaArrowCircleUp } from "react-icons/fa";
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
+import { LayoutGroup, motion } from "framer-motion";
 
 var val = 0;
 interface Project {
@@ -26,21 +27,34 @@ export default function Proj({projectData}: {projectData: Project[]}) {
   val = activeIndex;
   return (
     <>
-      <ul className="flex items-center gap-4 justify-center mb-2 text-lg font-medium text-neutral-700">
-        {types.map((item, index) => (
-          <li
-            key={item}
-            onClick={() => setActiveIndex(index)}
-            className={`${
-              activeIndex === index
-                ? "bg-neutral-900 text-white"
-                : "hover:text-neutral-800"
-            } py-1 px-3 hover:cursor-pointer rounded-lg duration-300`}
-          >
-            {item}
-          </li>
-        ))}
-      </ul>
+      <LayoutGroup>
+        <ul className="flex items-center gap-4 justify-center mb-2 text-lg font-medium text-neutral-700">
+          {types.map((item, index) => (
+            <li
+              key={item}
+              onClick={() => setActiveIndex(index)}
+              className={`${
+                activeIndex === index
+                  ? "text-white"
+                  : "hover:text-neutral-800"
+              } relative py-1 px-3 hover:cursor-pointer rounded-lg duration-300`}
+            >
+              {item}
+              {index === activeIndex ? (
+                <motion.div
+                  className="absolute inset-0 bg-neutral-800 rounded-md z-[-1]"
+                  layoutId="sidebar"
+                  transition={{
+                    type: "spring",
+                    stiffness: 350,
+                    damping: 30,
+                  }}
+                />
+              ) : null}
+            </li>
+          ))}
+        </ul>
+      </LayoutGroup>
       <div className="grid gap-6 xs:grid-cols-[350px] sm:grid-cols-[350px] md:grid-cols-2 sm:gap-8 md:gap-12 justify-center lg:px-8">
         {filteredData.map((data) => (
           <Project key={data.title} data={data} />
@@ -52,7 +66,7 @@ export default function Proj({projectData}: {projectData: Project[]}) {
 
 const Project = ({ data }: { data: Project }) => {
   return (
-    <div className="bg-white border p-5 rounded-2xl">
+    <div className="container bg-white border p-5 rounded-2xl">
       <Image
         priority
         quality={100}

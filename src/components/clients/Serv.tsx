@@ -47,7 +47,7 @@ export default function ServCli ({ data }: { data: Serv }) {
           <ul className="grid gap-6 gap-y-3">
             {data.ul.map(({ li }) => (
               <li key={li} className="flex items-center gap-x-2">
-                <MdOutlineCheckCircle className="text-neutral-700 text-xl" />
+                <MdOutlineCheckCircle className="text-neutral-700 text-xl min-w-fit" />
                 <p className="text-sm">{li}</p>
               </li>
             ))}
