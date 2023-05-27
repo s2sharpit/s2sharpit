@@ -14,7 +14,7 @@ You can learn more about the `app/` directory [here](https://nextjs.org/docs).
 
 ## Running Locally
 
-This application requires Node.js v16.13+.
+This application requires Node.js v16.13+ and Next.js 13.4+ .
 
 ```bash
 git clone https://github.com/s2sharpit/s2sharpit.github.io.git
