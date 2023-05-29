@@ -30,7 +30,7 @@ export default function ServCli ({ data }: { data: Serv }) {
       >
         <div className="container w-[500px] relative bg-white pt-16 pb-10 px-10 rounded-3xl">
           <Button
-            variant={"link"}
+            variant={"ghost"}
             onClick={() => setState(false)}
             className="absolute top-4 right-4 text-xl"
           >

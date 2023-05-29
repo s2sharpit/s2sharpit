@@ -36,7 +36,7 @@ export default function Proj({projectData}: {projectData: Project[]}) {
               className={`${
                 activeIndex === index
                   ? "text-white"
-                  : "hover:text-neutral-800"
+                  : "hover:text-neutral-800 hover:bg-neutral-200/60"
               } relative py-1 px-3 hover:cursor-pointer rounded-lg duration-300`}
             >
               {item}

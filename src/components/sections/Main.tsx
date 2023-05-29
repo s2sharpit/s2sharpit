@@ -50,7 +50,7 @@ export default function Main() {
         </div>
 
         <div className="ml-[7.5rem] md:ml-28 max-sm:hidden">
-          <Scroll to="about" variant={"link"} className="group">
+          <Scroll to="about" variant={"ghost"} className="group">
             <Svg.Mouse />
             <span className="ml-0.5">
               Scroll Down
