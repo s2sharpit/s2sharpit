@@ -23,4 +23,4 @@ npm install
 npm run dev
 ```
 
-Create a `.env.local` file similar to [`example.env.local`](https://github.com/s2sharpit/s2sharpit.github.io/blob/next/example.env.local).
+Create a `.env.local` file similar to [`.env.example`](https://github.com/s2sharpit/s2sharpit.github.io/blob/next/example.env.local).
