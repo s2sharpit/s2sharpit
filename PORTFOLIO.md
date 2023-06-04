@@ -8,7 +8,7 @@
 
 In May 2023, I refactored my site to use the new `app/` directory in Next.js 13. I went ahead and shipped it, but there are still a few errors I want to fix:
 
-- [ ] [Qualification, and Projects Section having issues to share data with client components](https://github.com/s2sharpit/s2sharpit.github.io/issues/2)
+- No Issues as for now.
 
 You can learn more about the `app/` directory [here](https://nextjs.org/docs).
 
