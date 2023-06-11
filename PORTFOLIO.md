@@ -1,4 +1,4 @@
-# s2sharpit.me
+# [s2sharpit.me](https://s2sharpit.me)
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Deployment**: [Vercel](https://vercel.com)
