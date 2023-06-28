@@ -1,0 +1,128 @@
+body {
+  background: #100720;
+  color: #f2f2f2;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pic {
+  padding: 15px;
+  display: flex;
+  gap: 50px;
+}
+
+img {
+  height: 200px;
+  border-radius: 1rem;
+  /* border: 1px solid #000; */
+  transition: all 0.2s;
+}
+
+img:hover {
+  transform: scale(0.98);
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 0.7;
+  float: right;
+  height: fit-content;
+}
+h1:hover {
+  text-decoration: overline;
+}
+
+span {
+  float: right;
+}
+
+.links {
+  padding: 70px;
+  float: right;
+}
+
+a {
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.secondary {
+  padding: 0 100px 0 150px;
+}
+
+h2 {
+  padding: 10px 0;
+  font-size: 33px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.items div,
+ul {
+  padding: 5px;
+  text-align: center;
+  background-color: #000000;
+  border: solid 1px #c3c3c3;
+  cursor: pointer;
+}
+
+ul {
+  display: none;
+  cursor: auto;
+  margin: 0;
+}
+
+li {
+  margin: 15px;
+  display: inline-flex;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+form {
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+input,
+textarea {
+  font-size: 19px;
+  padding: 4px 9px;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 7px;
+  width: fit-content;
+  background-color: #eee;
+  border: solid 1px #c3c3c3;
+}
+input[type="submit"] {
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+form div {
+  display: flex;
+  gap: 40px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.submitReset input {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 7px;
+}

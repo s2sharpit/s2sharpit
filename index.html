@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <link rel='stylesheet' href='main.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle("fast");
+            });
+            $("#fl").click(function () {
+                $("#pa").slideToggle("fast");
+            });
+            $("#fli").click(function () {
+                $("#pan").slideToggle("fast");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="pic">
+            <img src="https://s2sharpit.me/_next/image?url=%2Fs2sharpit.jpeg&w=828&q=100" alt="my pic" class="">
+            <h1>Tushar <br> <span>Saini</span> </h1>
+        </div>
+        <div class="links">
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="secondary">
+        <h2>About</h2>
+        <div class="items">
+
+            <div id="flip">Tushar Saini +</div>
+            <ul id="panel">
+                <li>PROGRAMMER</li>
+                <li>CEO</li>
+                <li>STUDENT</li>
+            </ul>
+            <div id="fl">Aparesh Kumar +</div>
+            <ul id="pa">
+                <li>GAMER</li>
+                <li>PROFESSIONAL AUDIENCE</li>
+                <li>STUDENT</li>
+            </ul>
+            <div id="fli">Adnan Shahid +</div>
+            <ul id="pan">
+                <li>TOPPER</li>
+                <li>PLAYER</li>
+                <li>STUDENT</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
