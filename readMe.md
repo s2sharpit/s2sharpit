@@ -8,6 +8,10 @@
 
 🔹 I’m currently learning **Flutter**
 
+🔸 I’m looking to collaborate on **OpenSource Projects** & **Frontend Projects**
+
+🔹 Ask me about **React, Next, JavaScript, HTML, CSS, Git & Github**
+
 <div>
   <!-- <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fs2sharpit%2Fs2sharpit&label=VISITORS&labelColor=%23000&countColor=%230A0209" /> -->
   <h3>Connect with me:</h3>
