@@ -13,6 +13,10 @@
 
 🔸 I’m looking to collaborate on **OpenSource Projects** & **Frontend Projects**
 
+🔹 If you have any project idea or want to work together then feel free to contact me!
+
+🔸Global rank [#12](https://gssoc.girlscript.tech/leaderboard) in [GSSoC'23](https://gssoc.girlscript.tech).
+
 🔹 Ask me about **React, Next, JavaScript, HTML, CSS, Git & Github**
 
 <div>
