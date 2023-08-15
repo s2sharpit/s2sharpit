@@ -1,12 +1,23 @@
 <h1 align="center">नमस्ते (Namaste)🙏, I'm Tushar Saini</h1>
-<h3 align="center">An enthusiastic MERN Developer</h3>
+<h3 align="center">An enthusiastic MERN Developer with NextJs</h3>
 <br>
 
 <img src = "https://www.puttiapps.com/wp-content/uploads/2021/05/stats.gif" alt="Laptop GIF" width="25%" align="right">
 
+## <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="40"> **About Me:**
+
+
 🔸 I’m continuously working on improving my skillset.
 
 🔹 I’m currently learning **Flutter**
+
+🔸 I’m looking to collaborate on **OpenSource Projects** & **Frontend Projects**
+
+🔹 If you have any project idea or want to work together then feel free to contact me!
+
+🔸Global rank [#12](https://gssoc.girlscript.tech/leaderboard) in [GSSoC'23](https://gssoc.girlscript.tech).
+
+🔹 Ask me about **React, Next, JavaScript, HTML, CSS, Git & Github**
 
 <div>
   <!-- <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fs2sharpit%2Fs2sharpit&label=VISITORS&labelColor=%23000&countColor=%230A0209" /> -->
