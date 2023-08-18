@@ -15,7 +15,7 @@ const contactData = [
         icon: <FaLinkedin />,
     },
     {
-        title: "X",
+        title: "Twitter",
         desc: "@s2sharpit",
         url: "https://x.com/s2sharpit",
         icon: <FaTwitter />,

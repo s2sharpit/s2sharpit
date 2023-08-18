@@ -12,8 +12,8 @@ const profileData = [
     icon: <FaGithub />,
   },
   {
-    name: "Twitter",
-    url: "https://twitter.com/s2sharpit",
+    name: "X",
+    url: "https://x.com/s2sharpit",
     icon: <FaTwitter />,
   },
   {
