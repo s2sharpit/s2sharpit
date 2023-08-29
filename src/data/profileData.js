@@ -1,4 +1,6 @@
-import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaTwitter, FaRegEnvelope } from "react-icons/fa";
+import { MdMailOutline } from "react-icons/md";
+// import { SiGmail } from "react-icons/si";
 
 const profileData = [
   {
@@ -17,9 +19,9 @@ const profileData = [
     icon: <FaTwitter />,
   },
   {
-    name: "Instagram",
-    url: "https://instagram.com/s2sharpit",
-    icon: <FaInstagram />,
+    name: "Email",
+    url: "mailto:s2sharpit@gmail.com",
+    icon: <MdMailOutline />,
   },
 ];
 
