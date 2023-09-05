@@ -9,12 +9,12 @@ import { Button, Section, Subtle, Title, Wrapper } from "@/components/ui";
 
 export default function Contact() {
     const form = useRef<HTMLFormElement>(null);
-    const [state, setState] = useState<boolean>();
+    // const [state, setState] = useState<boolean>();
 
-    const handleToggle = (toggle: boolean) => {
-        setState(toggle);
-        setTimeout(() => setState(undefined), 2000);
-    }
+    // const handleToggle = (toggle: boolean) => {
+    //     setState(toggle);
+    //     setTimeout(() => setState(undefined), 2000);
+    // }
 
     return (
         <Section id="contact">
