@@ -1,5 +1,5 @@
 import { MdForwardToInbox } from "react-icons/md";
-import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 const contactData = [
     {
@@ -18,7 +18,7 @@ const contactData = [
         title: "X",
         desc: "@s2sharpit",
         url: "https://x.com/s2sharpit",
-        icon: <FaTwitter />,
+        icon: <FaXTwitter />,
     },
 ];
 
