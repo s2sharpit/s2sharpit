@@ -1,5 +1,5 @@
 <h1 align="center">नमस्ते (Namaste)🙏, I'm Tushar Saini</h1>
-<h3 align="center">An enthusiastic MERN Developer with NextJs</h3>
+<h3 align="center">An aspiring Software Engineer with experience in Java, MERN stack, and NextJs,</h3>
 <br>
 
 <img src = "https://www.puttiapps.com/wp-content/uploads/2021/05/stats.gif" alt="Laptop GIF" width="25%" align="right">
@@ -8,7 +8,8 @@
 
 🔸 I’m continuously working on improving my skillset.
 
-🔹 I’m currently learning **Flutter**
+<!-- 🔹 I’m currently learning **Flutter** -->
+🔹 I’m currently learning **Data Structure and Alogroithms**
 
 🔸 I’m looking to collaborate on **OpenSource Projects** & **Frontend Projects**
 
@@ -18,13 +19,13 @@
 
 🔹 Ask me about **React, Next, JavaScript, HTML, CSS, Git & Github**
 
-<div>
-  <!-- <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fs2sharpit%2Fs2sharpit&label=VISITORS&labelColor=%23000&countColor=%230A0209" /> -->
+<!-- <div>
+  <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fs2sharpit%2Fs2sharpit&label=VISITORS&labelColor=%23000&countColor=%230A0209" />
   <h3>Connect with me:</h3>
   <a href="https://www.linkedin.com/in/s2sharpit/"><img src="https://img.shields.io/badge/LinkedIn-d5d5d5?style=for-the-badge&logo=linkedin&logoColor=0A0209"/></a>
   <a href="mailto:s2sharpit@gmail.com"><img src="https://img.shields.io/badge/Gmail-d5d5d5?style=for-the-badge&logo=gmail&logoColor=0A0209" /></a>
-  <a href="https://twitter.com/s2sharpit"><img src="https://img.shields.io/badge/twitter-d5d5d5?style=for-the-badge&logo=twitter&logoColor=0A0209" alt="Anmol#7140" ></a>
-</div>
+  <a href="https://twitter.com/s2sharpit"><img src="https://img.shields.io/badge/twitter-d5d5d5?style=for-the-badge&logo=twitter&logoColor=0A0209" alt="s2sharpit#0572" ></a>
+</div> -->
 
 <!-- <div>
 <h3 align="left">Languages and Tools:</h3>
