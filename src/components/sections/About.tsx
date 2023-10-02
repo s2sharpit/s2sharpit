@@ -31,8 +31,8 @@ export default function About() {
           </div>
 
           <p className="max-w-md mx-auto px-4 mb-8 md:mb-10 text-sm text-justify">
-            I am a <b>software engineer</b> with <b>experience</b> in{" "}
-            <b>web development</b> and <b>UI/UX design.</b> I have a passion for
+            I am an aspiring <b>software engineer</b> with <b>experience</b> in{" "}
+            <b>web development</b> and <b>UI/UX design.</b> I have a passion for{" "}
             <b>creating intuitive</b> and <b>visually appealing</b> interfaces
             that <b>enhance</b> user experience. With a strong foundation in{" "}
             <b>computer science</b> and <b>design principles</b>, I can deliver{" "}
