@@ -28,7 +28,7 @@ export default function Main() {
             ))}
           </div>
 
-          <div className="max-xs:ml-0 max-sm:ml-6 bg-[url('../../public/s2sharpit.jpeg')] bg-no-repeat bg-center bg-cover shadow-profile sm:shadow-smProfile sm:order-1 sm:justify-self-center w-52 sm:w-64 md:w-72 h-52 sm:h-64 md:h-72 animate-profile -scale-x-100"></div>
+          <div className="max-xs:ml-0 max-sm:ml-6 bg-[url('../../public/s2sharpit.png')] bg-no-repeat bg-center bg-cover shadow-profile sm:shadow-smProfile sm:order-1 sm:justify-self-center w-52 sm:w-64 md:w-72 h-52 sm:h-64 md:h-72 animate-profile -scale-x-100"></div>
 
           <div className="max-xs:mx-4 max-sm:mx-6 max-sm:col-span-3">
             <Title size={"lg"} className="mb-3">

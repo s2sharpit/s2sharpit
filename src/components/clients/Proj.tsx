@@ -24,7 +24,6 @@ export default function Proj({projectData}: {projectData: Project[]}) {
     return activeIndex === 0 || data.type === types[activeIndex];
   });
 
-  val = activeIndex;
   return (
     <>
       <LayoutGroup>
