@@ -11,6 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://s2sharpit.me"),
   title: {
     default: "Tushar Saini",
     template: "%s | Tushar Saini",
