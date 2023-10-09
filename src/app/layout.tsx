@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: "Tushar Saini",
     images: [
       {
-        url: "https://s2sharpit.me/s2sharpit.jpeg",
+        url: "https://s2sharpit.me/s2sharpit.png",
         width: 1080,
         height: 1080,
       },
