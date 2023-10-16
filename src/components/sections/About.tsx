@@ -15,7 +15,7 @@ export default function About() {
       <Wrapper variant={'about'}>
         <Image
           priority
-          src={"/s2sharpit.jpeg"}
+          src={"/s2sharpit.png"}
           quality={100}
           width={400}
           height={400}
