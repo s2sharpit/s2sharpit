@@ -11,7 +11,7 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/dp',
+        source: '/(dp|pfp|avatar|headshot)',
         destination: "/s2sharpit.png",
         permanent: true,
       },
