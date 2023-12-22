@@ -60,7 +60,7 @@ function Qualifi({ data, val }: { data: Qualifi, val: number }) {
   let toggle = false;
 
   function Quali({ data }: { data: Qualifi["quali"][number] }) {
-    toggle = !toggle;
+    toggle =! toggle;
     return (
       <div className="group grid grid-cols-[1fr_max-content_1fr] gap-2 gap-x-6">
         <div className={`${toggle && "hidden"}`}></div>
