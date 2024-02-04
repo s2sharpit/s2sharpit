@@ -12,6 +12,8 @@
     "@types/node": "20.11.16",
     "@types/react": "18.2.52",
     "@types/react-dom": "18.2.18",
+    "@vercel/analytics": "^1.1.2",
+    "@vercel/speed-insights": "^1.0.9",
     "autoprefixer": "10.4.17",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
