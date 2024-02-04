@@ -1,38 +1,20 @@
-import { MdOutlineViewQuilt, MdCode, MdOutlineNoteAlt } from "react-icons/md";
+import { SiCodingninjas, SiGeeksforgeeks, SiLeetcode } from "react-icons/si";
 
 const serviceData = [
   {
-    title: "UI/UX Designer",
-    icon: <MdOutlineViewQuilt />,
-    ul: [
-      { li: "I develop the user interface." },
-      { li: "Web page development." },
-      { li: "I create UX element interactions." },
-      { li: "I position your company brand." },
-      { li: "Design and mocups of products for companies." },
-    ],
+    title: "GeeksforGeeks",
+    icon: <SiGeeksforgeeks />,
+    url: "https://auth.geeksforgeeks.org/user/s2sharpit",
   },
   {
-    title: "Web Developer",
-    icon: <MdCode />,
-    ul: [
-      { li: "I develop the user interface." },
-      { li: "Web page development." },
-      { li: "I create UX element interactions." },
-      { li: "I position your company brand." },
-      { li: "Design and mocups of products for companies." },
-    ],
+    title: "Leetcode",
+    icon: <SiLeetcode />,
+    url: "https://leetcode.com/s2sharpit",
   },
   {
-    title: "Web Designer",
-    icon: <MdOutlineNoteAlt />,
-    ul: [
-      { li: "I develop the user interface." },
-      { li: "Web page development." },
-      { li: "I create UX element interactions." },
-      { li: "I position your company brand." },
-      { li: "Design and mocups of products for companies." },
-    ],
+    title: "Coding Ninjas",
+    icon: <SiCodingninjas />,
+    url: "https://www.codingninjas.com/studio/profile/s2sharpit",
   },
 ];
 

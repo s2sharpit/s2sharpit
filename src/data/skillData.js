@@ -1,62 +1,62 @@
 const skillData = [
-    {
-        title: "Frontend Developer",
-        end: [
-            {
-                name: "HTML",
-                level: "Basic",
-            },
-            {
-                name: "CSS",
-                level: "Advanced",
-            },
-            {
-                name: "Javascript",
-                level: "Intermediate",
-            },
-            {
-                name: "Git",
-                level: "Intermediate",
-            },
-            {
-                name: "ReactJs",
-                level: "Intermediate",
-            },
-            {
-                name: "NextJs",
-                level: "Intermediate",
-            },
-        ]
-    },
-    {
-        title: "Backend Developer",
-        end: [
-            {
-                name: "NodeJs",
-                level: "Basic",
-            },
-            {
-                name: "Python",
-                level: "Intermediate",
-            },
-            {
-                name: "MySQL",
-                level: "Intermediate",
-            },
-            {
-                name: "MongoDB",
-                level: "Intermediate",
-            },
-            {
-                name: "Firebase",
-                level: "Intermediate",
-            },
-            {
-                name: "Java",
-                level: "Intermediate",
-            },
-        ]
-    },
-]
+  {
+    title: "Languages & Frameworks",
+    end: [
+      {
+        name: "Java",
+        level: "Intermediate",
+      },
+      {
+        name: "Python",
+        level: "Intermediate",
+      },
+      {
+        name: "Javascript",
+        level: "Intermediate",
+      },
+      {
+        name: "HTML/CSS",
+        level: "Advanced",
+      },
+      {
+        name: "Next.js",
+        level: "Intermediate",
+      },
+      {
+        name: "Node.js",
+        level: "Intermediate",
+      },
+    ],
+  },
+  {
+    title: "Databases & Tools",
+    end: [
+      {
+        name: "MongoDB",
+        level: "Intermediate",
+      },
+      {
+        name: "MySQL",
+        level: "Intermediate",
+      },
+      {
+        name: "Firebase",
+        level: "Intermediate",
+      },
+      {
+        name: "Git",
+        level: "Intermediate",
+      },
+      {
+        name: "GCP",
+        level: "Intermediate",
+      },
+      {
+        name: "VS Code",
+        level: "Intermediate",
+      },
+    ],
+  },
+];
 
 export default skillData;

@@ -12,7 +12,7 @@ export default function Footer() {
           Tushar Saini
         </Scroll>
         <ul className="flex justify-center gap-x-6 mb-6">
-          {["about", "services", "qualification"].map((name) => (
+          {["about", "portfolio", "qualification"].map((name) => (
             <li key={name}>
               <Scroll to={name} variant="link">
                 {name}

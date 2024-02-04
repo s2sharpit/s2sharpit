@@ -1,4 +1,4 @@
-import { MdOutlineTextSnippet, MdOutlineHome, MdOutlinePerson, MdOutlineBusinessCenter, MdOutlineImage, MdOutlineSend } from 'react-icons/md';
+import { MdOutlineTextSnippet, MdOutlineHome, MdOutlinePerson, MdOutlineImage, MdOutlineSend, MdOutlineAutoAwesomeMosaic } from 'react-icons/md';
 
 const navData = [
   {
@@ -14,8 +14,8 @@ const navData = [
     icon: <MdOutlineTextSnippet />,
   },
   {
-    name: "services",
-    icon: <MdOutlineBusinessCenter />,
+    name: "portfolio",
+    icon: <MdOutlineAutoAwesomeMosaic />,
   },
   {
     name: "projects",

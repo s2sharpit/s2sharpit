@@ -2,7 +2,7 @@ const projectData = [
   {
     title: "School Website",
     img: "1",
-    techstack: "ReactJs, TailwindCSS",
+    techstack: "Next.js, TailwindCSS",
     type: "Web",
     github: "https://github.com/s2sharpit/school",
     url: "https://bsseniorsecondaryschool.in/",
@@ -16,12 +16,12 @@ const projectData = [
     url: "https://github.com/s2sharpit/krishi-bazaar",
   },
   {
-    title: "ARB Bookings",
+    title: "LegallyFit",
     img: "3",
-    techstack: "MERN Stack",
+    techstack: "Next.js, TailwindCSS",
     type: "Web",
-    github: "https://github.com/s2sharpit/booking_app",
-    url: "https://booking-app-lyart.vercel.app/",
+    github: "https://github.com/s2sharpit/legallyfit",
+    url: "https://legallyfit.s2sharpit.me",
   },
   {
     title: "s2sharpit's admin",

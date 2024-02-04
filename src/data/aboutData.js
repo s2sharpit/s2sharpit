@@ -1,4 +1,8 @@
-import { MdOutlineWorkspacePremium, MdOutlineImage, MdOutlineBusinessCenter } from "react-icons/md";
+import {
+  MdOutlineWorkspacePremium,
+  MdOutlineImage,
+  MdOutlineAutoAwesome,
+} from "react-icons/md";
 
 const infoData = [
   {
@@ -12,9 +16,9 @@ const infoData = [
     icon: <MdOutlineImage />,
   },
   {
-    title: "Expertise",
-    subTitle: "3+ Services",
-    icon: <MdOutlineBusinessCenter />,
+    title: "Solved",
+    subTitle: "150+ Problems",
+    icon: <MdOutlineAutoAwesome />,
   },
 ];
 
