@@ -20,7 +20,9 @@ export default function Services() {
             </div>
             <Link
               href={data.url}
+              target="_blank"
               className="group text-neutral-700 text-sm inline-flex items-center gap-x-1"
+              aria-label="link"
             >
               Visit
               <MdArrowForward className="transition duration-300 group-hover:translate-x-1" />

@@ -4,7 +4,7 @@ import Header from "./Header";
 import Main from "./Main";
 import Projects from "./Projects";
 import Qualification from "./Qualification";
-import Services from "./Services";
+import Portfolio from "./Portfolio";
 import Skills from "./Skills";
 
-export { About, Footer, Header, Main, Projects, Qualification, Services, Skills };
+export { About, Footer, Header, Main, Portfolio, Projects, Qualification, Skills };
