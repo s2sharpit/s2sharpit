@@ -12,7 +12,7 @@ export default function About() {
       <Title>About Me</Title>
       <Subtle>My Introduction</Subtle>
 
-      <Wrapper variant={'about'}>
+      <Wrapper variant={"about"}>
         <Image
           priority
           src={"/s2sharpit.png"}
@@ -43,9 +43,7 @@ export default function About() {
           <Link
             target="_blank"
             className={cn(buttonVariants({ size: "lg" }))}
-            href={
-              "https://drive.google.com/file/d/16Bn8xX8vIYZ4tNV3Axu7T6dLeI4-dXQG/view?usp=sharing"
-            }
+            href="/cv"
           >
             Download CV
             <Svg.Cv />
@@ -56,10 +54,10 @@ export default function About() {
   );
 }
 
-interface Box  {
-    title: string;
-    subTitle: string;
-    icon: JSX.Element;
+interface Box {
+  title: string;
+  subTitle: string;
+  icon: JSX.Element;
 }
 
 function Box({ data }: { data: Box }) {

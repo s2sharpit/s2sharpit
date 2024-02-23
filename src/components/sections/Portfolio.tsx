@@ -11,23 +11,24 @@ export default function Services() {
 
       <Wrapper variant={"service"}>
         {serviceData.map((data) => (
-          <div key={data.title} className="container relative bg-white pt-12 sm:pt-24 pb-5 sm:pb-8 max-sm:px-6 sm:pl-10 border rounded-2xl">
-            <div className="text-neutral-700">
+          <Link
+            key={data.title}
+            href={data.url}
+            target="_blank"
+            aria-label="link"
+            className="group container relative bg-white pt-12 sm:pt-24 pb-5 sm:pb-8 max-sm:px-6 sm:pl-10 border rounded-2xl"
+          >
+            <div className="text-neutral-700 sm:pt-2">
               <span className="text-4xl">{data.icon}</span>
-              <h3 className="text-xl my-4 sm:my-5 font-medium sm:w1/2">
+              <h3 className="text-xl my-4 sm:my-6 font-medium sm:w1/2">
                 {data.title}
               </h3>
             </div>
-            <Link
-              href={data.url}
-              target="_blank"
-              className="group text-neutral-700 text-sm inline-flex items-center gap-x-1"
-              aria-label="link"
-            >
+            <div className="text-neutral-700 text-sm inline-flex items-center gap-x-1">
               Visit
               <MdArrowForward className="transition duration-300 group-hover:translate-x-1" />
-            </Link>
-          </div>
+            </div>
+          </Link>
         ))}
       </Wrapper>
     </Section>
