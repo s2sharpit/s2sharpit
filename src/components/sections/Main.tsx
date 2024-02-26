@@ -36,7 +36,7 @@ export default function Main() {
               <Svg.Hand />
             </Title>
             <Subtle variant={'special'}>
-              Software Engineer
+              ML Enthusiast
             </Subtle>
             <h3 className="font-medium my-1 md:my-2">Bhubaneswar, Bharat</h3>
             <p className="max-w-sm text-justify mb-10 md:mb-12 text-text-color">
