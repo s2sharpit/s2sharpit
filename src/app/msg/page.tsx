@@ -17,7 +17,7 @@ export default async function page() {
           {data.docs.map((doc) => (
             <li key={doc.id}>
               {doc.data().username}:
-              <span className="text-neutral-800"> {doc.data().message}: </span>
+              <span className="text-neutral-800"> {doc.data().message}</span>
             </li>
           ))}
         </ul>
