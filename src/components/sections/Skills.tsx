@@ -16,6 +16,7 @@ export default async function Skills() {
       throw new Error("Failed to fetch skill data");
     }
     const skillData: Skill[] = await req.json();
+    
     return (
       <Section id="skills">
         <Title>Skills</Title>
