@@ -18,6 +18,7 @@ export default function Contact() {
             username: String(formData.get("username")),
             email: String(formData.get("email")),
             message: String(formData.get("message")),
+            createdAt: new Date(),
         });
         if (response.status == 200) {
             setStatus(true);

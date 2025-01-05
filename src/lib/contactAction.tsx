@@ -8,6 +8,7 @@ interface data {
   username: string;
   email: string;
   message: string;
+  createdAt: Date;
 }
 
 const submitContact = async (data: data) => {

@@ -3,14 +3,14 @@
 import { MdClose, MdOutlineGridView } from "react-icons/md";
 import { useCallback, useEffect, useRef, useState } from "react";
 import navData from "@/data/navData";
-import { useTheme } from "next-themes";
+// import { useTheme } from "next-themes";
 import { Button, Scroll } from "@/components/ui";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/Button";
 
 export default function Header() {
-  const { theme, setTheme } = useTheme();
+  // const { theme, setTheme } = useTheme();
   const [menu, setMenu] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const [activeNav, setActiveNav] = useState<string>("home");
