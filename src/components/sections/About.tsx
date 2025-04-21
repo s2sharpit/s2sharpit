@@ -6,6 +6,8 @@ import { buttonVariants } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 import { Subtle, Section, Title, Wrapper } from "@/components/ui";
 
+import type { JSX } from "react";
+
 export default function About() {
   return (
     <Section id="about">

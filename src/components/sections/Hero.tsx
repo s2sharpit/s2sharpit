@@ -6,7 +6,7 @@ import profileData from "@/data/profileData";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/Button";
 
-export default function Main() {
+export default function Hero() {
   return (
     <Section id="home">
       <div className="grid gap-10">
