@@ -4,15 +4,15 @@ import Link from "next/link";
 import contactData from "@/data/contactData";
 import { MdArrowForward } from "react-icons/md";
 import { Svg } from "@/components/Svg";
-import { Button, Section, Subtle, Title, Wrapper } from "@/components/ui";
+import { Button, Section, Wrapper } from "@/components/ui";
 import { useState } from "react";
-import submitContact from "@/lib/contactAction";
+// import submitContact from "@/lib/contactAction";
 import { SectionHeader } from "../ui/section-header";
 
 export default function Contact() {
-  const [status, setStatus] = useState<boolean>();
+  const [status] = useState<boolean>();
 
-  const handleSubmit = async (formData: FormData) => {
+  const handleSubmit = async () => {
     // try {
     //     const response = await submitContact({
     //         username: String(formData.get("username")),
@@ -136,7 +136,14 @@ export default function Contact() {
   );
 }
 
-function Card({ data }: { data: any }) {
+interface TalkMeCard {
+  icon: React.JSX.Element,
+  title: string,
+  desc: string,
+  url: string
+}
+
+function Card({ data }: { data: TalkMeCard }) {
   return (
     <div className="container bg-card border p-4 rounded-xl grid place-items-center">
       <span className="text-2xl ">{data.icon}</span>

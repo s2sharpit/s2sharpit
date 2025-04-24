@@ -21,8 +21,8 @@ export default function Header() {
   }, []);
 
   const handleClose = useCallback(
-    (e: any) => {
-      if (menuRef.current && !menuRef.current?.contains(e.target)) {
+    (e: MouseEvent | Event) => {
+      if (menuRef.current && !menuRef.current?.contains(e.target as Node)) {
         setMenu(false);
       }
     },

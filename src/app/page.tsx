@@ -1,4 +1,4 @@
-import { Skills, About, Hero, Portfolio, Qualification, Projects } from "@/components/sections";
+import { Skills, About, Hero, Projects } from "@/components/sections";
 import Contact from "@/components/sections/Contact";
 export default function Home() {
   return (

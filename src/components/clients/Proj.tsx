@@ -6,7 +6,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { LayoutGroup, motion } from "framer-motion";
 
-let val = 0;
+const val = 0;
 
 export default function Proj({ projectData }: { projectData: Project[] }) {
   const [activeIndex, setActiveIndex] = useState(val);

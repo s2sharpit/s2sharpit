@@ -1,5 +1,5 @@
 import { MdOutlineVerified } from "react-icons/md";
-import { Section, Subtle, Title, Wrapper } from "@/components/ui";
+import { Section, Wrapper } from "@/components/ui";
 import { SectionHeader } from "../ui/section-header";
 
 interface Skill {

@@ -1,4 +1,4 @@
-import { Section, Subtle, Title, Wrapper } from "@/components/ui";
+import { Section, Wrapper } from "@/components/ui";
 import Proj from "@/components/clients/Proj";
 import { SectionHeader } from "../ui/section-header";
 

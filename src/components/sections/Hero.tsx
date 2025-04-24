@@ -1,4 +1,3 @@
-import { MdArrowDownward } from "react-icons/md";
 import Link from "next/link";
 import { Scroll, Title, Section, Subtle } from "@/components/ui";
 import { Svg } from "@/components/Svg";
