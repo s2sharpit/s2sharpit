@@ -68,7 +68,7 @@ export default function Header() {
     <header
       id="header"
       ref={menuRef}
-      className="max-md:shadow-header w-full fixed max-md:bottom-0 md:top-0 left-0 z-50 bg-white md:bg-neutral-50"
+      className="max-md:shadow-header w-full fixed max-md:bottom-0 md:top-0 left-0 z-50 bg-background"
     >
       <nav className="max-w-4xl px-4 md:mx-auto h-14 md:h-16 flex justify-between items-center gap-4 bg-inherit">
         {/* <Button variant={'link'} className="lowercase" onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
@@ -89,9 +89,9 @@ export default function Header() {
         <div
           className={`${
             menu ? "bottom-0" : "-bottom-full"
-          } fixed md:static left-0 w-full md:w-fit bg-neutral-50 pt-8 md:pt-0 px-2 sm:px-6 md:px-0 pb-14 md:pb-0 shadow-header md:shadow-none rounded-t-3xl md:rounded-none md:transition-none duration-300`}
+          } fixed md:static left-0 w-full md:w-fit bg-background pt-8 md:pt-0 px-2 sm:px-6 md:px-0 pb-14 md:pb-0 shadow-header md:shadow-none rounded-t-3xl md:rounded-none md:transition-none duration-300`}
         >
-          <ul className="grid grid-cols-3 md:flex gap-4 justify-between md:w-[30rem]">
+          <ul className="grid grid-cols-4 md:flex gap-4 justify-between">
             {navData.map((data) => (
               <Scroll
                 to={data.name}

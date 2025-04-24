@@ -20,7 +20,7 @@ export function SectionHeader({ badge, title, description, centered = true, clas
           {badge}
         </Badge>
       )}
-      <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">{title}</h2>
+      <h2 className="text-3xl font-bold sm:text-4xl">{title}</h2>
       {description && <p className="mx-auto mt4 max-w-[700px] text-muted-foreground">{description}</p>}
     </div>
   )

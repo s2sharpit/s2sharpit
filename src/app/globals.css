@@ -6,8 +6,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-poppins);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -44,7 +43,7 @@
 
   --shadow-profile: inset 0 0 0 6px rgb(255 255 255 / 30%);
   --shadow-sm-profile: inset 0 0 0 8px rgb(255 255 255 / 30%);
-  --shadow-header: 0 -1px 4px rgba(var(--border-color), 0.15);
+  --shadow-header: 0 -1px 4px color-mix(in oklch  , var(--foreground) 15%, transparent);
 
   --animate-profile: profile 4s ease-in-out infinite;
   --animate-wheel: scroll 2s ease infinite;
@@ -94,7 +93,7 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
+  --background: oklch(0.985 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -167,5 +166,8 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  b {
+    @apply font-medium text-primary;
   }
 }

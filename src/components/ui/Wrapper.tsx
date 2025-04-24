@@ -3,7 +3,7 @@ import { VariantProps, cva } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const wrapperVariants = cva(
-  "mt-16 mx-auto max-w-4xl grid gap-6 gap-x-8 md:gap-x-16 justify-center place-items-center",
+  "mt-16 grid gap-6 gap-x-8 md:gap-x-16 justify-center place-items-center",
   {
     variants: {
       variant: {

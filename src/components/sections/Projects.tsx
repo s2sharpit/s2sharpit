@@ -1,14 +1,7 @@
 import { Section, Subtle, Title, Wrapper } from "@/components/ui";
 import Proj from "@/components/clients/Proj";
+import { SectionHeader } from "../ui/section-header";
 
-interface Project {
-  title: string;
-  img: string;
-  techstack: string;
-  type: string;
-  github: string;
-  url: string;
-}
 
 export default async function Projects() {
   try {
@@ -20,8 +13,8 @@ export default async function Projects() {
 
     return (
       <Section id="projects">
-        <Title className="title">Projects</Title>
-        <Subtle className="subTitle">Most Recent Works</Subtle>
+        <SectionHeader title="Projects" description="Most Recent Works" />
+
         <Wrapper>
           <Proj projectData={projectData} />
         </Wrapper>

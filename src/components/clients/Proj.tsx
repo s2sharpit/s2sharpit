@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { FaGithub, FaArrowCircleUp } from "react-icons/fa";
 import Link from "next/link";
@@ -7,16 +7,8 @@ import Image from "next/image";
 import { LayoutGroup, motion } from "framer-motion";
 
 let val = 0;
-interface Project {
-  title: string;
-  img: string;
-  techstack: string;
-  type: string;
-  github: string;
-  url: string;
-}
 
-export default function Proj({projectData}: {projectData: Project[]}) {
+export default function Proj({ projectData }: { projectData: Project[] }) {
   const [activeIndex, setActiveIndex] = useState(val);
   const types = ["All", "Web", "App"];
 
@@ -27,21 +19,21 @@ export default function Proj({projectData}: {projectData: Project[]}) {
   return (
     <>
       <LayoutGroup>
-        <ul className="flex items-center gap-4 justify-center mb-2 text-lg font-medium text-neutral-700">
+        <ul className="flex items-center gap-4 justify-center mb-2 text-lg font-medium">
           {types.map((item, index) => (
             <li
               key={item}
               onClick={() => setActiveIndex(index)}
               className={`${
                 activeIndex === index
-                  ? "text-white"
-                  : "hover:text-neutral-800 hover:bg-neutral-200/60"
+                  ? "text-primary-foreground"
+                  : "hover:bg-muted"
               } relative py-1 px-3 hover:cursor-pointer rounded-lg duration-300`}
             >
               {item}
               {index === activeIndex ? (
                 <motion.div
-                  className="absolute inset-0 bg-neutral-800 rounded-md z-[-1]"
+                  className="absolute inset-0 bg-primary rounded-md z-[-1]"
                   layoutId="sidebar"
                   transition={{
                     type: "spring",
@@ -65,7 +57,7 @@ export default function Proj({projectData}: {projectData: Project[]}) {
 
 const Project = ({ data }: { data: Project }) => {
   return (
-    <div className="container bg-white border p-5 rounded-2xl">
+    <div className="container bg-card border p-5 rounded-2xl">
       <Image
         priority
         quality={100}
@@ -73,30 +65,32 @@ const Project = ({ data }: { data: Project }) => {
         alt={data.title + "_img"}
         width={1000}
         height={1000}
-        className="h-48 w-full rounded-2xl border border-border-color/10"
+        className="h-48 w-full rounded-2xl border border-border-color/10 object-cover"
       />
       <div className="flex mt-5 items-center justify-between">
         <div className="text-sm">
-          <h3 className="text-xl text-neutral-700 font-medium">{data.title}</h3>
-          {data.techstack}
+          <h3 className="text-xl font-medium">{data.title}</h3>
+          <p className="text-muted-foreground">{data.techstack}</p>
         </div>
-        <div className="inline-flex items-center gap-x-3 text-neutral-700">
+        <div className="inline-flex items-center gap-x-3">
           <Link
             href={data.github}
             target="_blank"
-            className="text-[1.7rem] hover:text-neutral-800 duration-300"
+            className="text-[1.7rem] hover:text-primary/90 duration-300"
             aria-label="link"
           >
             <FaGithub />
           </Link>
-          <Link
-            href={data.url}
-            target="_blank"
-            className="text-[1.7rem] hover:text-neutral-800 duration-300"
-            aria-label="link"
-          >
-            <FaArrowCircleUp className="rotate-45" />
-          </Link>
+          {data.url && (
+            <Link
+              href={data.url}
+              target="_blank"
+              className="text-[1.7rem] hover:text-primary/90 duration-300"
+              aria-label="link"
+            >
+              <FaArrowCircleUp className="rotate-45" />
+            </Link>
+          )}
         </div>
       </div>
     </div>
