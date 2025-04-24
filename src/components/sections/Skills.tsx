@@ -1,6 +1,7 @@
 import { MdOutlineVerified } from "react-icons/md";
 import { Section, Wrapper } from "@/components/ui";
 import { SectionHeader } from "../ui/section-header";
+import skillData from "@/data/skillData";
 
 interface Skill {
   title: string;
@@ -10,13 +11,7 @@ interface Skill {
   }[];
 }
 
-export default async function Skills() {
-  try {
-    const req = await fetch(`${process.env.URL}/api/skills`);
-    if (!req.ok) {
-      throw new Error("Failed to fetch skill data");
-    }
-    const skillData: Skill[] = await req.json();
+export default function Skills() {
 
     return (
       <Section id="skills">
@@ -29,10 +24,6 @@ export default async function Skills() {
         </Wrapper>
       </Section>
     );
-  } catch (error) {
-    console.error(error);
-    return <div>Error: Failed to fetch skill data</div>;
-  }
 }
 
 function End({ data }: { data: Skill }) {

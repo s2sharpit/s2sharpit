@@ -1,16 +1,10 @@
 import { Section, Wrapper } from "@/components/ui";
 import Proj from "@/components/clients/Proj";
-import { SectionHeader } from "../ui/section-header";
+import { SectionHeader } from "@/components/ui/section-header";
+import projectData from "@/data/projectData"
 
 
-export default async function Projects() {
-  try {
-    const req = await fetch(`${process.env.URL}/api/projects`);
-    if (!req.ok) {
-      throw new Error("Failed to fetch project data");
-    }
-    const projectData: Project[] = await req.json();
-
+export default function Projects() {
     return (
       <Section id="projects">
         <SectionHeader title="Projects" description="Most Recent Works" />
@@ -20,8 +14,4 @@ export default async function Projects() {
         </Wrapper>
       </Section>
     );
-  } catch (error) {
-    console.error(error);
-    return <div>Error: Failed to fetch project data</div>;
-  }
 }
