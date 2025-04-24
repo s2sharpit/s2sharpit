@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Button, Scroll } from "@/components/ui";
 import profileData from "@/data/profileData";
-import { cn } from "@/lib/utils";
 import navData from "@/data/navData";
 
 export default function Footer() {

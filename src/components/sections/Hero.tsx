@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Scroll, Title, Section, Subtle, Button } from "@/components/ui";
+import { Scroll, Section, Button } from "@/components/ui";
 import { Svg } from "@/components/Svg";
 import profileData from "@/data/profileData";
 

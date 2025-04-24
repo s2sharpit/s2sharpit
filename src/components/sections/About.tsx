@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import aboutData from "@/data/aboutData";
 import { Svg } from "@/components/Svg";
-import { cn } from "@/lib/utils";
 import { Button, Section, Wrapper } from "@/components/ui";
 
 import type { JSX } from "react";
