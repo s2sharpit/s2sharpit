@@ -1,7 +1,7 @@
 "use client";
 
-import { HTMLAttributes, forwardRef, useCallback } from "react";
-import { VariantProps, cva } from "class-variance-authority";
+import { HTMLAttributes, useCallback } from "react";
+import { VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/Button";
 import * as React from "react";

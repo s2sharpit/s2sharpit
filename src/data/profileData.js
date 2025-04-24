@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub, FaXTwitter, FaRegEnvelope } from "react-icons/fa6";
+import { FaLinkedin, FaGithub, FaXTwitter } from "react-icons/fa6";
 import { MdMailOutline } from "react-icons/md";
 // import { SiGmail } from "react-icons/si";
 

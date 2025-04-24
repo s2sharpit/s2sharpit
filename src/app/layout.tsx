@@ -3,8 +3,8 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import Header from "@/components/sections/Header";
 import { Metadata } from "next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from '@vercel/analytics/react';
+// import { SpeedInsights } from "@vercel/speed-insights/next";
+// import { Analytics } from '@vercel/analytics/react';
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -72,13 +72,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} text-neutral-500 bg-neutral-50 dark:bg-neutral-950`}
+        className={`${poppins.variable} font-sans`}
       >
         <Header />
         {children}
         <Footer />
-        <SpeedInsights />
-        <Analytics />
+        {/* <SpeedInsights />
+        <Analytics /> */}
       </body>
     </html>
   );

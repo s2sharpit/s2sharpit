@@ -4,13 +4,15 @@ import aboutData from "@/data/aboutData";
 import { Svg } from "@/components/Svg";
 import { buttonVariants } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
-import { Subtle, Section, Title, Wrapper } from "@/components/ui";
+import { Section, Wrapper } from "@/components/ui";
+
+import type { JSX } from "react";
+import { SectionHeader } from "../ui/section-header";
 
 export default function About() {
   return (
     <Section id="about">
-      <Title>About Me</Title>
-      <Subtle>My Introduction</Subtle>
+      <SectionHeader title="About Me" description="My Introduction" />
 
       <Wrapper variant={"about"}>
         <Image
@@ -62,10 +64,10 @@ interface Box {
 
 function Box({ data }: { data: Box }) {
   return (
-    <div className="container bg-white border rounded-xl grid place-items-center py-3 md:py-5 px-2 md:px-4">
-      <span className="text-2xl text-neutral-700">{data.icon}</span>
-      <h3 className="text-sm font-medium text-neutral-700">{data.title}</h3>
-      <span className="text-xs">{data.subTitle}</span>
+    <div className="container bg-card border rounded-xl grid place-items-center py-3 md:py-5 px-2 md:px-4">
+      <span className="text-2xl">{data.icon}</span>
+      <h3 className="text-sm font-medium">{data.title}</h3>
+      <span className="text-xs text-muted-foreground">{data.subTitle}</span>
     </div>
   );
 }

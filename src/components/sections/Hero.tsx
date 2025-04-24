@@ -1,4 +1,3 @@
-import { MdArrowDownward } from "react-icons/md";
 import Link from "next/link";
 import { Scroll, Title, Section, Subtle } from "@/components/ui";
 import { Svg } from "@/components/Svg";
@@ -6,7 +5,7 @@ import profileData from "@/data/profileData";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/Button";
 
-export default function Main() {
+export default function Hero() {
   return (
     <Section id="home">
       <div className="grid gap-10">
@@ -28,7 +27,7 @@ export default function Main() {
             ))}
           </div>
 
-          <div className="max-xs:ml-0 max-sm:ml-6 bg-[url('../../public/s2sharpit.png')] bg-no-repeat bg-center bg-cover shadow-profile sm:shadow-smProfile sm:order-1 sm:justify-self-center w-52 sm:w-64 md:w-72 h-52 sm:h-64 md:h-72 animate-profile -scale-x-100"></div>
+          <div className="max-xs:ml-0 max-sm:ml-6 bg-[url('/s2sharpit.png')] bg-no-repeat bg-center bg-cover shadow-profile sm:shadow-smProfile sm:order-1 sm:justify-self-center w-52 sm:w-64 md:w-72 h-52 sm:h-64 md:h-72 animate-profile -scale-x-100"></div>
 
           <div className="max-xs:mx-4 max-sm:mx-6 max-sm:col-span-3">
             <Title size={"lg"} className="mb-3">
@@ -47,16 +46,6 @@ export default function Main() {
               Say Hello <Svg.Arrow />
             </Scroll>
           </div>
-        </div>
-
-        <div className="ml-[7.5rem] md:ml-28 max-sm:hidden">
-          <Scroll to="about" variant={"ghost"} className="group">
-            <Svg.Mouse />
-            <span className="ml-0.5">
-              Scroll Down
-            </span>
-            <MdArrowDownward className="text-title-color text-xl ml-1" />
-          </Scroll>
         </div>
       </div>
     </Section>
