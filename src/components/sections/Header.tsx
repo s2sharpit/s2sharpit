@@ -1,16 +1,16 @@
-'use client'
+"use client";
 
 import { MdClose, MdOutlineGridView } from "react-icons/md";
 import { useCallback, useEffect, useRef, useState } from "react";
 import navData from "@/data/navData";
-// import { useTheme } from "next-themes";
-import { Button, Scroll } from "@/components/ui";
+import { useTheme } from "next-themes";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/Button";
+import { Moon, Sun } from "lucide-react";
+import { Scroll } from "../ui";
 
 export default function Header() {
-  // const { theme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
   const [menu, setMenu] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const [activeNav, setActiveNav] = useState<string>("home");
@@ -71,20 +71,9 @@ export default function Header() {
       className="max-md:shadow-header w-full fixed max-md:bottom-0 md:top-0 left-0 z-50 bg-background"
     >
       <nav className="max-w-4xl px-4 md:mx-auto h-14 md:h-16 flex justify-between items-center gap-4 bg-inherit">
-        {/* <Button variant={'link'} className="lowercase" onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
-          <abbr
-            title="Change Theme"
-            className="no-underline"
-          >
-            s2sharpit
-          </abbr>
-        </Button> */}
-        <Link
-          href={"/"}
-          className={cn(buttonVariants({ variant: "link" }), "lowercase")}
-        >
-          s2sharpit
-        </Link>
+        <Button variant="ghost" asChild>
+          <Link href={"/"}>s2sharpit</Link>
+        </Button>
 
         <div
           className={`${
@@ -96,11 +85,12 @@ export default function Header() {
               <Scroll
                 to={data.name}
                 variant={"link"}
+                size='sm'
                 key={data.name}
                 onClick={() => handleClickClose(data.name)}
                 className={`${
-                  activeNav === data.name && "text-neutral-800 font-semibold"
-                } flex flex-col items-center text-sm text-neutral-700 font-medium transition duration-300 hover:text-neutral-800 capitalize hover:cursor-pointer`}
+                  activeNav === data.name && "font-semibold"
+                } flex flex-col items-center transition duration-300 capitalize hover:cursor-pointer`}
               >
                 <span className="md:hidden text-xl">{data.icon}</span>{" "}
                 {data.name}
@@ -115,6 +105,16 @@ export default function Header() {
             <MdClose />
           </Button>
         </div>
+        <Button
+          variant="outline"
+          size='icon'
+          onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+        >
+          <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+          <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+          <span className="sr-only">Toggle theme</span>
+        </Button>
+
         <Button
           variant={"link"}
           className="md:hidden text-3xl"

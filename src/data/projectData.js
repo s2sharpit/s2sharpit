@@ -1,7 +1,7 @@
 const projectData = [
   {
     title: "CodeFusion",
-    img: "codefusion",
+    img: "codeFusion",
     techstack: "NextJs, Node.js, MongoDB, GitHub APi",
     type: "Web",
     github: "https://github.com/s2sharpit/codefusion",

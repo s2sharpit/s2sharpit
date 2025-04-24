@@ -2,9 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import aboutData from "@/data/aboutData";
 import { Svg } from "@/components/Svg";
-import { buttonVariants } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
-import { Section, Wrapper } from "@/components/ui";
+import { Button, Section, Wrapper } from "@/components/ui";
 
 import type { JSX } from "react";
 import { SectionHeader } from "../ui/section-header";
@@ -42,14 +41,12 @@ export default function About() {
             <b>clients.</b> I am always looking for new challenges and
             opportunities to learn and grow as a <b>developer</b>.
           </p>
-          <Link
-            target="_blank"
-            className={cn(buttonVariants({ size: "lg" }))}
-            href="/cv"
-          >
-            Download CV
-            <Svg.Cv />
-          </Link>
+          <Button size="xl" asChild>
+            <Link target="_blank" href="/cv">
+              Download CV
+              <Svg.Cv />
+            </Link>
+          </Button>
         </div>
       </Wrapper>
     </Section>

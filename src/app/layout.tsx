@@ -3,6 +3,7 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import Header from "@/components/sections/Header";
 import { Metadata } from "next";
+import { ThemeProvider } from "./theme-provider";
 // import { SpeedInsights } from "@vercel/speed-insights/next";
 // import { Analytics } from '@vercel/analytics/react';
 
@@ -71,14 +72,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${poppins.variable} font-sans`}
-      >
-        <Header />
-        {children}
-        <Footer />
-        {/* <SpeedInsights />
+      <body className={`${poppins.variable} font-sans`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          {children}
+          <Footer />
+          {/* <SpeedInsights />
         <Analytics /> */}
+        </ThemeProvider>
       </body>
     </html>
   );

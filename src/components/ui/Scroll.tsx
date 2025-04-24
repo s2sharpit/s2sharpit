@@ -1,39 +1,37 @@
 "use client";
 
-import { HTMLAttributes, useCallback } from "react";
+import * as React from "react";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/Button";
-import * as React from "react";
 
 interface ScrollProps
-  extends HTMLAttributes<HTMLButtonElement>,
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   to: string;
 }
 
-const Scroll = React.forwardRef<HTMLButtonElement, ScrollProps>(
-  ({ className, size, variant, children, to, ...props }, ref) => {
-    const handleClick = useCallback((e: { preventDefault: () => void; }) => {
-      e.preventDefault();
-      const element = document.getElementById(to);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }, [to]);
-    return (
-      <button
-        {...props}
-        ref={ref}
-        onClick={handleClick}
-        className={cn(buttonVariants({ variant, size, className }))}
-      >
-        {children}
-      </button>
-    );
-  }
-);
+function Scroll({
+  to,
+  className,
+  onClick,
+  ...props
+}: ScrollProps) {
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    onClick?.(e);
 
-Scroll.displayName = "Scroll";
+    if (!e.defaultPrevented) {
+      document.getElementById(to)?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <Button
+      onClick={handleClick}
+      className={cn("hover:no-underline cursor-pointer capitalize", className)}
+      {...props}
+    />
+  );
+}
 
 export default Scroll;

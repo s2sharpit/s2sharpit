@@ -1,4 +1,4 @@
-import Button from "./Button"
+import {Button} from "./button"
 import Scroll from "./Scroll"
 import Section from "./Section"
 import Subtle from "./Subtle"
