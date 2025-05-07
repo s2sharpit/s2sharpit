@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: '/cv/(AppDev)',
+        source: '/cv/AppDev',
         destination: "https://drive.google.com/file/d/1TFXWtpU2L6M873p5R2UmxGNgcu7WJ6XO/view?usp=sharing",
         permanent: true,
       },
