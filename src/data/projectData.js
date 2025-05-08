@@ -13,7 +13,7 @@ const projectData = [
     techstack: "Next.js, TailwindCSS",
     type: "Web",
     github: "https://github.com/s2sharpit/school",
-    url: "https://bsseniorsecondaryschool.in/",
+    url: "https://bsseniorsecondary.in/",
   },
   {
     title: "Meals App",
