@@ -1,5 +1,5 @@
 <h1 align="center">नमस्ते (Namaste)🙏, I'm Tushar Saini</h1>
-<h3 align="center">ML enthusiast with a knack for leveraging data to create innovative solutions | Proficient in Java, Python & JavaScript | Delving deep into DSA with Java | Web Wizard | Eager to contribute to impactful projects and drive positive change.</h3>
+<h3 align="center">Top 12 @GSSoC’23 | Full-Stack Developer (MERN, Next.js) | Open Source Contributor | AWS Cloud Certified | Building Scalable Web Solutions</h3>
 <br>
 
 <img src = "https://www.puttiapps.com/wp-content/uploads/2021/05/stats.gif" alt="Laptop GIF" width="25%" align="right">
