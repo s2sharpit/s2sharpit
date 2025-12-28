@@ -92,7 +92,7 @@ export default function Header() {
                   activeNav === data.name && "font-semibold"
                 } flex flex-col items-center transition duration-300 capitalize hover:cursor-pointer`}
               >
-                <span className="md:hidden text-xl">{data.icon}</span>{" "}
+                <span className="md:hidden text-xl scale-125">{data.icon}</span>{" "}
                 {data.name}
               </Scroll>
             ))}

@@ -14,7 +14,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://s2sharpit.tech"),
+  metadataBase: new URL("https://s2sharpit.dev"),
   title: {
     default: "Tushar Saini",
     template: "%s | Tushar Saini",
@@ -33,11 +33,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Tushar Saini",
     description: "Software Engineer",
-    url: "https://s2sharpit.tech",
+    url: "https://s2sharpit.dev",
     siteName: "Tushar Saini",
     images: [
       {
-        url: "https://s2sharpit.tech/s2sharpit.png",
+        url: "https://s2sharpit.dev/s2sharpit.png",
         width: 1080,
         height: 1080,
       },

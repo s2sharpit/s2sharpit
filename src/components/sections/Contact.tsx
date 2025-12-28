@@ -49,7 +49,7 @@ export default function Contact() {
         </div>
 
         <div>
-          <h3 className="text-xl text-center font-medium mb-6 text-neutral-700">
+          <h3 className="text-xl text-center font-medium mb-6 text-primary">
             Write Me A Message
           </h3>
           <form
@@ -113,11 +113,9 @@ export default function Contact() {
             <Button
               size={"lg"}
               className={`${
-                status !== undefined
-                  ? status
-                    ? "bg-green-500 hover:bg-green-500"
-                    : "bg-red-500 hover:bg-red-500"
-                  : "bg-neutral-800 hover:bg-neutral-900 text-neutral-200 "
+                status !== undefined && (status
+                  ? "bg-green-500 hover:bg-green-500"
+                  : "bg-red-500 hover:bg-red-500")
               } `}
             >
               {`${
@@ -127,7 +125,7 @@ export default function Contact() {
                     : "Failed to Send"
                   : "Send Message"
               }`}
-              <Svg.Message />
+              <Svg.Arrow />
             </Button>
           </form>
         </div>
@@ -137,10 +135,10 @@ export default function Contact() {
 }
 
 interface TalkMeCard {
-  icon: React.JSX.Element,
-  title: string,
-  desc: string,
-  url: string
+  icon: React.JSX.Element;
+  title: string;
+  desc: string;
+  url: string;
 }
 
 function Card({ data }: { data: TalkMeCard }) {
