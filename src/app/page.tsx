@@ -1,5 +1,5 @@
 import { Skills, About, Hero, Projects } from "@/components/sections";
-import Contact from "@/components/sections/Contact";
+// import Contact from "@/components/sections/Contact";
 export default function Home() {
   return (
     <main className="min-h-screen max-w-5xl mx-auto px-8">
@@ -7,7 +7,7 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
-      <Contact /> 
+      {/* <Contact /> */}
     </main>
   );
 }

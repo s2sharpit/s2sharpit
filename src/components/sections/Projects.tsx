@@ -6,7 +6,7 @@ import projectData from "@/data/projectData"
 
 export default function Projects() {
     return (
-      <Section id="projects">
+      <Section id="projects" className="mb-12">
         <SectionHeader title="Projects" description="Most Recent Works" />
 
         <Wrapper>

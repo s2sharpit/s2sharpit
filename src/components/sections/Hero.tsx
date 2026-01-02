@@ -29,8 +29,8 @@ export default function Hero() {
             Tushar Saini
             <Svg.Hand />
           </h1>
-          <h2 className="relative text-muted-foreground text-xl pl-14 md:pl-20 before:content-start before:absolute before:w-10 md:before:w-16 before:h-[1px] before:bg-muted-foreground before:left-0 before:top-3 md:before:top-4">ML Enthusiast</h2>
-          <h3 className="font-medium my-1 md:my-2">Bhubaneswar, Bharat</h3>
+          <h2 className="relative text-muted-foreground text-xl pl-14 md:pl-20 before:content-start before:absolute before:w-10 md:before:w-16 before:h-px before:bg-muted-foreground before:left-0 before:top-3 md:before:top-4">Software Engineer</h2>
+          <h3 className="font-medium my-1 md:my-2">Kolkata, Bharat</h3>
           <p className="max-w-sm text-justify mb-10 md:mb-12 text-text-color">
             I like creating <b>delightful, magical,</b> and <b>accessible</b>{" "}
             art with code.
