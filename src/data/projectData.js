@@ -5,7 +5,7 @@ const projectData = [
     techstack: "NextJs, Node.js, MongoDB, GitHub APi",
     type: "Web",
     github: "https://github.com/s2sharpit/codefusion",
-    url: "https://codefusion.s2sharpit.tech",
+    url: "https://codefusion.s2sharpit.dev",
   },
   {
     title: "School Website",
@@ -37,7 +37,7 @@ const projectData = [
     techstack: "Next.js, TailwindCSS",
     type: "Web",
     github: "https://github.com/s2sharpit/legallyfit",
-    url: "https://legallyfit.s2sharpit.me",
+    url: "https://legallyfit.s2sharpit.dev",
   },
 ];
 
