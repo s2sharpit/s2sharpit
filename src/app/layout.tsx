@@ -1,16 +1,18 @@
-import Footer from "@/components/sections/Footer";
 import "./globals.css";
-import { Poppins } from "next/font/google";
-import Header from "@/components/sections/Header";
+import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import { Metadata } from "next";
-import { ThemeProvider } from "./theme-provider";
-// import { SpeedInsights } from "@vercel/speed-insights/next";
-// import { Analytics } from '@vercel/analytics/react';
 
-const poppins = Poppins({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-poppins",
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-cormorant",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-dm-sans",
 });
 
 export const metadata: Metadata = {
@@ -71,20 +73,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${poppins.variable} font-sans`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Header />
-          {children}
-          <Footer />
-          {/* <SpeedInsights />
-        <Analytics /> */}
-        </ThemeProvider>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${cormorant.variable} ${dmSans.variable} font-sans bg-background text-foreground antialiased selection:bg-accent/20 selection:text-accent transition-colors duration-300`}>
+        {children}
       </body>
     </html>
   );
