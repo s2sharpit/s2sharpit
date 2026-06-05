@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUpRight } from "lucide-react";
+import { LuArrowUpRight } from "react-icons/lu";
 
 export default function About() {
   return (
@@ -31,10 +31,12 @@ export default function About() {
             href="/cv"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center space-x-1 text-sm text-foreground hover:text-accent font-medium group transition-colors duration-300"
+            className="inline-flex items-baseline group/link text-foreground hover:text-accent font-medium text-sm transition-colors duration-300"
           >
-            <span>View curriculum vitae</span>
-            <ArrowUpRight className="w-4.5 h-4.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            <span className="inline-block">
+              View curriculum vitae
+              <LuArrowUpRight className="inline-block h-3.5 w-3.5 shrink-0 transition-transform duration-300 translate-y-px ml-1 text-muted-text group-hover/link:text-accent group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" />
+            </span>
           </a>
         </div>
       </div>
