@@ -18,11 +18,14 @@ export default function About() {
 
       <div className="space-y-6">
         {/* Bio paragraph */}
-        <p className="text-foreground font-sans text-sm md:text-base leading-relaxed text-muted-text text-justify">
-          Software engineer specializing in building high-performance web applications and robust user experiences. 
-          Experienced in engineering clean, modular frontends using Angular, React, and Next.js, alongside designing 
-          scalable backend architectures and RESTful microservices using Java Core, Spring Boot, Node.js, and FastAPI. 
-          Focused on delivering production-ready software that balances database query optimization, clean APIs, and refined user interfaces.
+        <p className="text-muted-text font-sans text-sm md:text-base leading-relaxed text-justify">
+          Software engineer specializing in building high-performance web
+          applications and robust user experiences. Experienced in engineering
+          clean, modular frontends using Angular, React, and Next.js, alongside
+          designing scalable backend architectures and RESTful microservices
+          using Java Core, Spring Boot, Node.js, and FastAPI. Focused on
+          delivering production-ready software that balances database query
+          optimization, clean APIs, and refined user interfaces.
         </p>
 
         {/* CV Link */}

@@ -45,7 +45,7 @@ export default function Sidebar() {
     <header className="lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:pt-20 lg:pb-12">
       <div>
         {/* Profile Avatar */}
-        <div className="mb-4 relative w-20 h-20 rounded-full overflow-hidden border border-accent/20 p-0.5 bg-background flex-shrink-0">
+        <div className="mb-4 relative w-20 h-20 rounded-full overflow-hidden border border-accent/20 p-0.5 bg-background shrink-0">
           <div className="w-full h-full rounded-full overflow-hidden relative">
             <Image
               src="/s2sharpit.png"

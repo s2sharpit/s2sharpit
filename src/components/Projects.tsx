@@ -62,7 +62,7 @@ export default function Projects() {
           return (
             <div
               key={idx}
-              className="group grid grid-cols-1 md:grid-cols-12 gap-4 transition-all duration-300 lg:group-hover/list:opacity-50 lg:hover:!opacity-100 lg:hover:bg-accent/[0.02] p-4 -mx-4 rounded-lg lg:relative"
+              className="group grid grid-cols-1 md:grid-cols-12 gap-4 transition-all duration-300 lg:group-hover/list:opacity-50 lg:hover:opacity-100! lg:hover:bg-accent/2 p-4 -mx-4 rounded-lg lg:relative"
             >
               {/* Timeline Column */}
               <div className="md:col-span-3">

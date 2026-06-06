@@ -12,9 +12,8 @@ export default function Home() {
       <Spotlight />
 
       {/* Content Container Grid */}
-      <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-12 xl:px-16 lg:py-0">
+      <div className="mx-auto min-h-screen max-w-7xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-12 xl:px-16 lg:py-0">
         <div className="lg:flex lg:justify-between lg:gap-8">
-          
           {/* Left sticky sidebar panel */}
           <Sidebar />
 
@@ -27,11 +26,10 @@ export default function Home() {
 
             {/* Integrated Copyright Footer */}
             <footer className="text-[10px] text-muted-text/70 tracking-wider lowercase pt-12 border-t border-border/20">
-              designed & coded by Tushar Saini. built with Next.js & Tailwind CSS. 
-              inspired by Brittany Chiang.
+              designed & coded by Tushar Saini. built with Next.js & Tailwind
+              CSS. inspired by Brittany Chiang.
             </footer>
           </main>
-
         </div>
       </div>
     </div>

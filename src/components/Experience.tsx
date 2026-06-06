@@ -12,7 +12,15 @@ export default function Experience() {
       location: "Hyderabad, India",
       description:
         "Engineered Angular UI modules for an enterprise insurance platform serving 13M+ users, delivering end-to-end policy and claims workflows across Agile sprints. Underwent rigorous technical training in Java Core and Spring Boot backend development. Integrated RESTful APIs into Angular services and partnered with backend engineers through daily standups and code reviews to ship features on schedule with zero regressions. Triaged and resolved production defects by diagnosing root causes, applying targeted fixes, and validating resolutions to maintain platform stability at scale.",
-      skills: ["Java", "Spring Boot", "Angular", "TypeScript", "REST APIs", "Agile", "Defect Triaging"]
+      skills: [
+        "Java",
+        "Spring Boot",
+        "Angular",
+        "TypeScript",
+        "REST APIs",
+        "Agile",
+        "Defect Triaging",
+      ],
     },
     {
       timeline: "May – Aug 2023",
@@ -22,8 +30,8 @@ export default function Experience() {
       location: "Remote",
       description:
         "Ranked 12 / 1,000+ contributors program-wide by shipping full-stack features across 10+ repositories over 4 months. Migrated 3 projects from React to Next.js, implementing SSR and restructuring codebases to cut page-load time by 30%. Closed 50+ bugs and merged 100+ pull requests across collaborative repos using MERN Stack, Next.js, and TypeScript.",
-      skills: ["React", "Next.js", "TypeScript", "SSR", "Git", "MERN Stack"]
-    }
+      skills: ["React", "Next.js", "TypeScript", "SSR", "Git", "MERN Stack"],
+    },
   ];
 
   return (
@@ -44,7 +52,7 @@ export default function Experience() {
         {experiences.map((exp, idx) => (
           <div
             key={idx}
-            className="group grid grid-cols-1 md:grid-cols-12 gap-4 transition-all duration-300 lg:group-hover/list:opacity-50 lg:hover:!opacity-100 lg:hover:bg-accent/[0.02] p-4 -mx-4 rounded-lg lg:relative"
+            className="group grid grid-cols-1 md:grid-cols-12 gap-4 transition-all duration-300 lg:group-hover/list:opacity-50 lg:hover:opacity-100! lg:hover:bg-accent/2 p-4 -mx-4 rounded-lg lg:relative"
           >
             {/* Timeline Column */}
             <div className="md:col-span-3">
@@ -71,7 +79,9 @@ export default function Experience() {
                     <span className="absolute inset-0 z-20 hidden lg:block" />
                   </a>
                 </h3>
-                <span className="block text-xs text-muted-text/75 mt-0.5">{exp.location}</span>
+                <span className="block text-xs text-muted-text/75 mt-0.5">
+                  {exp.location}
+                </span>
               </div>
 
               {/* Description Paragraph */}

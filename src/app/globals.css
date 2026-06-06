@@ -44,24 +44,24 @@
 
 :root {
     color-scheme: dark;
-    --background: #0e0e0e;
-    --foreground: #f0ede8;
-    --accent: #e8624a;
-    --muted-text: #888480;
-    --border: rgba(240, 237, 232, 0.08);
-    --spotlight-color: rgba(232, 98, 74, 0.035);
-    --spotlight-color-transparent: rgba(232, 98, 74, 0);
+    --background: oklch(0.14 0 0);
+    --foreground: oklch(0.94 0.005 70);
+    --accent: oklch(0.62 0.19 38);
+    --muted-text: oklch(0.58 0.004 70);
+    --border: oklch(0.94 0.005 70 / 0.08);
+    --spotlight-color: oklch(0.62 0.19 38 / 0.035);
+    --spotlight-color-transparent: oklch(0.62 0.19 38 / 0);
 }
 
 [data-theme="light"] {
     color-scheme: light;
-    --background: #f0ede8;
-    --foreground: #0e0e0e;
-    --accent: #d64b33;
-    --muted-text: #7a7570;
-    --border: rgba(14, 14, 14, 0.08);
-    --spotlight-color: rgba(214, 75, 51, 0.03);
-    --spotlight-color-transparent: rgba(214, 75, 51, 0);
+    --background: oklch(0.94 0.005 70);
+    --foreground: oklch(0.14 0 0);
+    --accent: oklch(0.54 0.18 36);
+    --muted-text: oklch(0.53 0.004 70);
+    --border: oklch(0.14 0 0 / 0.08);
+    --spotlight-color: oklch(0.54 0.18 36 / 0.03);
+    --spotlight-color-transparent: oklch(0.54 0.18 36 / 0);
 }
 
 @layer base {
