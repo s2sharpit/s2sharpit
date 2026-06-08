@@ -8,10 +8,14 @@ import {
   FaLinkedin,
   FaXTwitter,
   FaRegEnvelope,
+  FaSun,
+  FaMoon,
 } from "react-icons/fa6";
+import { useTheme } from "next-themes";
 
 export default function Sidebar() {
   const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   // Avoid hydration mismatch
   useEffect(() => {
@@ -82,8 +86,8 @@ export default function Sidebar() {
         <SidebarNav />
       </div>
 
-      {/* Socials Panel */}
-      <div className="mt-8 lg:mt-0">
+      {/* Socials Panel & Theme Toggle */}
+      <div className="mt-8 lg:mt-0 flex items-center justify-between lg:justify-start lg:gap-8">
         <ul
           className="flex items-center space-x-6"
           aria-label="Social media links"
@@ -102,6 +106,22 @@ export default function Sidebar() {
             </li>
           ))}
         </ul>
+
+        {mounted ? (
+          <button
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            className="flex items-center justify-center p-2 rounded-full border border-border/40 bg-accent/[0.03] text-muted-text hover:text-accent hover:border-accent/30 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer select-none"
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
+          >
+            {theme === "dark" ? (
+              <FaSun className="w-5 h-5 transition-transform duration-500 hover:rotate-45" />
+            ) : (
+              <FaMoon className="w-5 h-5 transition-transform duration-500 hover:-rotate-12" />
+            )}
+          </button>
+        ) : (
+          <div className="w-9 h-9" />
+        )}
       </div>
     </header>
   );

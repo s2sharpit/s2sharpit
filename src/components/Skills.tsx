@@ -68,7 +68,7 @@ export default function Skills() {
           >
             {/* Category Title */}
             <div className="mb-1.5 sm:mb-0">
-              <span className="text-xs font-bold uppercase tracking-widest text-muted-text/50 font-sans pt-0.5 block">
+              <span className="text-xs font-bold uppercase tracking-widest text-muted-text font-sans pt-0.5 block">
                 {group.category}
               </span>
             </div>

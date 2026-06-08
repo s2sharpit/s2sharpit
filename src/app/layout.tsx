@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import { Metadata } from "next";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -73,9 +74,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body className={`${cormorant.variable} ${dmSans.variable} font-sans bg-background text-foreground antialiased selection:bg-accent/20 selection:text-accent transition-colors duration-300`}>
-        {children}
+        <ThemeProvider
+          attribute="data-theme"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

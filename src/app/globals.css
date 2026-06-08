@@ -55,13 +55,13 @@
 
 [data-theme="light"] {
     color-scheme: light;
-    --background: oklch(0.94 0.005 70);
-    --foreground: oklch(0.14 0 0);
-    --accent: oklch(0.54 0.18 36);
-    --muted-text: oklch(0.53 0.004 70);
-    --border: oklch(0.14 0 0 / 0.08);
-    --spotlight-color: oklch(0.54 0.18 36 / 0.03);
-    --spotlight-color-transparent: oklch(0.54 0.18 36 / 0);
+    --background: oklch(0.95 0.01 260);
+    --foreground: oklch(0.11 0.03 260);
+    --accent: oklch(0.6 0.18 36);
+    --muted-text: oklch(0.55 0.02 260);
+    --border: oklch(0.11 0.03 260 / 0.08);
+    --spotlight-color: oklch(0.6 0.18 36 / 0.15);
+    --spotlight-color-transparent: oklch(0.6 0.18 36 / 0);
 }
 
 @layer base {
