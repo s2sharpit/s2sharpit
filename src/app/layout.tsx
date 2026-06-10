@@ -22,20 +22,24 @@ export const metadata: Metadata = {
     default: "Tushar Saini",
     template: "%s | Tushar Saini",
   },
-  description: "Software Engineer",
+  description:
+    "Software Engineer building AI-augmented, full-stack systems — Angular, Spring Boot, Next.js, FastAPI.",
   keywords: [
     "s2sharpit",
     "Tushar",
     "Saini",
-    "TusharSaini",
-    "Tushars2sharpit",
-    "sainis2sharpit",
     "portfolio",
     "bharat",
+    "angular",
+    "spring-boot",
+    "fastapi",
+    "ai-engineer",
+    "full-stack",
   ],
   openGraph: {
     title: "Tushar Saini",
-    description: "Software Engineer",
+    description:
+      "Software Engineer building AI-augmented, full-stack systems — Angular, Spring Boot, Next.js, FastAPI.",
     url: "https://s2sharpit.dev",
     siteName: "Tushar Saini",
     images: [
@@ -62,6 +66,8 @@ export const metadata: Metadata = {
   twitter: {
     title: "Tushar Saini",
     card: "summary_large_image",
+    description:
+      "Software Engineer building AI-augmented, full-stack systems — Angular, Spring Boot, Next.js, FastAPI.",
   },
   icons: {
     shortcut: "/favicon.ico",
@@ -75,7 +81,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
-      <body className={`${cormorant.variable} ${dmSans.variable} font-sans bg-background text-foreground antialiased selection:bg-accent/20 selection:text-accent transition-colors duration-300`}>
+      <body
+        className={`${cormorant.variable} ${dmSans.variable} font-sans bg-background text-foreground antialiased selection:bg-accent/20 selection:text-accent transition-colors duration-300`}
+      >
         <ThemeProvider
           attribute="data-theme"
           defaultTheme="dark"

@@ -39,6 +39,15 @@ export default function Projects() {
       description:
         "Trained a supervised classification model predicting addiction risk, achieving 81% accuracy on a 13,000-sample test set. Benchmarked Random Forest, SVM, and Logistic Regression; applied feature selection and data cleaning to reduce overfitting and improve generalisation.",
     },
+    {
+      title: "B. S. Senior Secondary — School Website",
+      timeline: "Feb – Jun 2025",
+      techstack: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+      url: "https://bsseniorsecondary.in",
+      github: "https://github.com/s2sharpit/school",
+      description:
+        "Designed and developed a production school website for BS Senior Secondary, currently live and serving the institution. Built with Next.js and TailwindCSS for performance and responsive design across devices. Delivered a clean information architecture covering admissions, academics, and contact — prioritising usability for a non-technical audience.",
+    },
   ];
 
   return (

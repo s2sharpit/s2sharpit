@@ -21,6 +21,7 @@ export default function Skills() {
       category: "Frontend",
       skills: [
         "Angular",
+        "Flutter",
         "React",
         "Next.js",
         "TailwindCSS",

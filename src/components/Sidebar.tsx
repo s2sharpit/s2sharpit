@@ -8,9 +8,8 @@ import {
   FaLinkedin,
   FaXTwitter,
   FaRegEnvelope,
-  FaSun,
-  FaMoon,
 } from "react-icons/fa6";
+import { LuSun, LuMoon } from "react-icons/lu";
 import { useTheme } from "next-themes";
 
 export default function Sidebar() {
@@ -79,7 +78,7 @@ export default function Sidebar() {
 
         {/* Tagline */}
         <p className="text-muted-text text-sm sm:text-base max-w-xs mt-2.5 leading-relaxed font-sans font-normal italic text-pretty">
-          I build robust, accessible, and performant software for the web.
+          Full-stack engineer. AI systems builder. High bias for action
         </p>
 
         {/* Desktop Vertical Scroll Spy Menu */}
@@ -110,13 +109,13 @@ export default function Sidebar() {
         {mounted ? (
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="flex items-center justify-center p-2 rounded-full border border-border/40 bg-accent/[0.03] text-muted-text hover:text-accent hover:border-accent/30 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer select-none"
+            className="flex items-center justify-center p-2 rounded-full border border-border/40 bg-accent/3 text-muted-text hover:text-accent hover:border-accent/30 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer select-none"
             aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
           >
             {theme === "dark" ? (
-              <FaSun className="w-5 h-5 transition-transform duration-500 hover:rotate-45" />
+              <LuSun className="w-5 h-5 transition-transform duration-500 hover:rotate-45" />
             ) : (
-              <FaMoon className="w-5 h-5 transition-transform duration-500 hover:-rotate-12" />
+              <LuMoon className="w-5 h-5 transition-transform duration-500 hover:-rotate-12" />
             )}
           </button>
         ) : (

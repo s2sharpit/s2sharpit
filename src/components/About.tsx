@@ -19,13 +19,18 @@ export default function About() {
       <div className="space-y-6">
         {/* Bio paragraph */}
         <p className="text-muted-text font-sans text-sm md:text-base leading-relaxed text-justify">
-          Software engineer specializing in building high-performance web
-          applications and robust user experiences. Experienced in engineering
-          clean, modular frontends using Angular, React, and Next.js, alongside
-          designing scalable backend architectures and RESTful microservices
-          using Java Core, Spring Boot, Node.js, and FastAPI. Focused on
-          delivering production-ready software that balances database query
-          optimization, clean APIs, and refined user interfaces.
+          Software engineer with hands-on experience across full-stack
+          development, agentic AI systems, and automated deployment pipelines.
+          Currently at Capgemini, engineering modules for an enterprise
+          insurance platform that serves 13 million users. Outside of that, I
+          independently architect AI-powered platforms that connect large
+          language models, microservices, and CI/CD infrastructure — built to be
+          production-ready from day one, not just demo-ready.
+          <br /> I think at the product level before writing a line of code. My
+          focus is on systems that are scalable, AI-augmented, and maintainable
+          — not just functional.
+          <br /> Open to backend, full-stack, and AI engineering roles where I
+          can contribute meaningfully from day one.
         </p>
 
         {/* CV Link */}
