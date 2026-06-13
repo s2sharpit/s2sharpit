@@ -95,7 +95,7 @@ export default function Projects() {
                         {project.title}
                         <LuArrowUpRight className="inline-block h-3.5 w-3.5 shrink-0 transition-transform duration-300 translate-y-px ml-1 text-muted-text group-hover/link:text-accent group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" />
                       </span>
-                      <span className="absolute inset-0 z-20 hidden lg:block" />
+                      <span className="absolute inset-0 hidden lg:block" />
                     </a>
                   </h3>
                 </div>

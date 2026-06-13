@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import SidebarNav from "./SidebarNav";
 import {
   FaGithub,
@@ -11,6 +10,7 @@ import {
 } from "react-icons/fa6";
 import { LuSun, LuMoon } from "react-icons/lu";
 import { useTheme } from "next-themes";
+import ProfileAvatar from "./ProfileAvatar";
 
 export default function Sidebar() {
   const [mounted, setMounted] = useState(false);
@@ -48,18 +48,7 @@ export default function Sidebar() {
     <header className="lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:pt-20 lg:pb-12">
       <div>
         {/* Profile Avatar */}
-        <div className="mb-4 relative w-20 h-20 rounded-full overflow-hidden border border-accent/20 p-0.5 bg-background shrink-0">
-          <div className="w-full h-full rounded-full overflow-hidden relative">
-            <Image
-              src="/s2sharpit.png"
-              alt="Tushar Saini"
-              fill
-              priority
-              sizes="80px"
-              className="object-cover"
-            />
-          </div>
-        </div>
+        <ProfileAvatar src="/s2sharpit.png" alt="Tushar Saini" />
 
         {/* Branding */}
         <h1 className="text-5xl sm:text-6xl font-bold font-display tracking-tight text-foreground">
